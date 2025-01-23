@@ -15,7 +15,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0; padding: 0; box-sizing: border-box;
-    font-size: .625em; vertical-align: baseline;
+     vertical-align: baseline;
     border: 0; font-family: 'Noto Sans KR', sans-serif; 
 }
 /* HTML5 display-role reset for older browsers */

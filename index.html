@@ -5,22 +5,516 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trip:ter J이고 싶은 P 당신을 위한 플랫폼</title>
     
+    <!-- reset / CDN -->
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- 작업용 -->
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/dahye.css">
+
 </head>
 <body>
     <header id="hd">
         <div class="header_inner">
-            효정님 자리~
+            <div id="user" class="trip-bl">
+                <div class="container d-flex justify-content-end align-items-center">
+                    <ul class=" d-flex gap-3">
+                        <li ><a href="" class="text-white">로그인</a></li>
+                        <li class="position-relative"><a href="" class="text-white">고객지원
+                            <img src="./img/polygon-1.svg" alt="">
+                        </a>
+                            <ul class="position-absolute d-none">
+                                <li><a href="">이용가이드</a></li>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">문의게시판</a></li>
+                            </ul>
+                         </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="gnb" class="container d-flex justify-content-between">
+                <div class="hbmenu">
+                    <img src="./img/menu-all.svg" alt="">
+                </div>
+                <ul class="d-flex justify-content-start gap-3 me-auto ps-3 py-0">
+                    <li><a href="">계획하기</a></li>
+                    <li><a href="">트립톡</a></li>
+                    <li><a href="">이벤트</a></li>
+                </ul>
+                <h1 class="logo"><a href="index.html"><img src="./img/logo_TRT_basic.svg" alt="logo">
+                    <span class="visually-hidden">트립터</span>
+                   
+                </a></h1>
+                <ul class= "icon d-flex">
+                    <li>
+                        <form action="http://www.google.com">
+                            <input type="text" class="search" name="search">
+                            <input type="image" src="./img/search-02.svg" alt="">
+                        </form>
+                        
+                    </li>
+                    <li>
+                        <button class="wishlist-btn"><a href=""><img src="./img/heart.svg" alt=""></a></button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <a href="" class="bluea">
-        #도시좋아
-    </a>
+    <main id="section_wrap">
+        <div class="section section1">
+            <div id="main_slide">
+                <div class="swiper main_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <h2>라스베이거스<span>Las Vegas</span></h2>
+                                <p>야경의 끝판왕</p>                                                      
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <h2>언제가도 좋은 제주<span></span></h2>
+                                <p>제주도 구석구석</p>                                                      
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <h2>아이슬란드,<span></span></h2>
+                                <p>버킷리스트 1순위 여행지<br>대자연의 웅장함</p>                                                      
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <h2>특별기획 테마여행<span></span></h2>
+                                <p>트립터와 함께 떠나보세요</p>                                                      
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div id="mftr">
+                <form action="#">
+                    <h4 class="mftr_tit">MY FEEL:TER</h4>
+                    <div class="mftr_cont">
+                        <fieldset class="filset1">
+                            <legend>나의 여행 스타일은?</legend>
+                            <div class="mftr_btn d-flex">
+                                <input type="button" value="계획형">
+                                <input type="button" value="즉흥형">
+                                <input type="button" value="아무거나">
+                            </div>
+                        </fieldset>
+                        <fieldset class="filset2">
+                            <legend>여행지 선택의 1순위는?</legend>
+                            <div class="mftr_btn d-flex">
+                                <input type="button" value="음식">
+                                <input type="button" value="액티비티">
+                                <input type="button" value="호텔">
+                                <input type="button" value="관광명소">
+                            </div>
+                        </fieldset>
+                        <fieldset class="filset3">
+                            <legend>나의 여행 스타일은?</legend>
+                            <div class="mftr_btn d-flex">
+                                <input type="button" value="짧게 여러 번">
+                                <input type="button" value="길게 한 번에">
+                            </div>
+                        </fieldset>
+                        <fieldset class="filset4">
+                            <legend>나의 여행 스타일은?</legend>
+                            <div class="mftr_btn d-flex">
+                                <input type="button" value="가성비">
+                                <input type="button" value="여행은 플렉스">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="MY FEEL:TER 설정하기">
+                </form>
+            </div>
+            <div class="banner promo_banner"></div>
+        </div>
+        <div class="section section2">
+            <h3 class="section_tit">
+                 MD 추천 테마여행지
+            </h3>
+            <div id="md_slide">
+                <div class="swiper md_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="img_box"></div>
+                                <div class="swiper_desc">
+                                    <b>밤 낮 없이 반짝반짝</b>
+                                    <p>라스베가스 2인 25만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="img_box"></div>
+                                <div class="swiper_desc">
+                                    <b>머글들의 마법 세상 체험기</b>
+                                    <p>도쿄 워너 브라더스 2인 25만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">                               
+                                <div class="img_box"></div>
+                                <div class="swiper_desc">
+                                    <b>마이 프레셔스~!<span>반지를 찾아서</span></b>
+                                    <p>뉴질랜드 2인 52만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="img_box"></div>
+                                <div class="swiper_desc">
+                                    <b>내이름은 니기하야미<span>코하쿠누시야</span></b>
+                                    <p>대만 지우펀 15만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="img_box"></div>
+                                <div class="swiper_desc">
+                                    <b>동화속 세상 그 자체!</b>
+                                    <p>베트남 푸꾸옥 33만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="img_box"></div>
+                                <div class="swiper_desc">
+                                    <b>라라라라라라라~<span>날 좋아 한다고</span></b>
+                                    <p>산토리니 125만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+
+                                <div class="img_box"></div>
+                                <div class="swiper_desc">
+                                    <b>소고기는 넣지 않아 나마스떼</b>
+                                    <p>타지마할-갠지스강 45만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+        <div class="section section3">
+            <div id="trt_info" class="container">
+                <div class="img_box"></div>
+                <div class="txt_box">
+                    <h3>J이고 싶은 P, 당신을 위한 플랫폼</h3>
+                    <h4>반복되는 일상에 지쳤다면?<br>트립터에서 나에게 딱 맞는 여행을 만나보세요</h4>
+                    <ol class="d-flex">
+                        <li>
+                            <span>01</span>
+                            <b>나의 취향을 찾아서</b>
+                            <i>MY FEEL:TER 에서 나의 여행 스타일을 찾아요</i>
+                        </li>
+                        <li>
+                            <span>02</span>
+                            <b>맞춤 계획표 서비스</b>
+                            <i>여행 계획 짜기 트립터가 다 해드릴게요</i>
+                        </li>
+                        <li>
+                            <span>03</span>
+                            <b>나의 취향을 찾아서</b>
+                            <i>여러 테마여행 상품에서 특별한 추억을 만들어보세요</i>
+                        </li>
+                        <li>
+                            <span>04</span>
+                            <b>더 많은 여행 후기</b>
+                            <i>검증된 후기로 실패 없는 여행을 계획하세요</i>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="section section4">
+            <div class="container">
+                <h3 class="section_tit">
+                    지금 가장 인기있는 여행지를 만나보세요
+                </h3>
+                <ul class="tab_menu d-flex">
+                    <li class="active">#도시좋아</li>
+                    <li>#자연좋아</li>
+                    <li>#빵지순례</li>
+                    <li>#인생샷명소</li>
+                    <li>#뚜벅이</li>
+                    <li>#액티비티</li>
+                    <li>#힐링여행</li>
+                    <li>#부모님과 함께</li>
+                    <li>#이색경험</li>
+                    <li>#먹스타그램</li>
+                    <li>#혼자여행</li>
+                    <li>#풀빌라</li>
+                    <li>#야경투어</li>
+                    <li>#반려동물</li>
+                    <li>#2030</li>
+                    <li>#드라이브</li>
+                </ul>
+                <ul class="tab_contents">
+                    <li>
+                        <div class="content_desc">
+                            <a href="#none">
+                                <b>이태리 알프스 총정리</b>
+                                <span>내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content_desc">
+                            <a href="#none">
+                                <b>전세계 인기 카페 투어</b>
+                                <span>내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content_desc">
+                            <a href="#none">
+                                <b>성에서 일주일 살기</b>
+                                <span>내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content_desc">
+                            <a href="#none">
+                                <b>현지 이색 투어 모음</b>
+                                <span>내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section section5">
+            <h3 class="section_tit">
+                여행 혜택도 놓치지 마세요
+           </h3>
+           <div class="promotion_wrap">
+                <div></div>
+                <div>
+                    <iframe src="#" frameborder="0"></iframe>
+                </div>
+           </div>
+        </div>
+        <div class="section section6">
+            <h3 class="section_tit">
+                실시간 후기
+           </h3>
+           <a href="#none">후기 더 보기></a>
+           <div class="content_flow">
+                <ul class="flow_line1 d-flex">
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="flow_line2 d-flex">
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box"></div>
+                        <div class="txt_box">
+                            <div class="user_info">
+                                <b>닉네임</b>
+                                <i>★★★★★</i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+           </div>
+        </div>
+        <div class="section section7">
+            <div class="container">
+                <div class="qrimg"></div>
+                <div class="txt_box">
+                    <h2>나보다 나를 더 잘 아는 최고의 여행 메이트</h2>
+                    <div class="logo"></div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer id="ft">
-
+        <div class="container">
+            <h2 class="logo">
+            
+            </h2>
+            <div class="footer_content">
+                <ul>
+                    <li><a href="#none">사업자정보</a></li>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none">개인정보 처리방침</a></li>
+                    <li><a href="#none">제휴 / 광고 문의</a></li>
+                </ul>
+                <div class="compony_info">
+                    <b>회사소개</b>
+                    <i>주 트립터</i>
+                    <i><span>대표자</span> 신은경</i>
+                    <i><span>고객센터</span> 0000-0000</i>
+                    <i><span>주소</span> 서울특별시 구로구 구로5동 3-25 테크노마트 6층</i>
+                    <i><span>메일</span> help@tripter.com</i>
+                    <i><span>사업자등록번호</span> 0000000-0000</i>
+                    <i><span>통신판매입신고번호</span> 제0000-서울00-0000호</i>
+                    <i><span>관광사업자등록번호</span> 제0000-000000호</i>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".main_swiper", {
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        });
+
+        var swiper = new Swiper(".md_swiper", {
+            loop: true,
+            slidesPerView: 7,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                  el: ".swiper-pagination",
+              clickable: true,
+
+            },
+        });
+    </script>
 </body>
 </html>
