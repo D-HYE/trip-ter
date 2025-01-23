@@ -1,5 +1,20 @@
+:root{
+    --Trip-blue : "#0051D3";
+    --Trip-lemon : "#FFDA00";
+}
+
+body{
+   font-size: 1rem;
+}
 .container{
     max-width: 1440px;
     padding: 0 20px;
     margin: auto;
+}
+
+.trip_bl{
+    background-color:var(--Trip-blue);
+}
+.color-active-blue{
+    color:var(--Trip-blue);
 }
