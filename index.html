@@ -7,12 +7,12 @@
     
     <!-- reset / CDN -->
     <link rel="stylesheet" href="./css/reset.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- 작업용 -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/dahye.css">
 
 </head>
 <body>
@@ -55,10 +55,30 @@
             <div id="main_slide">
                 <div class="swiper main_swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">a태그 잊지 말것</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <h2>라스베이거스<span>Las Vegas</span></h2>
+                                <p>야경의 끝판왕</p>                                                      
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <h2>언제가도 좋은 제주<span></span></h2>
+                                <p>제주도 구석구석</p>                                                      
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <h2>아이슬란드,<span></span></h2>
+                                <p>버킷리스트 1순위 여행지<br>대자연의 웅장함</p>                                                      
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <h2>특별기획 테마여행<span></span></h2>
+                                <p>트립터와 함께 떠나보세요</p>                                                      
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -188,7 +208,7 @@
                 <div class="txt_box">
                     <h3>J이고 싶은 P, 당신을 위한 플랫폼</h3>
                     <h4>반복되는 일상에 지쳤다면?<br>트립터에서 나에게 딱 맞는 여행을 만나보세요</h4>
-                    <ol>
+                    <ol class="d-flex">
                         <li>
                             <span>01</span>
                             <b>나의 취향을 찾아서</b>
@@ -218,7 +238,7 @@
                 <h3 class="section_tit">
                     지금 가장 인기있는 여행지를 만나보세요
                 </h3>
-                <ul class="tab_menu">
+                <ul class="tab_menu d-flex">
                     <li class="active">#도시좋아</li>
                     <li>#자연좋아</li>
                     <li>#빵지순례</li>
@@ -458,5 +478,31 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".main_swiper", {
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        });
+
+        var swiper = new Swiper(".md_swiper", {
+            loop: true,
+            slidesPerView: 7,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                  el: ".swiper-pagination",
+              clickable: true,
+
+            },
+        });
+    </script>
 </body>
 </html>

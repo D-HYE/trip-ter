@@ -12,6 +12,27 @@ body{
     margin: auto;
 }
 
+/* flex 관련 */
+.d-flex{
+    display: flex;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-end{
+    align-items: end;
+}
+.align-items-center{
+    align-items: center;
+}
+
+
 .trip_bl{
     background-color:var(--Trip-blue);
 }
