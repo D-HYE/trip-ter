@@ -2,28 +2,38 @@
     --Trip-blue : #0051D3;
     --Trip-lemon : #FFDA00;
 }
-
 body{
    font-size: 1rem;
 }
-a{
-    color: #111;
-    text-decoration: none;
+.container{
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: auto;
 }
 
+/* flex 관련 */
 .d-none{
     display: none;
 }
 .d-flex{
     display: flex;
 }
-
-
-.container{
-    max-width: 1440px;
-    padding: 0 20px;
-    margin: auto;
+.justify-content-end{
+    justify-content: end;
 }
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-end{
+    align-items: end;
+}
+.align-items-center{
+    align-items: center;
+}
+
 
 .trip-bl{
     background-color:var(--Trip-blue);
@@ -33,6 +43,5 @@ a{
 }
 
 .w-0{
-    width: 0 !important;
-    
+    width: 0;   
 }
