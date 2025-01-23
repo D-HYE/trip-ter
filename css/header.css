@@ -1,0 +1,22 @@
+#hd > div > div{
+    height: 2.5rem;
+}
+#gnb ul {
+    font-family: "The Jamsil OTF";
+    font-weight: 500;
+    font-size: 1.25rem;
+    
+}
+#gnb img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.search{
+    border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
+    border: 2px solid #0051D3;
+}
+
+.logo img{
+    width: 12.18431rem !important;
+    height: 3.375rem !important;
+}

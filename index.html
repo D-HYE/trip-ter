@@ -13,35 +13,48 @@
 <body>
     <header id="hd">
         <div class="header_inner">
-            <div class="bg-active-blue">
-                <div class="container d-flex justify-content-end">
-                    <ul class="d-flex py-3">
+            <div id="user" class="trip-bl">
+                <div class="container d-flex justify-content-end align-items-center">
+                    <ul class="d-flex gap-3">
                         <li ><a href="" class="text-white">로그인</a></li>
-                        <li class="position-relative"><a href="" class="text-white">고객지원</a>
+                        <li class="position-relative"><a href="" class="text-white">고객지원
+                            <img src="./img/polygon-1.svg" alt="">
+                        </a>
                             <ul class="position-absolute d-none">
-                                <li><a href="">공지사항</a></li>
-                                <li><a href="">공지사항</a></li>
-                                <li><a href="">공지사항</a></li>
+                                <li><a href="">이용가이드</a></li>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">문의게시판</a></li>
                             </ul>
-                        </li>
+                         </li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="container d-flex">
-                <ul>
-                    <li class="d-flex"><a href="">로그인</a></li>
-                    <li class="d-flex"><a href="">로그인</a></li>
+            <div id="gnb" class="container d-flex justify-content-between">
+                <div class="hbmenu">
+                    <img src="./img/menu-all.svg" alt="">
+                </div>
+                <ul class="d-flex justify-content-start gap-3 me-auto ps-3 py-0">
+                    <li><a href="">계획하기</a></li>
+                    <li><a href="">트립톡</a></li>
+                    <li><a href="">이벤트</a></li>
+                </ul>
+                <h1 class="logo"><a href="index.html"><img src="./img/logo_TRT_basic.svg" alt="logo">
+                    <span class="visually-hidden">트립터</span>
+                   
+                </a></h1>
+                <ul class= "d-flex">
+                    <li>
+                        <form action="http://da-bong.com/dabong/">
+                            <input type="text" class="search" name="search">
+                            <input type="image" src="./img/search-02.svg" alt="">
+                        </form>
+                        
+                    </li>
+                    <li>
+                        <button class="wishlist-btn"><a href=""><img src="./img/heart.svg" alt=""></a></button>
+                    </li>
                 </ul>
             </div>
-            <div class="hbmenu"></div>
-            <ul>
-                <li><a href="">대메뉴</a></li>
-                <li><a href="">대메뉴</a></li>
-                <li><a href="">대메뉴</a></li>
-            </ul>
-            <h1 class="logo"><a href=""><img src="" alt=""></a></h1>
-            <input type="text" class="search"><button class="wishlist-btn"></button>
         </div>
     </header>
 
