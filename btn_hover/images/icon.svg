@@ -1,0 +1,15 @@
+<svg width="37" height="33" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="37" height="33" fill="#DADADA"/>
+<g id="&#236;&#132;&#184;&#235;&#182;&#128;&#235;&#169;&#148;&#235;&#137;&#180;_&#236;&#187;&#168;&#237;&#141;&#188;&#235;&#132;&#140;&#237;&#138;&#184;">
+<path d="M-1436 -109C-1436 -110.105 -1435.1 -111 -1434 -111H2166C2167.1 -111 2168 -110.105 2168 -109V1800C2168 1801.1 2167.1 1802 2166 1802H-1434C-1435.1 1802 -1436 1801.1 -1436 1800V-109Z" fill="#838383"/>
+<g id="btn_hover">
+<rect x="-114.5" y="-46.5" width="207" height="295" rx="4.5" stroke="#9747FF" stroke-dasharray="10 5"/>
+<g id="btn_hover=btn_basic">
+<circle id="Ellipse 1" cx="18" cy="17" r="39" fill="#0051D3"/>
+<g id="Arrow Right">
+<path id="Icon" d="M21.111 2.79199L34.1666 16.5003M34.1666 16.5003L21.111 30.2087M34.1666 16.5003L2.83325 16.5003" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
