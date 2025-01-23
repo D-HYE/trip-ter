@@ -5,6 +5,14 @@
 body{
    font-size: 1rem;
 }
+
+.trip-bl{
+    background-color:var(--Trip-blue);
+}
+.color-active-blue{
+    color:var(--Trip-blue);
+}
+
 .container{
     max-width: 1440px;
     padding: 0 20px;
@@ -33,15 +41,11 @@ body{
 .align-items-center{
     align-items: center;
 }
-
-
-.trip-bl{
-    background-color:var(--Trip-blue);
-}
-.color-active-blue{
-    color:var(--Trip-blue);
+.align-items-stretch{
+    align-items: stretch;
 }
 
+/* 넓이 관련 */
 .w-0{
     width: 0;   
 }
