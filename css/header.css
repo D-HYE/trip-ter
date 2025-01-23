@@ -4,12 +4,7 @@
 #gnb ul {
     font-family: "The Jamsil OTF";
     font-weight: 500;
-    font-size: 1.25rem;
-    
-}
-#gnb img{
-    width: 1.5rem;
-    height: 1.5rem;
+    font-size: 1.25rem;  
 }
 .search{
     border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
@@ -17,6 +12,6 @@
 }
 
 .logo img{
-    width: 12.18431rem !important;
-    height: 3.375rem !important;
+    width: 12.18431rem;
+    height: 3.375rem;
 }
