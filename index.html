@@ -64,12 +64,12 @@
 
     <main id="section_wrap">
         <div class="section section1">
-            <div id="main_slide">
+            <div id="main_slide" class="rel">
                 <div class="swiper main_swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slide1">
                             <a href="#none" class="">
-                                <div class="slide_desc">
+                                <div class="slide_desc abs">
                                     <h2>라스베이거스<span>Las Vegas</span></h2>
                                     <p>야경의 끝판왕</p>
                                 </div>                                                   
@@ -77,7 +77,7 @@
                         </div>
                         <div class="swiper-slide swiper-slide2">
                             <a href="#none"class="">
-                                <div class="slide_desc">
+                                <div class="slide_desc abs">
                                     <h2>언제가도 좋은 제주<span></span></h2>
                                     <p>제주도 구석구석</p>
                                 </div>                                                
@@ -85,7 +85,7 @@
                         </div>
                         <div class="swiper-slide swiper-slide3">
                             <a href="#none"class="">
-                                <div class="slide_desc">
+                                <div class="slide_desc abs">
                                     <h2>아이슬란드,<span></span></h2>
                                     <p>버킷리스트 1순위 여행지<br>대자연의 웅장함</p>
                                 </div>                                                    
@@ -93,7 +93,7 @@
                         </div>
                         <div class="swiper-slide swiper-slide4">
                             <a href="#none"class="">
-                                <div class="slide_desc">
+                                <div class="slide_desc abs">
                                     <h2>특별기획 테마여행<span></span></h2>
                                     <p>트립터와 함께 떠나보세요</p>
                                 </div>                                                    
@@ -102,47 +102,50 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+                <div id="mftr" class="mftr_form abs">
+                    <form action="#">
+                        <h4 class="mftr_tit">MY FEEL:TER</h4>
+                        <div class="mftr_cont">
+                            <fieldset class="filset1">
+                                <legend>나의 여행 스타일은?</legend>
+                                <div class="mftr_btn_wrap d-flex">
+                                    <input type="button" value="계획형">
+                                    <input type="button" value="즉흥형">
+                                    <input type="button" value="아무거나">
+                                </div>
+                            </fieldset>
+                            <fieldset class="filset2">
+                                <legend>여행지 선택의 1순위는?</legend>
+                                <div class="mftr_btn_wrap d-flex">
+                                    <input type="button" value="음식" >
+                                    <input type="button" value="액티비티">
+                                    <input type="button" value="호텔">
+                                    <input type="button" value="관광명소">
+                                </div>
+                            </fieldset>
+                            <fieldset class="filset3">
+                                <legend>나의 여행 스타일은?</legend>
+                                <div class="mftr_btn_wrap d-flex">
+                                    <input type="button" value="짧게 여러 번">
+                                    <input type="button" value="길게 한 번에">
+                                </div>
+                            </fieldset>
+                            <fieldset class="filset4">
+                                <legend>나의 여행 스타일은?</legend>
+                                <div class="mftr_btn_wrap d-flex">
+                                    <input type="button" value="가성비">
+                                    <input type="button" value="여행은 플렉스">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <input type="submit" value="MY FEEL:TER 설정하기" class="submit_btn">
+                    </form>
+                </div>
             </div>
-            <div id="mftr">
-                <form action="#">
-                    <h4 class="mftr_tit">MY FEEL:TER</h4>
-                    <div class="mftr_cont">
-                        <fieldset class="filset1">
-                            <legend>나의 여행 스타일은?</legend>
-                            <div class="mftr_btn d-flex">
-                                <input type="button" value="계획형">
-                                <input type="button" value="즉흥형">
-                                <input type="button" value="아무거나">
-                            </div>
-                        </fieldset>
-                        <fieldset class="filset2">
-                            <legend>여행지 선택의 1순위는?</legend>
-                            <div class="mftr_btn d-flex">
-                                <input type="button" value="음식">
-                                <input type="button" value="액티비티">
-                                <input type="button" value="호텔">
-                                <input type="button" value="관광명소">
-                            </div>
-                        </fieldset>
-                        <fieldset class="filset3">
-                            <legend>나의 여행 스타일은?</legend>
-                            <div class="mftr_btn d-flex">
-                                <input type="button" value="짧게 여러 번">
-                                <input type="button" value="길게 한 번에">
-                            </div>
-                        </fieldset>
-                        <fieldset class="filset4">
-                            <legend>나의 여행 스타일은?</legend>
-                            <div class="mftr_btn d-flex">
-                                <input type="button" value="가성비">
-                                <input type="button" value="여행은 플렉스">
-                            </div>
-                        </fieldset>
-                    </div>
-                    <input type="submit" value="MY FEEL:TER 설정하기">
-                </form>
+            <div class="banner promo_banner">
+                <h2>이미지가 없어요~~~ 어디갔지~~~</h2>
+                <!-- <img src="./img" alt=""> -->
             </div>
-            <div class="banner promo_banner"></div>
         </div>
         <div class="section section2">
             <h3 class="section_tit">
@@ -153,64 +156,77 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#none">
-                                <div class="img_box"></div>
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/lasvegas.jpg" alt="라스베가스">
+                                </div>
                                 <div class="swiper_desc">
-                                    <b>밤 낮 없이 반짝반짝</b>
+                                    <b class="d-flex align-items-center  justify-content-center">밤 낮 없이 반짝반짝</b>
                                     <p>라스베가스 2인 25만원부터</p>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#none">
-                                <div class="img_box"></div>
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/japan.jpg" alt="도쿄">
+                                </div>
                                 <div class="swiper_desc">
-                                    <b>머글들의 마법 세상 체험기</b>
+                                    <b class="d-flex align-items-center  justify-content-center">머글들의 마법 세상 체험기</b>
                                     <p>도쿄 워너 브라더스 2인 25만원부터</p>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#none">                               
-                                <div class="img_box"></div>
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/newzealand.jpg" alt="뉴질랜드">
+                                </div>
                                 <div class="swiper_desc">
-                                    <b>마이 프레셔스~!<span>반지를 찾아서</span></b>
+                                    <b class="d-flex align-items-center  justify-content-center">마이 프레셔스~!<span>반지를 찾아서</span></b>
                                     <p>뉴질랜드 2인 52만원부터</p>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#none">
-                                <div class="img_box"></div>
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/taiwan.jpg" alt="지우펀">
+                                </div>
                                 <div class="swiper_desc">
-                                    <b>내이름은 니기하야미<span>코하쿠누시야</span></b>
+                                    <b class="d-flex align-items-center  justify-content-center">내이름은 니기하야미<span>코하쿠누시야</span></b>
                                     <p>대만 지우펀 15만원부터</p>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#none">
-                                <div class="img_box"></div>
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/vietnam.jpg" alt="푸꾸옥">
+                                </div>
                                 <div class="swiper_desc">
-                                    <b>동화속 세상 그 자체!</b>
+                                    <b class="d-flex align-items-center  justify-content-center">동화속 세상 그 자체!</b>
                                     <p>베트남 푸꾸옥 33만원부터</p>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#none">
-                                <div class="img_box"></div>
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/santorini.jpg" alt="산토리니">
+                                </div>
                                 <div class="swiper_desc">
-                                    <b>라라라라라라라~<span>날 좋아 한다고</span></b>
+                                    <b class="d-flex align-items-center justify-content-center">라라라라라라라~<span>날 좋아 한다고</span></b>
                                     <p>산토리니 125만원부터</p>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#none">
-
-                                <div class="img_box"></div>
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/india.jpg" alt="타지마할">
+                                </div>
                                 <div class="swiper_desc">
-                                    <b>소고기는 넣지 않아 나마스떼</b>
+                                    <b class="d-flex align-items-center  justify-content-center">소고기는 넣지 않아 나마스떼</b>
                                     <p>타지마할-갠지스강 45만원부터</p>
                                 </div>
                             </a>
@@ -218,36 +234,36 @@
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination mb"></div>
                   </div>
             </div>
         </div>
         <div class="section section3">
-            <div id="trt_info" class="container">
+            <div id="trt_info" class="container d-flex justify-content-between align-items-end">
                 <div class="img_box"></div>
                 <div class="txt_box">
                     <h3>J이고 싶은 P, 당신을 위한 플랫폼</h3>
                     <h4>반복되는 일상에 지쳤다면?<br>트립터에서 나에게 딱 맞는 여행을 만나보세요</h4>
-                    <ol class="d-flex">
+                    <ol class="d-flex justify-content-between flex-wrap">
                         <li>
-                            <span>01</span>
+                            <strong>01</strong>
                             <b>나의 취향을 찾아서</b>
-                            <i>MY FEEL:TER 에서 나의 여행 스타일을 찾아요</i>
+                            <i>MY FEEL:TER 에서 <span>나의 여행 스타일을 찾아요</span></i>
                         </li>
                         <li>
-                            <span>02</span>
+                            <strong>02</strong>
                             <b>맞춤 계획표 서비스</b>
-                            <i>여행 계획 짜기 트립터가 다 해드릴게요</i>
+                            <i>여행 계획 짜기 <span>트립터가 다 해드릴게요</span></i>
                         </li>
                         <li>
-                            <span>03</span>
-                            <b>나의 취향을 찾아서</b>
-                            <i>여러 테마여행 상품에서 특별한 추억을 만들어보세요</i>
+                            <strong>03</strong>
+                            <b>내 마음 속 테마여행</b>
+                            <i>여러 테마여행 상품에서 <span>특별한 추억을 만들어보세요</span></i>
                         </li>
                         <li>
-                            <span>04</span>
+                            <strong>04</strong>
                             <b>더 많은 여행 후기</b>
-                            <i>검증된 후기로 실패 없는 여행을 계획하세요</i>
+                            <i>검증된 후기로 실패 없는 <span>여행을 계획하세요</span></i>
                         </li>
                     </ol>
                 </div>
@@ -258,7 +274,7 @@
                 <h3 class="section_tit">
                     지금 가장 인기있는 여행지를 만나보세요
                 </h3>
-                <ul class="tab_menu d-flex">
+                <ul class="tab_menu d-flex justify-content-center flex-wrap">
                     <li class="active">#도시좋아</li>
                     <li>#자연좋아</li>
                     <li>#빵지순례</li>
@@ -276,7 +292,7 @@
                     <li>#2030</li>
                     <li>#드라이브</li>
                 </ul>
-                <ul class="tab_contents">
+                <ul class="tab_contents d-flex">
                     <li>
                         <div class="content_desc">
                             <a href="#none">
@@ -504,6 +520,10 @@
     <script>
         var swiper = new Swiper(".main_swiper", {
             loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             pagination: {
               el: ".swiper-pagination",
               clickable: true,
@@ -513,7 +533,10 @@
         var swiper = new Swiper(".md_swiper", {
             loop: true,
             slidesPerView: 7,
-            spaceBetween: 10,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
