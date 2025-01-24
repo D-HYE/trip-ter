@@ -2,12 +2,11 @@
      /* Color styles */
     --Trip-blue : #0051D3;
     --Trip-lemon : #FFDA00;
-    --trip_yellow: rgba(255, 218, 0, 1);
-    --trip_blue: rgba(0, 81, 211, 1);
-    --trip_gray1: rgba(181, 181, 181, 1);
-    --trip_gray2: rgba(217, 217, 217, 1);
-    --trip_black: rgba(17, 17, 17, 1);
-    --trip_skyblue: rgba(171, 198, 240, 1);
+    --Trip_white : rgba(255, 255, 255, 1);
+    --Trip_gray1: rgba(181, 181, 181, 1);
+    --Trip_gray2: rgba(217, 217, 217, 1);
+    --Trip_black: rgba(17, 17, 17, 1);
+    --Trip_skyblue: rgba(171, 198, 240, 1);
 
     /* Text-size styles */
     --main-slide: 64px;
@@ -66,6 +65,27 @@ body{
 }
 
 /* 넓이 관련 */
+.mx-auto{
+    margin: 0 auto;
+}
 .w-0{
     width: 0;   
 }
+.gap-3{
+    gap: 1rem;
+}
+
+/* 포지션 */
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.sticky{
+    position: sticky;
+}
+.fix{
+    position: fixed;
+}
+

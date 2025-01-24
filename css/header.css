@@ -1,7 +1,4 @@
-#hd > div > div{
-    height: 2.5rem;
-}
-#gnb ul {
+#gnb > ul{
     font-family: "The Jamsil OTF";
     font-weight: 500;
     font-size: 1.25rem;  
@@ -10,8 +7,30 @@
     border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
     border: 2px solid #0051D3;
 }
-
+.text-white{
+    color: white;
+}
+.hidden{
+    display: none;
+}
 .logo img{
     width: 12.18431rem;
     height: 3.375rem;
+}
+.py-3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.order-1{
+    order: 1;
+}
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 3;
+}
+.py-0{
+    padding-top: 0;
+    padding-bottom: 0;
 }
