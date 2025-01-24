@@ -1,24 +1,75 @@
+@font-face {
+    font-family: 'TheJamsil100';
+    src: url('../font/The_Jamsil/The\ Jamsil\ 1\ Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TheJamsil300';
+    src: url('../font/The_Jamsil/The\ Jamsil\ 2\ Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TheJamsil400';
+    src: url('../font/The_Jamsil/The\ Jamsil\ 3\ Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TheJamsil500';
+    src: url('../font/The_Jamsil/The\ Jamsil\ 4\ Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TheJamsil700';
+    src: url('../font/The_Jamsil/The\ Jamsil\ 5\ Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TheJamsil800';
+    src: url('../font/The_Jamsil/The\ Jamsil\ 6\ ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
 :root{
      /* Color styles */
     --trip-blue : #0051D3;
-    --trip-lemon : #FFDA00;
-    --trip_white : rgba(255, 255, 255, 1);
-    --trip_gray1: rgba(181, 181, 181, 1);
-    --trip_gray2: rgba(217, 217, 217, 1);
-    --trip_black: rgba(17, 17, 17, 1);
-    --trip_skyblue: rgba(171, 198, 240, 1);
+    --trip-yellow : #FFDA00;
+    --trip-white : rgba(255, 255, 255, 1);
+    --trip-gray1: rgba(181, 181, 181, 1);
+    --trip-gray2: rgba(217, 217, 217, 1);
+    --trip-black: rgba(17, 17, 17, 1);
+    --trip-skyblue: rgba(171, 198, 240, 1);
 
     /* Text-size styles */
     --main-slide: 64px;
     --section-title: 28px;
     --section-subtitle-menu: 20px;
     --section: 14px;
-    --bigtext: 40px;
-    --m_section-subtitle: 20px;
-    --m_title: 20px;
-    --m_mainbanner_en: 12px;
-    --m_text: 12px;
+    --m-section-subtitle: 20px;
+    --m-title: 20px;
+    --m-mainbanner-en: 12px;
+    --m-text: 12px;
     --menu: 20px;
+
+    --huge-text: 48px;
+    --big-text: 40px;
+    --semibig-text: 32px;
+    --medium-text: 24px;
+    --semismall-text: 20px;
+    --small-text: 16px;
+
+    /* Font style */
+    --theJamsil-thin: 'TheJamsil100';
+    --theJamsil-light: 'TheJamsil300';
+    --theJamsil-regular: 'TheJamsil400';
+    --theJamsil-medium: 'TheJamsil500';
+    --theJamsil-bold: 'TheJamsil700';
+    --theJamsil-extrabold: 'TheJamsil800';
 }
 
 body{
@@ -62,6 +113,12 @@ body{
 }
 .align-items-stretch{
     align-items: stretch;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-wrap-reverse{
+    flex-wrap: wrap-reverse;
 }
 
 /* 넓이 관련 */
