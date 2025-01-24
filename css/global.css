@@ -1,12 +1,12 @@
 :root{
      /* Color styles */
-    --Trip-blue : #0051D3;
-    --Trip-lemon : #FFDA00;
-    --Trip_white : rgba(255, 255, 255, 1);
-    --Trip_gray1: rgba(181, 181, 181, 1);
-    --Trip_gray2: rgba(217, 217, 217, 1);
-    --Trip_black: rgba(17, 17, 17, 1);
-    --Trip_skyblue: rgba(171, 198, 240, 1);
+    --trip-blue : #0051D3;
+    --trip-lemon : #FFDA00;
+    --trip_white : rgba(255, 255, 255, 1);
+    --trip_gray1: rgba(181, 181, 181, 1);
+    --trip_gray2: rgba(217, 217, 217, 1);
+    --trip_black: rgba(17, 17, 17, 1);
+    --trip_skyblue: rgba(171, 198, 240, 1);
 
     /* Text-size styles */
     --main-slide: 64px;
@@ -26,10 +26,10 @@ body{
 }
 
 .trip-bl{
-    background-color:var(--Trip-blue);
+    background-color:var(--trip-blue);
 }
 .color-active-blue{
-    color:var(--Trip-blue);
+    color:var(--trip-blue);
 }
 
 .container{
@@ -67,6 +67,12 @@ body{
 /* 넓이 관련 */
 .mx-auto{
     margin: 0 auto;
+}
+.p-0{
+    padding: 0;
+}
+.m-0{
+    margin: 0;
 }
 .w-0{
     width: 0;   

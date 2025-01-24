@@ -1,4 +1,11 @@
+#main_slide{background: red;}
 .main_swiper{
     width: 100vw;
     height: 720px;
+    border-radius: 400px 0 0 400px;
 }
+
+.main_swiper .swiper-slide{background: url(../img/main_slide/lasvegas.jpg) no-repeat left/cover;}
+.main_swiper .swiper-slide2{background-image: url(../img/main_slide/jeju.jpg);}
+.main_swiper .swiper-slide3{background-image: url(../img/main_slide/iceland.jpg);}
+.main_swiper .swiper-slide4{background-image: url(../img/main_slide/illustlator_slide.jpg);}
