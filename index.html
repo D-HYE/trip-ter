@@ -7,11 +7,11 @@
     
     <!-- reset / CDN -->
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- 작업용 -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/dahye.css">
+    <link rel="stylesheet" href="./css/dahye.min.css">
 
 </head>
 <body>
@@ -188,32 +188,32 @@
                             <fieldset class="filset1">
                                 <legend>나의 여행 스타일은?</legend>
                                 <div class="mftr_btn_wrap d-flex">
-                                    <input type="button" value="계획형">
-                                    <input type="button" value="즉흥형">
-                                    <input type="button" value="아무거나">
+                                    <input class="mftr_btn" type="button" value="계획형">
+                                    <input class="mftr_btn" type="button" value="즉흥형">
+                                    <input class="mftr_btn" type="button" value="아무거나">
                                 </div>
                             </fieldset>
                             <fieldset class="filset2">
                                 <legend>여행지 선택의 1순위는?</legend>
                                 <div class="mftr_btn_wrap d-flex">
-                                    <input type="button" value="음식" >
-                                    <input type="button" value="액티비티">
-                                    <input type="button" value="호텔">
-                                    <input type="button" value="관광명소">
+                                    <input class="mftr_btn" type="button" value="음식" >
+                                    <input class="mftr_btn" type="button" value="액티비티">
+                                    <input class="mftr_btn" type="button" value="호텔">
+                                    <input class="mftr_btn" type="button" value="관광명소">
                                 </div>
                             </fieldset>
                             <fieldset class="filset3">
                                 <legend>나의 여행 스타일은?</legend>
                                 <div class="mftr_btn_wrap d-flex">
-                                    <input type="button" value="짧게 여러 번">
-                                    <input type="button" value="길게 한 번에">
+                                    <input class="mftr_btn" type="button" value="짧게 여러 번">
+                                    <input class="mftr_btn" type="button" value="길게 한 번에">
                                 </div>
                             </fieldset>
                             <fieldset class="filset4">
                                 <legend>나의 여행 스타일은?</legend>
                                 <div class="mftr_btn_wrap d-flex">
-                                    <input type="button" value="가성비">
-                                    <input type="button" value="여행은 플렉스">
+                                    <input class="mftr_btn" type="button" value="가성비">
+                                    <input class="mftr_btn" type="button" value="여행은 플렉스">
                                 </div>
                             </fieldset>
                         </div>
@@ -221,9 +221,8 @@
                     </form>
                 </div>
             </div>
-            <div class="banner promo_banner">
-                <h2>이미지가 없어요~~~ 어디갔지~~~</h2>
-                <!-- <img src="./img" alt=""> -->
+            <div class="promo_banner d-flex justify-content-center align-items-center">
+                <a href="#none"><img src="./img/illustrator/event.jpg" alt="여름 성수기 이벤트"></a>
             </div>
         </div>
         <div class="section section2">
@@ -239,7 +238,7 @@
                                     <img src="./img/md_slide_pc/lasvegas.jpg" alt="라스베가스">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-center">밤 낮 없이 반짝반짝</b>
+                                    <b class="d-flex align-items-center justify-content-end">밤 낮 없이 반짝반짝</b>
                                     <p>라스베가스 2인 25만원부터</p>
                                 </div>
                             </a>
@@ -250,7 +249,7 @@
                                     <img src="./img/md_slide_pc/japan.jpg" alt="도쿄">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-center">머글들의 마법 세상 체험기</b>
+                                    <b class="d-flex align-items-center justify-content-end">머글들의 마법 세상 체험기</b>
                                     <p>도쿄 워너 브라더스 2인 25만원부터</p>
                                 </div>
                             </a>
@@ -261,7 +260,7 @@
                                     <img src="./img/md_slide_pc/newzealand.jpg" alt="뉴질랜드">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-center">마이 프레셔스~!<span>반지를 찾아서</span></b>
+                                    <b class="d-flex align-items-center justify-content-end">마이 프레셔스~!<span>반지를 찾아서</span></b>
                                     <p>뉴질랜드 2인 52만원부터</p>
                                 </div>
                             </a>
@@ -272,7 +271,7 @@
                                     <img src="./img/md_slide_pc/taiwan.jpg" alt="지우펀">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-center">내이름은 니기하야미<span>코하쿠누시야</span></b>
+                                    <b class="d-flex align-items-center  justify-content-end">내이름은 니기하야미<span>코하쿠누시야</span></b>
                                     <p>대만 지우펀 15만원부터</p>
                                 </div>
                             </a>
@@ -283,7 +282,7 @@
                                     <img src="./img/md_slide_pc/vietnam.jpg" alt="푸꾸옥">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-center">동화속 세상 그 자체!</b>
+                                    <b class="d-flex align-items-center  justify-content-end">동화속 세상 그 자체!</b>
                                     <p>베트남 푸꾸옥 33만원부터</p>
                                 </div>
                             </a>
@@ -294,7 +293,7 @@
                                     <img src="./img/md_slide_pc/santorini.jpg" alt="산토리니">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-center">라라라라라라라~<span>날 좋아 한다고</span></b>
+                                    <b class="d-flex align-items-center justify-content-end">라라라라라라라~<span>날 좋아 한다고</span></b>
                                     <p>산토리니 125만원부터</p>
                                 </div>
                             </a>
@@ -305,8 +304,41 @@
                                     <img src="./img/md_slide_pc/india.jpg" alt="타지마할">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-center">소고기는 넣지 않아 나마스떼</b>
+                                    <b class="d-flex align-items-center justify-content-end">소고기는 넣지 않아 나마스떼</b>
                                     <p>타지마할-갠지스강 45만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/lasvegas.jpg" alt="라스베가스">
+                                </div>
+                                <div class="swiper_desc">
+                                    <b class="d-flex align-items-center justify-content-end">밤 낮 없이 반짝반짝</b>
+                                    <p>라스베가스 2인 25만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/japan.jpg" alt="도쿄">
+                                </div>
+                                <div class="swiper_desc">
+                                    <b class="d-flex align-items-center  justify-content-end">머글들의 마법 세상 체험기</b>
+                                    <p>도쿄 워너 브라더스 2인 25만원부터</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">                               
+                                <div class="img_box">
+                                    <img src="./img/md_slide_pc/newzealand.jpg" alt="뉴질랜드">
+                                </div>
+                                <div class="swiper_desc">
+                                    <b class="d-flex align-items-center justify-content-end">마이 프레셔스~!<span>반지를 찾아서</span></b>
+                                    <p>뉴질랜드 2인 52만원부터</p>
                                 </div>
                             </a>
                         </div>
@@ -405,12 +437,11 @@
            </h3>
            <div class="container">
                 <ul class="d-flex justify-content-between">
-                    <li>
-                        <img src="./illustrator/images/coupon_event.jpg" alt="트립터 후기 이벤트">
+                    <li class="img_box">
+                        <img src="./img/illustrator/coupon_event.jpg" alt="트립터 후기 이벤트">
                     </li>
                     <li>
-                        <p>iframe 영역</p>
-                        <!-- <iframe src="" frameborder="0"></iframe> -->
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fdGT48DUnl8?si=LI2skKgj3SFxlGi9"></iframe>
                     </li>
                 </ul>
            </div>
@@ -419,146 +450,249 @@
             <h3 class="section_tit">
                 실시간 후기
            </h3>
-           <a href="#none">후기 더 보기></a>
+           <div class="page_view container d-flex justify-content-end"><a href="#none">후기 더 보기></a></div>
            <div class="content_flow">
-                <ul class="flow_line1 d-flex">
+                <ul class="flow_line flow_line1 d-flex justify-content-center">
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review10_mango.jpg" alt="홍콩">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review1_jeju.jpg" alt="제주도">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review2_hokkaido.jpg" alt="홋카이도">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review3_jejusea.jpg" alt="제주바다">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review4_taiwan2.jpg" alt="대만">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt ">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review5_taiwan.jpg" alt="대만">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review6_disney.jpg" alt="디즈니">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
-                <ul class="flow_line2 d-flex">
+                <ul class="flow_line flow_line2 d-flex">
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review7_kyoto.jpg" alt="일본 교토">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review8_osaka.jpg" alt="일본 오사카">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review9_turtle.jpg" alt="대만 컨딩">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review5_taiwan.jpg" alt="대만">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review6_disney.jpg" alt="디즈니">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b  class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review3_jejusea.jpg" alt="제주바다">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="img_box"></div>
-                        <div class="txt_box">
-                            <div class="user_info">
-                                <b>닉네임</b>
-                                <i>★★★★★</i>
+                        <a href="#none">
+                            <div class="img_box">
+                                <img src="./img/review/review4_taiwan2.jpg" alt="대만">
                             </div>
-                        </div>
+                            <div class="txt_box">
+                                <div class="user_info d-flex">
+                                    <b class="review_user">닉네임</b>
+                                    <i class="review_rate">★★★★★</i>
+                                </div>
+                                <p class="review_txt">
+                                    후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기
+                                </p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
            </div>
         </div>
         <div class="section section7">
-            <div class="container">
-                <div class="qrimg"></div>
+            <div class="container d-flex align-items-center justify-content-center">
+                <div class="qrimg">
+                    <div class="img_box"></div>
+                    <p>앱 다운로드</p>
+                </div>
                 <div class="txt_box">
                     <h2>나보다 나를 더 잘 아는 최고의 여행 메이트</h2>
-                    <div class="logo"></div>
+                    <div class="logo">
+                        <img src="./img/logo/logo_TRT_wh.svg" alt="트립:터">
+                    </div>
                 </div>
             </div>
         </div>
@@ -593,7 +727,37 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".main_swiper", {
+        const formFiedset = document.querySelectorAll('.mftr_cont fieldset');
+
+        formFiedset.forEach(fieldset => {
+            fieldset.addEventListener('click', (e) =>{
+
+                const formBtn = fieldset.querySelectorAll('input');
+                
+                if(e.target.tagName === 'INPUT'){ 
+                    formBtn.forEach(btn => btn.classList.remove('active'));
+                    e.target.classList.add('active');
+                }
+
+            });
+        });
+
+        const tabSection = document.querySelector('.section4 .tab_menu');
+
+        tabSection.addEventListener('click', (e) => {
+
+            const tabMenuBtn = tabSection.querySelectorAll('li');
+
+            if(e.target.tagName === 'LI'){
+                tabMenuBtn.forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+            }
+            
+        })
+
+
+        //swiper
+        let main_slide = new Swiper(".main_swiper", {
             loop: true,
             autoplay: {
                 delay: 3000,
@@ -605,9 +769,10 @@
             },
         });
 
-        var swiper = new Swiper(".md_swiper", {
+        let md_slide = new Swiper(".md_swiper", {
             loop: true,
-            slidesPerView: 7,
+            slidesPerView: 'auto',
+            centeredSlides: true,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
