@@ -1,56 +1,119 @@
-#gnb > ul{
-    font-family: "The Jamsil OTF";
-    font-weight: 500;
-    font-size: 1.25rem;  
+#hd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  font-family: var(--theJamsil-medium);
+  font-size: var(--semismall-text);
 }
-.search{
-    border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
-    border: 2px solid #0051D3;
+#hd #menu a {
+  font-size: var(--semismall-text);
 }
-.text-white{
-    color: white;
+#hd .font-1 {
+  font-size: var(--small-text);
 }
-.hidden{
-    display: none;
+#hd .search {
+  border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
+  border: 2px solid #0051D3;
 }
-.logo img{
-    width: 12.18431rem;
-    height: 3.375rem;
+#hd .logo img {
+  width: 12.18431rem;
+  height: 3.375rem;
 }
-.py-0{
-    padding-top: 0;
-    padding-bottom: 0;
+#hd #hb-submenu {
+  width: 400px;
+  height: 100vh;
+  align-items: flex-start;
+  background-color: #fff;
+  left: 0;
+  top: 0;
 }
-.px-3{
-    padding: 1rem;
-    padding: 1rem;
+#hd #hb-submenu hr {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
 }
-.py-3{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+#hd #hb-submenu .social-icon .naver {
+  background-color: #03c75a;
+  border-radius: 1.5rem;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
 }
-.order-1{
-    order: 1;
+#hd #hb-submenu .social-icon .kakao {
+  background-color: #fae100;
+  border-radius: 1.5rem;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
 }
-.order-2{
-    order: 2;
+#hd #hb-submenu .social-icon .google {
+  border: solid 1px #0051D3;
+  border-radius: 1.5rem;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
 }
-.order-3{
-    order: 3;
+#hd #hb-submenu .mainheader {
+  background-color: rgba(255, 217, 0, 0.2862745098);
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  margin-top: -10px;
 }
-.flex-wrap{
-    flex-wrap: wrap;
+#hd #hb-submenu .mainheader .user-box {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
-
-
-#hb-submenu{
-display: flex;
-width: 400px;
-height: 1080px;
-flex-direction: column;
-align-items: flex-start;
+#hd #hb-submenu .mainheader .settings {
+  margin-top: 40px;
+  margin-left: auto;
 }
-.sm-content{
-    width:328px;
-    height:164px;
+#hd #hb-submenu .mainheader .profileicon {
+  margin: 1rem;
+  border-radius: 1.5rem;
+  background: #9FC1FF;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+#hd #hb-submenu .mainheader .userprofile {
+  margin-top: 20px;
+}
+#hd #hb-submenu .hb-item {
+  margin: 1.5rem;
+}
+#hd #hb-submenu .hb-item .menu-icon {
+  margin-left: 1.5rem;
+}
+#hd #hb-submenu .hb-item .menu-icon a {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+}
+#hd #hb-submenu .hb-item .menu-icon a.heart {
+  margin-top: 20px;
+}
+#hd #hb-submenu .hb-item .menu-icon img {
+  margin-bottom: 10px;
+}
+#hd #hb-submenu .hb-list {
+  margin: 2.5rem 2.25rem;
+}
+#hd #hb-submenu .hb-list .communitymenu li {
+  width: 50%;
+}
+#hd #hb-submenu .hb-list .communitymenu li .friendfind {
+  margin-top: -15px;
 }
