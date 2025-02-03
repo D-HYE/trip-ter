@@ -1,6 +1,5 @@
 //----- form btn
 const formFiedset = document.querySelectorAll('.mftr_cont fieldset');
-
 formFiedset.forEach(fieldset => {
     fieldset.addEventListener('click', (e) =>{
 
@@ -64,6 +63,7 @@ tabSection.addEventListener('click', (e) => {
 //----- marquee json + swiper marquee
 
 const marquee1 = document.getElementById("review_marquee1")
+const marquee2 = document.getElementById("review_marquee2")
 
 fetch('../data/review.json')
     .then(response => response.json())
@@ -87,31 +87,64 @@ fetch('../data/review.json')
                 </a>
             `;
             marquee1.appendChild(li);
+            marquee2.appendChild(li.cloneNode(true));
         });
     });
 
-let review_marquee = new Swiper(".flow_swiper1", {
-    slidesPerView: "auto",
-    loop: true,
-    speed: 5000,
-    freeMode: true,
-    allowTouchMove: true,
-    autoplay:{
-        delay: 0,
+
+setTimeout(function(){
+    let review_marquee1 = new Swiper(".flow_swiper1", {
+        slidesPerView: "auto",
+        loop: true,
+        speed: 5000,
+        freeMode: true,
+        allowTouchMove: false,
+        autoplay:{
+            delay: 0,
+            //pauseOnMouseEnter: true,
+        }
+    });
+    const reviewContainer1 = document.querySelector(".flow_swiper1");
+    function stopAutoplay1(){
+        const swiperTranslate = review_marquee1.getTranslate();
+        review_marquee1.setTranslate(swiperTranslate);
+        review_marquee1.autoplay.stop();
     }
-});
-const reviewContainer = document.querySelector(".flow_swiper1");
+    function startAutoplay1(){
+        review_marquee1.slideTo(review_marquee1.activeIndex, 2500, false);
+        review_marquee1.autoplay.start();
+    }
+    reviewContainer1.addEventListener("mouseenter", () => stopAutoplay1());
+    reviewContainer1.addEventListener("mouseleave", () => startAutoplay1());
 
-function stopAutoplay(){
-    const swiperTranslate = review_marquee.getTranslate();
-    review_marquee.setTranslate(swiperTranslate);
-    review_marquee.autoplay.stop();
-}
-function startAutoplay(){
-    review_marquee.slideTo(review_marquee.activeIndex, 2500, false);
-    review_marquee.autoplay.start();
-}
 
-reviewContainer.addEventListener("mouseenter", () => stopAutoplay());
-reviewContainer.addEventListener("mouseleave", () => startAutoplay());
+    let review_marquee2 = new Swiper(".flow_swiper2", {
+        slidesPerView: "auto",
+        loop: true,
+        speed: 5000,
+        freeMode: true,
+        allowTouchMove: false,
+        autoplay:{
+            delay: 0,
+            //pauseOnMouseEnter: true,
+            reverseDirection: true,
+        }
+    });
+    const reviewContainer2 = document.querySelector(".flow_swiper2");
+    function stopAutoplay2(){
+        const swiperTranslate = review_marquee2.getTranslate();
+        review_marquee2.setTranslate(swiperTranslate);
+        review_marquee2.autoplay.stop();
+    }
+    function startAutoplay2(){
+        review_marquee2.slideTo(review_marquee2.activeIndex, 2500, false);
+        review_marquee2.autoplay.start();
+    }
+    reviewContainer2.addEventListener("mouseenter", () => stopAutoplay2());
+    reviewContainer2.addEventListener("mouseleave", () => startAutoplay2());
+}, 500)
+
+
+
+
         

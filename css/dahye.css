@@ -36,9 +36,12 @@ main {
 }
 
 /* section1 */
+.section1 {
+  padding-top: 132px;
+}
 .section1 .main_swiper {
   width: 100vw;
-  height: 720px;
+  height: 700px;
   border-radius: 400px 0 0 400px;
   cursor: pointer;
 }
@@ -161,8 +164,15 @@ main {
 .section2 {
   padding-bottom: 80px;
 }
-.section2 .md_swiper .swiper-slide {
+.section2 .md_swiper .swiper-wrapper {
+  gap: 30px;
+}
+.section2 .md_swiper .swiper-wrapper .swiper-slide {
   width: 242px;
+}
+.section2 .md_swiper .swiper-wrapper .swiper-slide .img_box {
+  border-radius: 20px;
+  overflow: hidden;
 }
 .section2 .md_swiper .swiper-button-prev {
   left: 13.542%;
@@ -360,6 +370,7 @@ main {
 .section6 .flow_swiper .flow_line {
   gap: 32px;
   margin: 24px 0;
+  transition-timing-function: linear !important;
 }
 .section6 .flow_swiper .flow_line li {
   width: 280px;

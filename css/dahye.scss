@@ -24,8 +24,9 @@ main{overflow: hidden;}
 
 /* section1 */
 .section1{
+    padding-top: 132px;
     .main_swiper{
-        width: 100vw; height: 720px;
+        width: 100vw; height: 700px;
         border-radius: 400px 0 0 400px;
         cursor: pointer;
     
@@ -130,8 +131,12 @@ main{overflow: hidden;}
 .section2{
     padding-bottom: 80px;
     .md_swiper{
-        .swiper-slide{
-            width: 242px;
+        .swiper-wrapper{
+            gap: 30px;
+            .swiper-slide{
+                width: 242px;
+                .img_box{border-radius: 20px; overflow: hidden;}
+            }
         }
         .swiper-button-prev{left: 13.542%;}
         .swiper-button-next{right: 13.542%;}
@@ -284,7 +289,7 @@ main{overflow: hidden;}
         .flow_line{
             gap: 32px;
             margin: 24px 0;
-
+            transition-timing-function: linear !important;
             li{
                 width: 280px; padding: 16px 12px;
                 background: var(--trip-white); box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
