@@ -150,6 +150,7 @@
 }
 #hd #hb-submenu .hb-list .hb-sublist .sublist {
   margin-top: 0.5rem;
+  row-gap: 0.5rem;
 }
 #hd #hb-submenu .hb-list .hb-sublist .sublist li {
   width: 50%;
