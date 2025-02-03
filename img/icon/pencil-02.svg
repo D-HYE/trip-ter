@@ -1,5 +1,3 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Pencil 02">
-<path id="Icon" d="M12 22.1999H21.6M15 4.7999L19.2 8.3999M4.20002 15.5999L16.0314 3.35533C17.3053 2.08143 19.3707 2.08143 20.6446 3.35533C21.9185 4.62923 21.9185 6.69463 20.6446 7.96853L8.40002 19.7999L2.40002 21.5999L4.20002 15.5999Z" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 20.5H20.5M13.9688 3.80303L18.125 7.25758M3.28125 14.1667L14.9894 2.41682C16.25 1.19439 18.2939 1.19439 19.5545 2.41682C20.8152 3.63925 20.8152 5.6212 19.5545 6.84363L7.4375 18.197L1.5 19.9242L3.28125 14.1667Z" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
