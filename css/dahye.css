@@ -103,7 +103,8 @@ main {
   transform: translateY(-50%);
   padding: 48px 32px;
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 10;
 }
 .section1 .mftr_form .mftr_tit {
