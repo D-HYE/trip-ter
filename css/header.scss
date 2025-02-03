@@ -5,17 +5,17 @@
     right:0;
     z-index: 1000;
     background-color: white;
-    font-family: var(--theJamsil-medium);
-    font-size: var(--semismall-text);
+    #user{
+        font-size: var(--m-text);
+    }
 
     #menu {
         a{        
             font-size: var(--semismall-text);
+            font-family: var(--theJamsil-medium);
         }
     }
-    .font-1{        
-        font-size: var(--small-text);
-    }
+
     .search{
         border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
         border: 2px solid #0051D3;
@@ -39,8 +39,12 @@
         left:0;
         top:0;
         hr{
-            margin-left: -1.5rem;
-            margin-right: -1.5rem;
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+        .m-1{
+            font-size: var(--semismall-text);
+            font-family: var(--theJamsil-medium);  
         }
         .social-icon{
             .naver{
@@ -72,7 +76,7 @@
             }
         }
         .mainheader{
-            background-color:#ffd90049;
+            background-color:rgba(255, 218, 0, 0.25);
             margin-left: -1.5rem;
             margin-right: -1.5rem;
             margin-top: -10px;
@@ -95,10 +99,21 @@
                 align-items: center;
             }
             .userprofile{
-                margin-top: 20px;
+                margin: auto 0;
+                font-size: var(--small-text);
+                .hi{
+                    margin-bottom: 10px;
+                }
+                .username{
+                    font-size: var(--semismall-text);
+                    margin: 0 1rem;
+                }
+                
             }
         }
         .hb-item{
+            font-size: var(--semismall-text);
+            font-family: var(--theJamsil-medium);  
             margin: 1.5rem;
             .menu-icon{
                 margin-left:1.5rem;
@@ -121,11 +136,39 @@
         // 메뉴리스트
         .hb-list{
             margin: 2.5rem 2.25rem;
+            .color-active-blue{
+                margin-bottom: 2.5rem;
+                font-family: var(--theJamsil-medium);
+                img{
+                    margin-left: 0.5rem;
+                    margin-top: -2px;
+                }
+            }           
             .communitymenu{
                 li{
                     width:50%;
+                    a{
+                        font-size:var(--small-text);
+                        font-family: var(--theJamsil-medium);   
+                    }
                     .friendfind{
                         margin-top:-15px;
+                    }
+                }
+            }
+            .hb-sublist{
+                div{
+                    margin-top: 1.5rem;
+                    a{
+                        font-family: var(--theJamsil-medium);
+                    }
+                }
+                .sublist{
+                    margin-top:.5rem;
+                    li{ width: 50%;
+                        a{
+                            font-size:var(--small-text);                        
+                        }
                     }
                 }
             }
