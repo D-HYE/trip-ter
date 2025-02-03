@@ -165,9 +165,10 @@
                 }
                 .sublist{
                     margin-top:.5rem;
+                    row-gap:.5rem;
                     li{ width: 50%;
                         a{
-                            font-size:var(--small-text);                        
+                            font-size:var(--small-text);              
                         }
                     }
                 }
