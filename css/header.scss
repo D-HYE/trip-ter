@@ -1,0 +1,178 @@
+#hd{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+    background-color: white;
+    #user{
+        font-size: var(--m-text);
+    }
+
+    #menu {
+        a{        
+            font-size: var(--semismall-text);
+            font-family: var(--theJamsil-medium);
+        }
+    }
+
+    .search{
+        border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
+        border: 2px solid #0051D3;
+    }
+    
+    
+    .logo{
+        img{
+            width: 12.18431rem;
+            height: 3.375rem;
+        }
+    }    
+    
+    
+    #hb-submenu{        
+        width: 400px;
+        height: 100vh;
+        
+        align-items: flex-start;
+        background-color: #fff;
+        left:0;
+        top:0;
+        hr{
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+        .m-1{
+            font-size: var(--semismall-text);
+            font-family: var(--theJamsil-medium);  
+        }
+        .social-icon{
+            .naver{
+                background-color:#03c75a;
+                border-radius: 1.5rem;
+                display: flex;
+                width: 3rem;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .kakao{
+                background-color:#fae100;
+                border-radius: 1.5rem;
+                display: flex;
+                width: 3rem;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .google{
+                border: solid 1px #0051D3;
+                border-radius: 1.5rem;
+                display: flex;
+                width: 3rem;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .mainheader{
+            background-color:rgba(255, 218, 0, 0.25);
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
+            margin-top: -10px;
+            .user-box{
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+            .settings{
+                margin-top: 40px;
+                margin-left: auto;
+            }
+            .profileicon{
+                margin: 1rem;
+                border-radius: 1.5rem;
+                background: #9FC1FF;
+                display: flex;
+                width: 3rem;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .userprofile{
+                margin: auto 0;
+                font-size: var(--small-text);
+                .hi{
+                    margin-bottom: 10px;
+                }
+                .username{
+                    font-size: var(--semismall-text);
+                    margin: 0 1rem;
+                }
+                
+            }
+        }
+        .hb-item{
+            font-size: var(--semismall-text);
+            font-family: var(--theJamsil-medium);  
+            margin: 1.5rem;
+            .menu-icon{
+                margin-left:1.5rem;
+                a{
+                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.875rem;
+                    &.heart{
+                        margin-top: 20px;
+                    }
+                }
+                img{
+                    margin-bottom: 10px;
+                }
+            }        
+        }
+        // 메뉴리스트
+        .hb-list{
+            margin: 2.5rem 2.25rem;
+            .color-active-blue{
+                margin-bottom: 2.5rem;
+                font-family: var(--theJamsil-medium);
+                img{
+                    margin-left: 0.5rem;
+                    margin-top: -2px;
+                }
+            }           
+            .communitymenu{
+                li{
+                    width:50%;
+                    a{
+                        font-size:var(--small-text);
+                        font-family: var(--theJamsil-medium);   
+                    }
+                    .friendfind{
+                        margin-top:-15px;
+                    }
+                }
+            }
+            .hb-sublist{
+                div{
+                    margin-top: 1.5rem;
+                    a{
+                        font-family: var(--theJamsil-medium);
+                    }
+                }
+                .sublist{
+                    margin-top:.5rem;
+                    row-gap:.5rem;
+                    li{ width: 50%;
+                        a{
+                            font-size:var(--small-text);              
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
