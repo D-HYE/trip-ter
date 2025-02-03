@@ -354,36 +354,36 @@ main {
 .section6 .page_view a {
   font-size: var(--semismall-text);
 }
-.section6 .content_flow {
+.section6 .flow_swiper {
+  width: 100vw;
   overflow: hidden;
 }
-.section6 .content_flow .flow_line {
+.section6 .flow_swiper .flow_line {
   gap: 32px;
   margin: 24px 0;
 }
-.section6 .content_flow .flow_line li {
-  flex-shrink: 0;
+.section6 .flow_swiper .flow_line li {
   width: 280px;
   padding: 16px 12px;
   background: var(--trip-white);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
-.section6 .content_flow .flow_line li .imb_box {
+.section6 .flow_swiper .flow_line li .imb_box {
   height: 256px;
   overflow: hidden;
 }
-.section6 .content_flow .flow_line li .txt_box .user_info {
+.section6 .flow_swiper .flow_line li .txt_box .user_info {
   gap: 20px;
   margin: 20px 0;
 }
-.section6 .content_flow .flow_line li .txt_box .user_info .review_user {
+.section6 .flow_swiper .flow_line li .txt_box .user_info .review_user {
   font-size: var(--semismall-text);
   font-weight: 400;
 }
-.section6 .content_flow .flow_line li .txt_box .user_info .review_rate {
+.section6 .flow_swiper .flow_line li .txt_box .user_info .review_rate {
   font-style: normal;
 }
-.section6 .content_flow .flow_line li .txt_box .review_txt {
+.section6 .flow_swiper .flow_line li .txt_box .review_txt {
   overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: nowrap;
