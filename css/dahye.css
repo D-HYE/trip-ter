@@ -103,8 +103,7 @@ main {
   transform: translateY(-50%);
   padding: 48px 32px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   z-index: 10;
 }
 .section1 .mftr_form .mftr_tit {
@@ -153,7 +152,7 @@ main {
   background: var(--trip-blue);
 }
 .section1 .promo_banner {
-  height: 240px;
+  height: 170px;
   background: var(--trip-blue);
   overflow: hidden;
 }
