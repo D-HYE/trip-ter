@@ -20,7 +20,7 @@
     <header id="hd">
         <div class="header_inner">
             <div id="user" class="trip-bl">
-                <div class="py-3 container d-flex justify-content-end">
+                <div class="py-2 container d-flex justify-content-end">
                     <ul class="d-flex gap-3 align-items-center">
                         <li ><a href="" class="text-white">로그인</a></li>
                         <li class="rel"><a href="" class="text-white">고객지원
@@ -36,12 +36,15 @@
                 </div>
             </div>
             <div id="gnb" class="container d-flex justify-content-between align-items-center">
-                <h1 class="logo py-3 order-2 mx-auto"><a href="index.html"><img src="./img/logo/logo_TRT_basic.svg" alt="logo">
+                <h1 class="logo py-2 order-2 mx-auto"><a href="index.html"><img src="./img/logo/logo_TRT_basic.svg" alt="logo">
                     <span class="d-none">트립터</span>                   
                 </a></h1>
                 <div class="hbmenu"> 
                     <button id="hamburger-btn"><img src="./img/icon/menu-all.svg" alt=""></button>
                 </div>
+                <!-- dim 배경 -->
+                <div id="dim-background" class="dim d-none"></div>
+                
                 <ul id="menu" class="d-flex justify-content-start gap-3 order-1 col-4">                   
                     <li><a href="">계획하기</a></li>
                     <li><a href="">트립톡</a></li>
@@ -60,92 +63,94 @@
                 </ul> 
             </div>
               <!-- 햄버거 소메뉴 -->  
-    <div id="hb-submenu" class="abs">
-        <div class="hb-item">
-            <div class="d-flex justify-content-end">
-                <button class="p-0"><img src="./img/icon/x-01.svg" alt=""></button>
-            </div>
-            <!-- 로그인 전 -->
-            <hr>
-            <div class="m-1">로그인/회원가입</div>
-            <ul class="social-icon d-flex justify-content-center gap-3">
-                <li><a class="naver" href=""><img src="img/icon/naver.svg" alt="naver"></a></li>
-                <li><a class="kakao" href=""><img src="img/icon/kakao.svg" alt="kakao"></a></li>
-                <li><a class="google" href=""><img src="img/icon/google.svg" alt="google"></a></li>
-            </ul>
-            <hr>
-            <!-- 로그인 후 -->
-            <div class="mainheader d-none">
-                <hr>
-                <div class="user-box d-flex">
-                    <div class="profileicon"><img src="./img/icon/user-profile-02.svg" alt=""></div>
-                    <div class="userprofile">
-                        <div class="hi">안녕하세요!</div>
-                        <div>트립터<span class="username">###</span>님</div>
-                    </div> 
-                    <a class="settings" href=""><img src="./img/icon/settings.svg" alt="설정"></a>
+        <div id="hb-submenu" class="abs">
+            <div class="hb-item">
+                <div class="d-flex justify-content-end">
+                    <button class="p-0"><img src="./img/icon/x-01.svg" alt=""></button>
                 </div>
-                <ul class="menu-icon d-flex justify-content-between">
-                    <li><a class="heart" href=""><img src="img/icon/heart_02.svg" alt="내찜">내 찜</a></li>
-                    <li><a href=""><img src="img/icon/travel.svg" alt="내여행">내 여행</a></li>
-                    <li><a href=""><img src="img/icon/layer.svg" alt="가계부">나 가계부</a></li>
-                    <li><a href=""><img src="img/icon/pencil-02.svg" alt="내후기">내 후기</a></li>
-                </ul>
-            </div>
-            <!-- 메뉴리스트 -->
-            <div class="hb-list">
-                <div class="color-active-blue d-flex">MY FEEL:TER 설정<img src="img/icon/arrow-right.svg" alt=""></div>
-                <div class="d-flex flex-column gap-3">
-                    <ul class="d-flex communitymenu flex-wrap">
-                        <li><a class="mbrecomm" href="">MD추천</a></li>
-                        <li><a class="bestreview" href="">BEST 후기</a></li>
+                <!-- 로그인 전 -->
+                <div id="login-section">
+                    <hr>
+                    <div class="m-1">로그인/회원가입</div>
+                    <ul class="social-icon d-flex justify-content-center gap-3">
+                        <li><a class="naver" href=""><img src="img/icon/naver.svg" alt="naver"></a></li>
+                        <li><a class="kakao" href=""><img src="img/icon/kakao.svg" alt="kakao"></a></li>
+                        <li><a class="google" href=""><img src="img/icon/google.svg" alt="google"></a></li>
                     </ul>
-                    <ul class="d-flex communitymenu flex-wrap">
-                        <li><a class="planaround" href="">계획 둘러보기</a></li>                        
-                        <li><a class="reviewaround" href="">후기 둘러보기</a></li>
-                        <li><a class="friendfind" href="">동행 구해요</a></li>
+                    <hr>
+                </div>    
+                <!-- 로그인 후 -->
+                <div id="logged-in-section" class="mainheader d-none">
+                    <hr>
+                    <div class="user-box d-flex ">
+                        <div class="profileicon"><img src="./img/icon/user-profile-02.svg" alt=""></div>
+                        <div class="userprofile">
+                            <div class="hi">안녕하세요!</div>
+                            <div>트립터<span class="username">###</span>님</div>
+                        </div> 
+                        <a class="settings" href=""><img src="./img/icon/settings.svg" alt="설정"></a>
+                    </div>
+                    <ul class="menu-icon d-flex justify-content-between">
+                        <li><a class="heart" href=""><img src="img/icon/heart_02.svg" alt="내찜">내 찜</a></li>
+                        <li><a href=""><img src="img/icon/travel.svg" alt="내여행">내 여행</a></li>
+                        <li><a href=""><img src="img/icon/layer.svg" alt="가계부">나 가계부</a></li>
+                        <li><a href=""><img src="img/icon/pencil-02.svg" alt="내후기">내 후기</a></li>
                     </ul>
-                    <ul class="d-flex communitymenu flex-wrap">                        
-                        <li><a class="couponpack" href="">트립터 쿠폰팩</a></li>
-                        <li><a class="thismonths" href="">이달의 기획전</a></li>
-                    </ul>
+                    <hr>
+                </div>
+                <!-- 메뉴리스트 -->
+                <div class="hb-list">
+                    <div class="color-active-blue d-flex">MY FEEL:TER 설정<img class="" src="./img/icon/arrow-right.svg" alt=""></div>
+                    <div class="d-flex flex-column gap-3">
+                        <ul class="d-flex communitymenu flex-wrap">
+                            <li><a class="mbrecomm" href="">MD추천</a></li>
+                            <li><a class="bestreview" href="">BEST 후기</a></li>
+                        </ul>
+                        <ul class="d-flex communitymenu flex-wrap">
+                            <li><a class="planaround" href="">계획 둘러보기</a></li>                        
+                            <li><a class="reviewaround" href="">후기 둘러보기</a></li>
+                            <li><a class="friendfind" href="">동행 구해요</a></li>
+                        </ul>
+                        <ul class="d-flex communitymenu flex-wrap">                        
+                            <li><a class="couponpack" href="">트립터 쿠폰팩</a></li>
+                            <li><a class="thismonths" href="">이달의 기획전</a></li>
+                        </ul>
 
-                    <ul class="hb-sublist">  
-                        <li>
-                            <div><a class="" href="">항공권</a></div>
-                            <ul class="sublist d-flex flex-wrap">
-                                <li><a href="">특가항공</a></li>
-                                <li><a href="">국내항공</a></li>
-                                <li><a href="">국외항공</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div><a class="" href="">숙소</a></div>
-                            <ul class="sublist d-flex flex-wrap">
-                                <li><a href="">특가숙소</a></li>
-                                <li><a href="">호텔</a></li>
-                                <li><a href="">게스트하우스</a></li>
-                                <li><a href="">펜션&캠핑</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div><a class="" href="">티켓&투어</a></div>
-                            <ul class="sublist d-flex flex-wrap">
-                                <li><a href="">현지투어</a></li>
-                                <li><a href="">테마파크</a></li>
-                                <li><a href="">박물관 / 미술관</a></li>
-                                <li><a href="">전망대 / 케이블카</a></li>
-                                <li><a href="">올패스권</a></li>
-                                <li><a href="">유람선 / 크루즈</a></li>
-                                <li><a href="">철도여행</a></li>
-                            </ul>
-                        </li>
-                        
-                    </ul>
-                </div>            
+                        <ul class="hb-sublist">  
+                            <li>
+                                <div><a class="" href="">항공권</a></div>
+                                <ul class="sublist d-flex flex-wrap">
+                                    <li><a href="">특가항공</a></li>
+                                    <li><a href="">국내항공</a></li>
+                                    <li><a href="">국외항공</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div><a class="" href="">숙소</a></div>
+                                <ul class="sublist d-flex flex-wrap">
+                                    <li><a href="">특가숙소</a></li>
+                                    <li><a href="">호텔</a></li>
+                                    <li><a href="">게스트하우스</a></li>
+                                    <li><a href="">펜션&캠핑</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div><a class="" href="">티켓&투어</a></div>
+                                <ul class="sublist d-flex flex-wrap">
+                                    <li><a href="">현지투어</a></li>
+                                    <li><a href="">테마파크</a></li>
+                                    <li><a href="">박물관 / 미술관</a></li>
+                                    <li><a href="">전망대 / 케이블카</a></li>
+                                    <li><a href="">올패스권</a></li>
+                                    <li><a href="">유람선 / 크루즈</a></li>
+                                    <li><a href="">철도여행</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>            
+                </div>
             </div>
-        </div>
-    </div>
         </div>
     </header>
   
@@ -523,5 +528,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/mainScript.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>
