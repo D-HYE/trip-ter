@@ -1,6 +1,6 @@
 [
     {
-        "img": "./img/review/review10_mango.jpg",
+        "img": "./img/review/review10.jpg",
         "alt": "홍콩",
         "href": "#none",
         "nickname": "닉네임",
@@ -8,7 +8,7 @@
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     },
     {
-        "img": "./img/review/review1_jeju.jpg",
+        "img": "./img/review/review1.jpg",
         "alt": "제주도",
         "href": "#none",
         "nickname": "닉네임",
@@ -16,7 +16,7 @@
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     },
     {
-        "img": "./img/review/review2_hokkaido.jpg",
+        "img": "./img/review/review2.jpg",
         "alt": "홋카이도",
         "href": "#none",
         "nickname": "닉네임",
@@ -24,71 +24,7 @@
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     },
     {
-        "img": "./img/review/review3_jejusea.jpg",
-        "alt": "제주바다",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★★☆",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review4_taiwan2.jpg",
-        "alt": "대만",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★★★",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review5_taiwan.jpg",
-        "alt": "대만",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★★☆",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review6_disney.jpg",
-        "alt": "디즈니",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★☆☆",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review7_kyoto.jpg",
-        "alt": "일본 교토",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★☆☆",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review8_osaka.jpg",
-        "alt": "일본 오사카",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★★☆",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review9_turtle.jpg",
-        "alt": "대만 컨딩",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★★★",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review10_mango.jpg",
-        "alt": "홍콩",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★★☆",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review1_jeju.jpg",
+        "img": "./img/review/review3.jpg",
         "alt": "제주도",
         "href": "#none",
         "nickname": "닉네임",
@@ -96,23 +32,7 @@
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     },
     {
-        "img": "./img/review/review2_hokkaido.jpg",
-        "alt": "홋카이도",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★☆☆",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review3_jejusea.jpg",
-        "alt": "제주바다",
-        "href": "#none",
-        "nickname": "닉네임",
-        "rating": "★★★★☆",
-        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
-    },
-    {
-        "img": "./img/review/review4_taiwan2.jpg",
+        "img": "./img/review/review4.jpg",
         "alt": "대만",
         "href": "#none",
         "nickname": "닉네임",
@@ -120,7 +40,7 @@
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     },
     {
-        "img": "./img/review/review5_taiwan.jpg",
+        "img": "./img/review/review5.jpg",
         "alt": "대만",
         "href": "#none",
         "nickname": "닉네임",
@@ -128,7 +48,7 @@
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     },
     {
-        "img": "./img/review/review6_disney.jpg",
+        "img": "./img/review/review6.jpg",
         "alt": "디즈니",
         "href": "#none",
         "nickname": "닉네임",
@@ -136,27 +56,76 @@
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     },
     {
-        "img": "./img/review/review7_kyoto.jpg",
-        "alt": "일본 교토",
+        "img": "./img/review/review7.jpg",
+        "alt": "일본",
         "href": "#none",
         "nickname": "닉네임",
         "rating": "★★★☆☆",
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     },
     {
-        "img": "./img/review/review8_osaka.jpg",
-        "alt": "일본 오사카",
+        "img": "./img/review/review8.jpg",
+        "alt": "일본",
         "href": "#none",
         "nickname": "닉네임",
         "rating": "★★★★☆",
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     },
     {
-        "img": "./img/review/review9_turtle.jpg",
-        "alt": "대만 컨딩",
+        "img": "./img/review/review9.jpg",
+        "alt": "대만",
+        "href": "#none",
+        "nickname": "닉네임",
+        "rating": "★★★★★",
+        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
+    },
+    {
+        "img": "./img/review/review11.jpg",
+        "alt": "일본",
+        "href": "#none",
+        "nickname": "닉네임",
+        "rating": "★★★★★",
+        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
+    },
+    {
+        "img": "./img/review/review12.jpg",
+        "alt": "태국",
+        "href": "#none",
+        "nickname": "닉네임",
+        "rating": "★★★★★",
+        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
+    },
+    {
+        "img": "./img/review/review13.jpg",
+        "alt": "남양주",
+        "href": "#none",
+        "nickname": "닉네임",
+        "rating": "★★★★★",
+        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
+    },
+    {
+        "img": "./img/review/review14.jpg",
+        "alt": "후아힌",
+        "href": "#none",
+        "nickname": "닉네임",
+        "rating": "★★★★★",
+        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
+    },
+    {
+        "img": "./img/review/review15.jpg",
+        "alt": "다카마쓰",
+        "href": "#none",
+        "nickname": "닉네임",
+        "rating": "★★★★★",
+        "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
+    },
+    {
+        "img": "./img/review/review16.jpg",
+        "alt": "시라카와고",
         "href": "#none",
         "nickname": "닉네임",
         "rating": "★★★★★",
         "desc": "후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기후기"
     }
+
 ]

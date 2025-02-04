@@ -6,10 +6,6 @@ main {
   overflow: hidden;
 }
 
-.img_box img {
-  width: 100%;
-}
-
 .section_tit {
   padding: 80px 0;
   font-size: var(--section-title);
@@ -104,10 +100,11 @@ main {
   top: 50%;
   right: 12.5%;
   transform: translateY(-50%);
+  z-index: 10;
   padding: 48px 32px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
-  z-index: 10;
+  transition: 0.3s;
 }
 .section1 .mftr_form .mftr_tit {
   margin-bottom: 40px;
@@ -299,7 +296,7 @@ main {
   height: 440px;
   border-radius: 15px;
   overflow: hidden;
-  background: url(../img/review/review3_jejusea.jpg) no-repeat center/cover;
+  background: url(../img/review/review3.jpg) no-repeat center/cover;
 }
 .section4 .tab_contents li a {
   flex-direction: column;
@@ -378,9 +375,14 @@ main {
   background: var(--trip-white);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
-.section6 .flow_swiper .flow_line li .imb_box {
+.section6 .flow_swiper .flow_line li .img_box {
   height: 256px;
   overflow: hidden;
+}
+.section6 .flow_swiper .flow_line li .img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .section6 .flow_swiper .flow_line li .txt_box .user_info {
   gap: 20px;
@@ -435,4 +437,27 @@ main {
 }
 .section7 .container .txt_box .logo {
   width: 216px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .section1 .mftr_form {
+    right: 2.5%;
+  }
+  .section2 .md_swiper .swiper-button-prev {
+    left: 5%;
+  }
+  .section2 .md_swiper .swiper-button-next {
+    right: 5%;
+  }
+  .section2 .md_swiper:before, .section2 .md_swiper:after {
+    width: calc(5% + 78px);
+    height: 100%;
+  }
+  .section3 .container .txt_box h3 {
+    font-size: var(--big-text);
+  }
+  .section3 .container .txt_box h4 {
+    margin: 40px 0;
+    font-size: var(--medium-text);
+  }
 }
