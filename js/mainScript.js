@@ -69,10 +69,10 @@ fetch('../data/review.json')
     .then(response => response.json())
     .then(reviews => {
         reviews.forEach(review => {
-            const li = document.createElement('li');
+            const reviewLi = document.createElement('li');
             
-            li.classList.add('swiper-slide');
-            li.innerHTML = `
+            reviewLi.classList.add('swiper-slide');
+            reviewLi.innerHTML = `
                 <a href="${review.href}">
                     <div class="img_box">
                         <img src="${review.img}" alt="${review.alt}">
@@ -86,37 +86,26 @@ fetch('../data/review.json')
                     </div>
                 </a>
             `;
-            marquee1.appendChild(li);
-            marquee2.appendChild(li.cloneNode(true));
+            marquee1.appendChild(reviewLi);
+            marquee2.appendChild(reviewLi.cloneNode(true));
+            // 미래의 내가 해결할 부분^-^
+            // 스와이퍼랑 같이 알아서 바꿔서 해보세요!!!
         });
     });
 
-
-setTimeout(function(){
+//나중에 생각해야지
+setTimeout(function() {
     let review_marquee1 = new Swiper(".flow_swiper1", {
         slidesPerView: "auto",
         loop: true,
         speed: 5000,
-        freeMode: true,
+        freeMode: false,
         allowTouchMove: false,
-        autoplay:{
+        autoplay: {
             delay: 0,
             //pauseOnMouseEnter: true,
         }
     });
-    const reviewContainer1 = document.querySelector(".flow_swiper1");
-    function stopAutoplay1(){
-        const swiperTranslate = review_marquee1.getTranslate();
-        review_marquee1.setTranslate(swiperTranslate);
-        review_marquee1.autoplay.stop();
-    }
-    function startAutoplay1(){
-        review_marquee1.slideTo(review_marquee1.activeIndex, 2500, false);
-        review_marquee1.autoplay.start();
-    }
-    reviewContainer1.addEventListener("mouseenter", () => stopAutoplay1());
-    reviewContainer1.addEventListener("mouseleave", () => startAutoplay1());
-
 
     let review_marquee2 = new Swiper(".flow_swiper2", {
         slidesPerView: "auto",
@@ -124,27 +113,32 @@ setTimeout(function(){
         speed: 5000,
         freeMode: true,
         allowTouchMove: false,
-        autoplay:{
+        autoplay: {
             delay: 0,
-            //pauseOnMouseEnter: true,
             reverseDirection: true,
+            //pauseOnMouseEnter: true,
         }
     });
-    const reviewContainer2 = document.querySelector(".flow_swiper2");
-    function stopAutoplay2(){
-        const swiperTranslate = review_marquee2.getTranslate();
-        review_marquee2.setTranslate(swiperTranslate);
-        review_marquee2.autoplay.stop();
+
+    // 공통 이벤트 처리 함수
+    function addHoverAutoplayControl(swiperInstance, containerSelector) {
+        const container = document.querySelector(containerSelector);
+
+        container.addEventListener("mouseenter", function() {
+            const translate = swiperInstance.getTranslate();
+            swiperInstance.setTranslate(translate);
+            swiperInstance.autoplay.stop();
+        });
+
+        container.addEventListener("mouseleave", function() {
+            swiperInstance.slideTo(swiperInstance.activeIndex, 2500, false);
+            swiperInstance.autoplay.start();
+        });
     }
-    function startAutoplay2(){
-        review_marquee2.slideTo(review_marquee2.activeIndex, 2500, false);
-        review_marquee2.autoplay.start();
-    }
-    reviewContainer2.addEventListener("mouseenter", () => stopAutoplay2());
-    reviewContainer2.addEventListener("mouseleave", () => startAutoplay2());
-}, 500)
 
+    // 각각의 스와이퍼에 이벤트 추가
+    addHoverAutoplayControl(review_marquee1, ".flow_swiper1");
+    addHoverAutoplayControl(review_marquee2, ".flow_swiper2");
 
-
-
-        
+}, 500);
+    
