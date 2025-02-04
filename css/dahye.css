@@ -180,6 +180,9 @@ main {
 .section2 .md_swiper .swiper_desc {
   word-break: keep-all;
 }
+.section2 .md_swiper .swiper_desc .img_box {
+  border-radius: 20px;
+}
 .section2 .md_swiper .swiper_desc b {
   flex-direction: column;
   height: 72px;

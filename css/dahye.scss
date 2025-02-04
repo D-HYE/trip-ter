@@ -142,6 +142,9 @@ main{overflow: hidden;}
         .swiper-button-next{right: 13.542%;}
         .swiper_desc{
             word-break: keep-all;
+            .img_box{
+                border-radius: 20px;
+            }
             b{
                 flex-direction: column;
                 height: 72px; padding: 12px 0;
