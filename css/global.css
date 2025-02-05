@@ -47,21 +47,14 @@
 
     /* Text-size styles */
     --main-slide: 64px;
-    --section-title: 28px;
-    --section-subtitle-menu: 20px;
-    --section: 14px;
-    --m-section-subtitle: 20px;
-    --m-title: 20px;
-    --m-mainbanner-en: 12px;
-    --m-text: 12px;
-    --menu: 20px;
-
     --huge-text: 48px;
     --big-text: 40px;
     --semibig-text: 32px;
     --medium-text: 24px;
     --semismall-text: 20px;
     --small-text: 16px;
+    --desc-text: 14px;
+    --m-small-text: 12px;
 
     /* Font style */
     --theJamsil-thin: 'TheJamsil100';
