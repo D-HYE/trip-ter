@@ -15,55 +15,75 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/header.min.css" >
     <link rel="stylesheet" href="./css/ek.min.css">
+    <link rel="stylesheet" href="./css/yujin.min.css">
     <link rel="stylesheet" href="./css/dahye.min.css">
 
 </head>
 <body>
+    <!-- mb 어플 다운로드 창 -->
+        <div id="mb-top" class="d-flex mb" >
+            
+              <div class="container d-flex">
+                   <div id="mb-top-text">
+                      <h5>오직 나만을 위한 Trip:ter
+                         <span class="d-block">앱으로 쿠폰 받기</span>
+                      </h5>
+                    </div> 
+                    <a href="http://">앱에서 보기>
+                    </a>  
+              </div>
+            <button class="close-btn abs align-items-start">
+                <img src="./img/icon/x-01_mb.svg" alt="닫기...">
+            </button>    
+        </div>
+
     <!-- 상단 -->
-    <header id="hd">
+       <header id="hd">
         <div class="header_inner">
             <div id="user" class="trip-bl">
                 <div class="py-2 container d-flex justify-content-end">
                     <ul class="d-flex gap-3 align-items-center">
                         <li ><a href="" class="text-white">로그인</a></li>
-                        <li class="rel"><a href="" class="text-white">고객지원
+                        <li class="support rel"><a href="#none" class="text-white">고객지원
                             <img src="./img/icon/polygon-1.svg" alt="">
                         </a>
-                            <ul class="abs d-none">
+                            <ul class="hide-menu abs d-none">
                                 <li><a href="">이용가이드</a></li>
                                 <li><a href="">FAQ</a></li>
                                 <li><a href="">문의게시판</a></li>
                             </ul>
-                         </li>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div id="gnb" class="container d-flex justify-content-between align-items-center">
-                <h1 class="logo py-2 order-2 mx-auto"><a href="index.html"><img src="./img/logo/logo_TRT_basic.svg" alt="logo">
-                    <span class="d-none">트립터</span>                   
-                </a></h1>
-                <div class="hbmenu"> 
-                    <button id="hamburger-btn"><img src="./img/icon/menu-all.svg" alt=""></button>
+            <div id="gnbbox" class="">
+                <div id="gnb" class="container d-flex justify-content-between align-items-center">
+                    <h1 class="logo order-2 mx-auto"><a href="index.html"><img src="./img/logo/logo_TRT_basic.svg" alt="logo">
+                        <span class="d-none">트립터</span>                   
+                    </a></h1>
+                    <div class="hbmenu mx-1"> 
+                        <button id="hamburger-btn"><img src="./img/icon/menu-all.svg" alt=""></button>
+                    </div>
+                    <!-- dim 배경 -->
+                    <div id="dim-background" class="dim d-none"></div>
+                    
+                    <ul id="menu" class="d-flex justify-content-start gap-3 order-1 col-4">                   
+                        <li><a href="">계획하기</a></li>
+                        <li><a href="">트립톡</a></li>
+                        <li><a href="">이벤트</a></li>
+                    </ul>
+                    <ul class= "icon d-flex align-items-center order-3">
+                        <li>
+                            <form action="http://www.google.com" class="d-flex align-items-center">
+                                <input type="text" class="search" name="search">
+                                <input type="image" class="py-0" src="./img/icon/search-02.svg" alt="">
+                            </form>
+                        </li>
+                        <li>
+                            <button class="wishlist-btn p-0"><a href=""><img src="./img/icon/heart.svg" alt=""></a></button>
+                        </li>
+                    </ul> 
                 </div>
-                <!-- dim 배경 -->
-                <div id="dim-background" class="dim d-none"></div>
-                
-                <ul id="menu" class="d-flex justify-content-start gap-3 order-1 col-4">                   
-                    <li><a href="">계획하기</a></li>
-                    <li><a href="">트립톡</a></li>
-                    <li><a href="">이벤트</a></li>
-                </ul>
-                <ul class= "icon d-flex align-items-center order-3">
-                    <li>
-                        <form action="http://www.google.com" class="d-flex align-items-center">
-                            <input type="text" class="search" name="search">
-                            <input type="image" class="py-0" src="./img/icon/search-02.svg" alt="">
-                        </form>
-                    </li>
-                    <li>
-                        <button class="wishlist-btn"><a href=""><img src="./img/icon/heart.svg" alt=""></a></button>
-                    </li>
-                </ul> 
             </div>
               <!-- 햄버거 소메뉴 -->  
     <div id="hb-submenu" class="abs">
@@ -81,7 +101,7 @@
             </ul>
             <hr>
             <!-- 로그인 후 -->
-            <div class="mainheader d-none">
+            <div class="mainheader">
                 <hr>
                 <div class="user-box d-flex">
                     <div class="profileicon"><img src="./img/icon/user-profile-02.svg" alt=""></div>
@@ -116,41 +136,42 @@
                         <li><a class="thismonths" href="">이달의 기획전</a></li>
                     </ul>
 
-                        <ul class="hb-sublist">  
-                            <li>
-                                <div><a class="" href="">항공권</a></div>
-                                <ul class="sublist d-flex flex-wrap">
-                                    <li><a href="">특가항공</a></li>
-                                    <li><a href="">국내항공</a></li>
-                                    <li><a href="">국외항공</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div><a class="" href="">숙소</a></div>
-                                <ul class="sublist d-flex flex-wrap">
-                                    <li><a href="">특가숙소</a></li>
-                                    <li><a href="">호텔</a></li>
-                                    <li><a href="">게스트하우스</a></li>
-                                    <li><a href="">펜션&캠핑</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div><a class="" href="">티켓&투어</a></div>
-                                <ul class="sublist d-flex flex-wrap">
-                                    <li><a href="">현지투어</a></li>
-                                    <li><a href="">테마파크</a></li>
-                                    <li><a href="">박물관 / 미술관</a></li>
-                                    <li><a href="">전망대 / 케이블카</a></li>
-                                    <li><a href="">올패스권</a></li>
-                                    <li><a href="">유람선 / 크루즈</a></li>
-                                    <li><a href="">철도여행</a></li>
-                                </ul>
-                            </li>
-                            
-                        </ul>
-                    </div>            
-                </div>
+                    <ul class="hb-sublist">  
+                        <li>
+                            <div><a class="" href="">항공권</a></div>
+                            <ul class="sublist d-flex flex-wrap">
+                                <li><a href="">특가항공</a></li>
+                                <li><a href="">국내항공</a></li>
+                                <li><a href="">국외항공</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div><a class="" href="">숙소</a></div>
+                            <ul class="sublist d-flex flex-wrap">
+                                <li><a href="">특가숙소</a></li>
+                                <li><a href="">호텔</a></li>
+                                <li><a href="">게스트하우스</a></li>
+                                <li><a href="">펜션&캠핑</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div><a class="" href="">티켓&투어</a></div>
+                            <ul class="sublist d-flex flex-wrap">
+                                <li><a href="">현지투어</a></li>
+                                <li><a href="">테마파크</a></li>
+                                <li><a href="">박물관 / 미술관</a></li>
+                                <li><a href="">전망대 / 케이블카</a></li>
+                                <li><a href="">올패스권</a></li>
+                                <li><a href="">유람선 / 크루즈</a></li>
+                                <li><a href="">철도여행</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>            
             </div>
+        </div>
+    </div>
         </div>
     </header>
   
@@ -196,7 +217,7 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-                <div id="mftr" class="mftr_form abs">
+                <div id="mftr" class="mftr_form abs pc">
                     <form action="#">
                         <h4 class="mftr_tit">MY FEEL:TER</h4>
                         <div class="mftr_cont">
@@ -236,8 +257,28 @@
                     </form>
                 </div>
             </div>
-            <div class="promo_banner d-flex justify-content-center align-items-center">
+            <div id="mftr_mb_btn" class="mb abs">
+                <a class="d-flex" href="#none">
+                    <div class="txt_box">
+                        <h4>MY FEEL:TER</h4>
+                        <p>나의 여행 스타일 설정하기</p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/icon/arrow-right.svg" alt="arrow">
+                    </div>
+                </a>
+            </div>
+            <div class="promo_banner d-flex justify-content-center align-items-center pc">
                 <a href="#none"><img src="./img/illustrator/event.jpg" alt="여름 성수기 이벤트"></a>
+            </div>
+            <div class="mb">
+                <div class="container">
+                    <ul class="d-flex">
+                        <li>계획짜기</li>
+                        <li>트립톡</li>
+                        <li>이벤트</li>
+                    </ul>
+                </div>
             </div>
         </div>
     <!-- section2 -->
@@ -359,18 +400,18 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next pc"></div>
+                    <div class="swiper-button-prev pc"></div>
                     <div class="swiper-pagination mb"></div>
                   </div>
             </div>
         </div>
     <!-- section3 -->
         <div class="section section3">
-            <div id="trt_info" class="container d-flex justify-content-between align-items-end">
-                <div class="img_box"></div>
+            <div id="trt_info" class="container d-flex justify-content-center align-items-end">
+                <div class="img_box pc"></div>
                 <div class="txt_box">
-                    <h3>J이고 싶은 P, 당신을 위한 플랫폼</h3>
+                    <h3>J이고 싶은 P, <span>당신을 위한 플랫폼</span></h3>
                     <h4>반복되는 일상에 지쳤다면?<br>트립터에서 나에게 딱 맞는 여행을 만나보세요</h4>
                     <ol class="d-flex justify-content-between flex-wrap">
                         <li>
@@ -403,47 +444,13 @@
                 <h3 class="section_tit">
                     지금 가장 인기있는 여행지를 만나보세요
                 </h3>
-                <ul class="tab_menu d-flex justify-content-center flex-wrap">
-                    <li class="active">#도시좋아</li>
-                    <li>#자연좋아</li>
-                    <li>#빵지순례</li>
-                    <li>#인생샷명소</li>
-                    <li>#뚜벅이</li>
-                    <li>#액티비티</li>
-                    <li>#힐링여행</li>
-                    <li>#부모님과 함께</li>
-                    <li>#이색경험</li>
-                    <li>#먹스타그램</li>
-                    <li>#혼자여행</li>
-                    <li>#풀빌라</li>
-                    <li>#야경투어</li>
-                    <li>#반려동물</li>
-                    <li>#2030</li>
-                    <li>#드라이브</li>
+                <ul class="tab_menu d-flex justify-content-center flex-wrap" id="tabMenu">
                 </ul>
-                <ul class="tab_contents d-flex justify-content-between">
+                <ul class="tab_contents d-flex justify-content-between" id="tabContent">
                     <li class="d-flex align-items-end content_desc content_desc1">
                         <a href="#none" class="d-flex align-items-center justify-content-center">
-                            <b>이태리 알프스 총정리</b>
-                            <span>내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
-                        </a>
-                    </li>
-                    <li class="d-flex align-items-end content_desc content_desc2">
-                        <a href="#none" class="d-flex align-items-center justify-content-center">
-                            <b>전세계 인기 카페 투어</b>
-                            <span>내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
-                        </a>
-                    </li>
-                    <li class="d-flex align-items-end content_desc content_desc3">
-                        <a href="#none" class="d-flex align-items-center justify-content-center">
-                            <b>성에서 일주일 살기</b>
-                            <span>내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
-                        </a>
-                    </li>
-                    <li class="d-flex align-items-end content_desc content_desc4">
-                        <a href="#none" class="d-flex align-items-center justify-content-center">
-                            <b>현지 이색 투어 모음</b>
-                            <span>내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
+                            <b></b>
+                            <span></span>
                         </a>
                     </li>
                 </ul>
@@ -471,11 +478,11 @@
                 실시간 후기
            </h3>
            <div class="page_view container d-flex justify-content-end"><a href="#none">후기 더 보기></a></div>
-           <div class="flow_swiper flow_swiper1">
+           <div class="swiper flow_swiper flow_swiper1">
                 <ul class="flow_line flow_line1 swiper-wrapper" id="review_marquee1">
                 </ul>
            </div>
-           <div class="flow_swiper flow_swiper2">
+           <div class="swiper flow_swiper flow_swiper2">
                 <ul class="flow_line flow_line2 swiper-wrapper" id="review_marquee2">
                 </ul>
            </div>
@@ -496,6 +503,13 @@
         </div>
     </main>
 
+    <ul id="quick">
+      <li><a href=""><span>MY</span>
+        FEEL:TER</a></li>
+      <li><a href="">큐알이미지</a></li>
+      <li><a href="">TOP</a></li>
+    </ul>
+
     <footer id="ft">
         <div class="ftcontainer">
             <img src="./img/logo/logo_TRT_basic.svg" class="ftlogo">
@@ -508,29 +522,28 @@
                     <li><a href="#none">개인정보 처리방침</a></li>
                     <li><a href="#none">제휴 / 광고 문의</a></li>
                 </ul>
-
-                <div>
-                    <div class="company_info">
-                        <b>회사소개</b>
-                        <i>주 트립터</i>
-                        <i><span>대표자</span> 신은경</i>
-                        <i><span>고객센터</span> 0000-0000</i>
-                        <i><span>주소</span> 서울특별시 구로구 구로5동 3-25 602호</i>
-                        <i><span>메일</span> help@tripter.com</i>
-                    </div> 
-                    <div class="company_id">   
-                        <i><span>사업자등록번호</span> 0000000-0000</i>
-                        <i><span>통신판매입신고번호</span> 제0000-서울00-0000호</i>
-                        <i><span>관광사업자등록번호</span> 제0000-000000호</i>
-                    </div>
+            </div>
+                <div class="company_info">
+                    <b>회사소개</b>
+                    <i>주 트립터</i>
+                    <i><span>대표자</span> 신은경</i>
+                    <i><span>고객센터</span> 0000-0000</i>
+                    <i><span>주소</span> 서울특별시 구로구 구로5동 3-25 테크노마트 6층</i>
+                    <i><span>메일</span> help@tripter.com</i>
+                </div> 
+                <div class="company_id">   
+                    <i><span>사업자등록번호</span> 0000000-0000</i>
+                    <i><span>통신판매입신고번호</span> 제0000-서울00-0000호</i>
+                    <i><span>관광사업자등록번호</span> 제0000-000000호</i>
                 </div>
-                
             </div>
         </div>
     </footer>
 
+   
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/mainScript.js"></script>
     <script src="./js/header.js"></script>
+   
 </body>
 </html>

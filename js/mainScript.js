@@ -36,8 +36,8 @@ let md_slide = new Swiper(".md_swiper", {
         disableOnInteraction: false,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-prev",
+        prevEl: ".swiper-button-next",
     },
     pagination: {
           el: ".swiper-pagination",
@@ -46,20 +46,54 @@ let md_slide = new Swiper(".md_swiper", {
     },
 });
 
-//----- tab btn
-const tabSection = document.querySelector('.section4 .tab_menu');
+//----- tab
+fetch('../data/mainTabMenu.json')
+  .then(response => response.json())
+  .then(data => {
+    const tabsContainer = document.getElementById('tabMenu');
+    const contentContainer = document.getElementById('tabContent');
 
-tabSection.addEventListener('click', (e) => {
+    // tabBtn
+    data.forEach((tab, index) => {
+      const tabButton = document.createElement('li');
+      if (index === 0) tabButton.classList.add('active');
+      tabButton.textContent = `#${tab.tabnm}`;
+      
+      tabButton.addEventListener('click', () => {
+        document.querySelectorAll('#tabMenu li').forEach(t => t.classList.remove('active'));
+        tabButton.classList.add('active');
+        renderContent(tab.tablist);
+      });
 
-    const tabMenuBtn = tabSection.querySelectorAll('li');
+      tabsContainer.appendChild(tabButton);
+    });
 
-    if(e.target.tagName === 'LI'){
-        tabMenuBtn.forEach(btn => btn.classList.remove('active'));
-        e.target.classList.add('active');
-    }
+    // firstContentsRendering
+    renderContent(data[0].tablist);
+
+    function renderContent(tablist) {
+        contentContainer.innerHTML = '';
+        
+        tablist.forEach(item => {
+            const contentItem = document.createElement('li');
+            contentItem.className = 'd-flex align-items-end content_desc';
+            contentItem.style.backgroundImage = `url("${item.src}")`;
     
-})
+            contentItem.innerHTML = `
+                <a href="${item.href}" class="d-flex align-items-center justify-content-center">
+                    <b>${item.title}</b>
+                    <span>${item.desc}</span>
+                </a>
+            `;
+    
+            contentContainer.appendChild(contentItem);
+        });
+    }
+  })
+  .catch(error => console.error('Error loading JSON:', error));
 
+
+  
 //----- marquee json + swiper marquee
 
 const marquee1 = document.getElementById("review_marquee1")
@@ -94,51 +128,51 @@ fetch('../data/review.json')
     });
 
 //나중에 생각해야지
-setTimeout(function() {
-    let review_marquee1 = new Swiper(".flow_swiper1", {
-        slidesPerView: "auto",
-        loop: true,
-        speed: 5000,
-        freeMode: false,
-        allowTouchMove: false,
-        autoplay: {
-            delay: 0,
-            //pauseOnMouseEnter: true,
-        }
-    });
+// setTimeout(function() {
+//     let review_marquee1 = new Swiper(".flow_swiper1", {
+//         slidesPerView: "auto",
+//         loop: true,
+//         speed: 5000,
+//         freeMode: false,
+//         allowTouchMove: false,
+//         autoplay: {
+//             delay: 0,
+//             //pauseOnMouseEnter: true,
+//         }
+//     });
 
-    let review_marquee2 = new Swiper(".flow_swiper2", {
-        slidesPerView: "auto",
-        loop: true,
-        speed: 5000,
-        freeMode: true,
-        allowTouchMove: false,
-        autoplay: {
-            delay: 0,
-            reverseDirection: true,
-            //pauseOnMouseEnter: true,
-        }
-    });
+//     let review_marquee2 = new Swiper(".flow_swiper2", {
+//         slidesPerView: "auto",
+//         loop: true,
+//         speed: 5000,
+//         freeMode: true,
+//         allowTouchMove: false,
+//         autoplay: {
+//             delay: 0,
+//             reverseDirection: true,
+//             //pauseOnMouseEnter: true,
+//         }
+//     });
 
-    // 공통 이벤트 처리 함수
-    function addHoverAutoplayControl(swiperInstance, containerSelector) {
-        const container = document.querySelector(containerSelector);
+//     // 공통 이벤트 처리 함수
+//     function addHoverAutoplayControl(swiperInstance, containerSelector) {
+//         const container = document.querySelector(containerSelector);
 
-        container.addEventListener("mouseenter", function() {
-            const translate = swiperInstance.getTranslate();
-            swiperInstance.setTranslate(translate);
-            swiperInstance.autoplay.stop();
-        });
+//         container.addEventListener("mouseenter", function() {
+//             const translate = swiperInstance.getTranslate();
+//             swiperInstance.setTranslate(translate);
+//             swiperInstance.autoplay.stop();
+//         });
 
-        container.addEventListener("mouseleave", function() {
-            swiperInstance.slideTo(swiperInstance.activeIndex, 2500, false);
-            swiperInstance.autoplay.start();
-        });
-    }
+//         container.addEventListener("mouseleave", function() {
+//             swiperInstance.slideTo(swiperInstance.activeIndex, 2500, false);
+//             swiperInstance.autoplay.start();
+//         });
+//     }
 
-    // 각각의 스와이퍼에 이벤트 추가
-    addHoverAutoplayControl(review_marquee1, ".flow_swiper1");
-    addHoverAutoplayControl(review_marquee2, ".flow_swiper2");
+//     // 각각의 스와이퍼에 이벤트 추가
+//     addHoverAutoplayControl(review_marquee1, ".flow_swiper1");
+//     addHoverAutoplayControl(review_marquee2, ".flow_swiper2");
 
-}, 500);
+// }, 500);
     

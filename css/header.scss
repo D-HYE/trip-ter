@@ -1,36 +1,80 @@
 #hd{
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    z-index: 1000;
-    background-color: white;
-    #user{
-        font-size: var(--m-text);
-    }
-
-    #menu {
-        a{        
-            font-size: var(--semismall-text);
-            font-family: var(--theJamsil-medium);
-        }
-    }
-
     .search{
         border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
         border: 2px solid #0051D3;
     }
     
-    
     .logo{
         img{
             width: 12.18431rem;
             height: 3.375rem;
+            transition: opacity 0.3s ease;
         }
-    }    
-    
-    
-  
+    }     
+}
+#menu {
+    a{        
+        font-size: var(--semismall-text);
+        font-family: var(--theJamsil-medium);
+    }
+}
+#user{
+    font-size: var(--m-text);
+    width: 100vw;
+    height: 40px;
+}
+.hide-menu{
+    width: 80px;
+    height: 80px;
+    top: 100%;
+    left: -15px;
+    background-color: #fff;
+    border: 2px solid #0051D3;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    li{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;       
+    }
+    a{
+        color: #0051D3;
+        font-weight: 500;
+    }
+}
+#gnbbox{
+    position: fixed;
+    top:40px;
+    left:0;
+    right:0;
+    z-index: 999;
+    background-color: white;
+    width: 100vw;
+    height: 80px;
+    transition: height 0.3s;
+    &.scrolled{
+        top:0;
+        height: 44px;
+        .logo{
+            img{
+                width: 0;
+                height: 0;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+        }
+    }   
+}
+#gnb{
+    height: 80px;
+    &.scrolled{
+        top:0;
+        height: 44px;}
+}
+
+.wishlist-btn{
+    margin-left: 1.5rem;
+    margin-bottom: -2px;
 }
 .dim {
     position: fixed;
@@ -38,11 +82,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
     z-index: 999;
 }
 //햄버거메뉴
-#hb-submenu{        
+#hb-submenu{     
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    transition: height 0.3s;   
     width: 400px;
     height: 100vh;
     
@@ -166,8 +214,8 @@
             margin-bottom: 2.5rem;
             font-family: var(--theJamsil-medium);
             img{
-                width: 1.5rem;
-                height: 1.5rem;
+                width: 24px;
+                height: 24px;
                 margin-left: 0.5rem;
                 margin-top: -2px;
             }
