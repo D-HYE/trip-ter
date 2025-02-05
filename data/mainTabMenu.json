@@ -4,27 +4,27 @@
     "tablist": [
       {
         "href": "#none",
-        "src": "./img/sample/sampleimg0.jpg",
-        "title": "이태리 알프스 총정리",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "src": "./img/tapmenu/city_1.jpg",
+        "title": "오사카 야경을 한눈에!",
+        "desc": "우메다 공중정원에서 눈부신 오사카의 도심을 담아보세요 "
       },
       {
         "href": "#none",
-        "src": "./img/sample/sampleimg2.jpg",
-        "title": "전세계 인기 카페 투어",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "src": "./img/tapmenu/city_2.jpg",
+        "title": "바다와 도시와 함께 축제를",
+        "desc": "한쪽엔 너른 바다가, 반대편엔 반짝이는 도시들이, 그리고 당신이 선 이곳은 축제가 벌어지는 이곳, 인천 송도달빛축제"
       },
       {
         "href": "#none",
-        "src": "./img/sample/sampleimg3.jpg",
-        "title": "성에서 일주일 살기",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "src": "./img/tapmenu/city_3.jpg",
+        "title": "중국 4대도시 중 하나, 삼잔(심천)",
+        "desc": "홍콩에 들렸다면 심천도 봐야지! 반짝거리는 도심과 거대한 마천루 금융센터까지 놓치지 말고 확인하세요"
       },
       {
         "href": "#none",
-        "src": "./img/sample/sampleimg4.jpg",
-        "title": "현지 이색 투어 모음",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "src": "./img/tapmenu/city_4.jpg",
+        "title": "휘향찬란한 LED 세상으로",
+        "desc": "인스파이어 최첨단 디지털 엔터테인먼트 거리 ‘오로라’ 매시 정각엔 대형 고래쇼까지"
       }
     ]
   },
@@ -33,26 +33,26 @@
     "tablist": [
       {
         "href": "#none",
-        "src": "./img/sample/sampleimg5.jpg",
-        "title": "대자연 속 하이킹",
+        "src": "./img/tapmenu/nature_1.jpg",
+        "title": "제주 한림읍",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         "href": "#none",
-        "src": "./img/sample/sampleimg6.jpg",
-        "title": "숨겨진 폭포 찾기",
+        "src": "./img/tapmenu/nature_2.jpg",
+        "title": "홋카이도 아사히다케",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         "href": "#none",
-        "src": "./img/sample/sampleimg7.jpg",
-        "title": "숨겨진 폭포 찾기",
+        "src": "./img/tapmenu/nature_3.jpg",
+        "title": "강릉바다 옥수수 커피",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         "href": "#none",
-        "src": "./img/sample/sampleimg8.jpg",
-        "title": "숨겨진 폭포 찾기",
+        "src": "./img/tapmenu/nature_4.jpg",
+        "title": "태국 후아힌",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       }
     ]
