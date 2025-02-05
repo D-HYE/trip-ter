@@ -33,7 +33,7 @@ main {
 
 /* section1 */
 .section1 {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 .section1 .main_swiper {
   width: 100vw;
@@ -103,8 +103,7 @@ main {
   z-index: 10;
   padding: 48px 32px;
   background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   transition: 0.3s;
 }
 .section1 .mftr_form .mftr_tit {
@@ -218,6 +217,9 @@ main {
 /* section3 */
 .section3 {
   padding: 80px 0 160px;
+}
+.section3 .container {
+  gap: 120px;
 }
 .section3 .container .img_box {
   width: 460px;
@@ -385,8 +387,7 @@ main {
 .section6 .flow_swiper .flow_line li .img_box img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .section6 .flow_swiper .flow_line li .txt_box .user_info {
   gap: 20px;
@@ -455,10 +456,8 @@ main {
   }
   .section2 .md_swiper:before, .section2 .md_swiper:after {
     width: calc(5% + 78px);
-    height: 100%;
   }
   .section3 .container {
-    justify-content: center;
     gap: 20px;
   }
   .section3 .container .txt_box h3 {
@@ -545,8 +544,8 @@ main {
   .section2 .md_swiper .swiper-wrapper .swiper-slide {
     margin: 0 10px;
   }
-  .section2 .md_swiper .swiper-wrapper:before, .section2 .md_swiper .swiper-wrapper:after {
-    display: none;
+  .section2 .md_swiper:before, .section2 .md_swiper:after {
+    width: 0;
   }
   .section3 .container .txt_box h3 {
     line-height: 1.6;

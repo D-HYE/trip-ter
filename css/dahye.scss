@@ -24,7 +24,7 @@ main{overflow: hidden;}
 
 /* section1 */
 .section1{
-    padding-top: 120px;
+    padding-top: 80px;
     .main_swiper{
         width: 100vw; height: 640px;
         border-radius: 400px 0 0 400px;
@@ -170,6 +170,7 @@ main{overflow: hidden;}
 .section3{
     padding: 80px 0 160px;
     .container{
+        gap: 120px;
         .img_box{
             width: 460px; height: 600px;
             background: var(--trip-blue); border-radius: 230px 230px 0 0;
@@ -366,13 +367,13 @@ main{overflow: hidden;}
             .swiper-button-prev{left: 5%;}
             .swiper-button-next{right: 5%;}
             &:before, &:after{
-                width: calc(5% + 78px); height: 100%;
+                width: calc(5% + 78px);
             }
         }
     }
     .section3{
         .container{
-            justify-content: center; gap: 20px;
+           gap: 20px;
             .txt_box{
                 h3{
                     font-size: var(--big-text);
@@ -417,7 +418,7 @@ main{overflow: hidden;}
             a img{height: 140px;}
         }
     }
-    .section2{
+    .section2{       
         .md_swiper{
             .swiper-wrapper{
                 .swiper-slide{
@@ -485,9 +486,9 @@ main{overflow: hidden;}
                 .swiper-slide{
                     margin: 0 10px;
                 }
-                &:before, &:after{
-                    display: none;
-                }
+            }
+            &:before, &:after{
+                width: 0;
             }
         }
     }
