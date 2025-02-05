@@ -19,51 +19,53 @@
 
 </head>
 <body>
-    <!-- 상단 -->
+    <!-- 상단 --> 
     <header id="hd">
-        <div class="header_inner">
-            <div id="user" class="trip-bl">
-                <div class="py-2 container d-flex justify-content-end">
+        <div class="header_inner"> 
+            <div class="trip-bl">
+                <div id="user" class="container d-flex justify-content-end">
                     <ul class="d-flex gap-3 align-items-center">
                         <li ><a href="" class="text-white">로그인</a></li>
-                        <li class="rel"><a href="" class="text-white">고객지원
+                        <li class="support rel"><a href="#none" class="text-white">고객지원
                             <img src="./img/icon/polygon-1.svg" alt="">
                         </a>
-                            <ul class="abs d-none">
+                            <ul class="hide-menu abs d-none">
                                 <li><a href="">이용가이드</a></li>
                                 <li><a href="">FAQ</a></li>
                                 <li><a href="">문의게시판</a></li>
                             </ul>
-                         </li>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div id="gnb" class="container d-flex justify-content-between align-items-center">
-                <h1 class="logo py-2 order-2 mx-auto"><a href="index.html"><img src="./img/logo/logo_TRT_basic.svg" alt="logo">
-                    <span class="d-none">트립터</span>                   
-                </a></h1>
-                <div class="hbmenu"> 
-                    <button id="hamburger-btn"><img src="./img/icon/menu-all.svg" alt=""></button>
+            <div id="gnbbox" class="">
+                <div id="gnb" class="container d-flex justify-content-between align-items-center">
+                    <h1 class="logo order-2 mx-auto"><a href="index.html"><img src="./img/logo/logo_TRT_basic.svg" alt="logo">
+                        <span class="d-none">트립터</span>                   
+                    </a></h1>
+                    <div class="hbmenu mx-1"> 
+                        <button id="hamburger-btn"><img src="./img/icon/menu-all.svg" alt=""></button>
+                    </div>
+                    <!-- dim 배경 -->
+                    <div id="dim-background" class="dim d-none"></div>
+                    
+                    <ul id="menu" class="d-flex justify-content-start gap-3 order-1 col-4">                   
+                        <li><a href="">계획하기</a></li>
+                        <li><a href="">트립톡</a></li>
+                        <li><a href="">이벤트</a></li>
+                    </ul>
+                    <ul class= "icon d-flex align-items-center order-3">
+                        <li>
+                            <form action="http://www.google.com" class="d-flex align-items-center">
+                                <input type="text" class="search" name="search">
+                                <input type="image" class="py-0" src="./img/icon/search-02.svg" alt="">
+                            </form>
+                        </li>
+                        <li>
+                            <button class="wishlist-btn p-0"><a href=""><img src="./img/icon/heart.svg" alt=""></a></button>
+                        </li>
+                    </ul> 
                 </div>
-                <!-- dim 배경 -->
-                <div id="dim-background" class="dim d-none"></div>
-                
-                <ul id="menu" class="d-flex justify-content-start gap-3 order-1 col-4">                   
-                    <li><a href="">계획하기</a></li>
-                    <li><a href="">트립톡</a></li>
-                    <li><a href="">이벤트</a></li>
-                </ul>
-                <ul class= "icon d-flex align-items-center order-3">
-                    <li>
-                        <form action="http://www.google.com" class="d-flex align-items-center">
-                            <input type="text" class="search" name="search">
-                            <input type="image" class="py-0" src="./img/icon/search-02.svg" alt="">
-                        </form>
-                    </li>
-                    <li>
-                        <button class="wishlist-btn"><a href=""><img src="./img/icon/heart.svg" alt=""></a></button>
-                    </li>
-                </ul> 
             </div>
               <!-- 햄버거 소메뉴 -->  
     <div id="hb-submenu" class="abs">
@@ -81,7 +83,7 @@
             </ul>
             <hr>
             <!-- 로그인 후 -->
-            <div class="mainheader d-none">
+            <div class="mainheader">
                 <hr>
                 <div class="user-box d-flex">
                     <div class="profileicon"><img src="./img/icon/user-profile-02.svg" alt=""></div>
