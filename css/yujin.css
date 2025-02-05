@@ -26,4 +26,35 @@
 }
 #quick li a span {
   font-size: var(--semismall-text, 18px);
+}
+#mb-top {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+  padding: 10px;
+  width: 100%;
+  position: relative;
+}
+#mb-top .container #mb-top-text {
+  flex-direction: column;
+  align-items: flex-start;
+  left: 30px;
+}
+#mb-top .container #mb-top-text h5 {
+  color: #111;
+}
+#mb-top .container #mb-top-text h5 span {
+  color: #555;
+}
+#mb-top .container a {
+  color: #FFF;
+  font-family: "Noto Sans";
+  font-size: var(--m-mainbanner-en, 12px);
+  position: absolute;
+  right: 35px;
+  top: 9px;
+  border-radius: 50px;
+  background: var(--Trip_blue, #0051D3);
+  justify-content: end;
+  right: 30px;
 }/*# sourceMappingURL=yujin.css.map */
