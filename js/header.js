@@ -55,10 +55,10 @@ body.addEventListener("click", (e) => {
 //     loggedInSection.classList.add("d-none");
 // }
 
-//고객지원
-const supportMenu = document.querySelector(".support a");
-const hideMenu = document.querySelector(".support .hide-menu");
+// //고객지원
+// const supportMenu = document.querySelector(".support a");
+// const hideMenu = document.querySelector(".support .hide-menu");
 
-supportMenu.addEventListener('click',(e) => {
-    hideMenu.classList.toggle('d-none')
-})
+// supportMenu.addEventListener('click',(e) => {
+//     hideMenu.classList.toggle('d-none')
+// })
