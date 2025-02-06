@@ -557,22 +557,7 @@ main{overflow: hidden;}
                 }
             }
         }
-        // !!!!! 모바일 !!!!!
-        .mftr_mb_btn{
-            position: absolute; left: 0; bottom: 0; transform: translateY(50%); z-index: 10;
-            padding: 12px 10px;
-            background: rgba(0, 81, 211, .9); border-radius: 0 30px 30px 0;
-            a{
-                color: #fff;
-            }
-        }
-        .icon_menu{
-            padding-top: 40px;
-            li{
-                width: 30%; height: 120px;
-                background: red;
-            }
-        }
+        
     }
     .section2{
         .md_swiper{
