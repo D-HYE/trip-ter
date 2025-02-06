@@ -1,5 +1,5 @@
 #hd{
-    .search{
+    .search-bar{
         border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
         border: 2px solid #0051D3;
     }
@@ -50,6 +50,7 @@
     &.scrolled{
         top:0;
         height: 44px;
+        border-bottom: var(--trip-gray2) 1px solid;
         .logo{
             img{
                 width: 0;
@@ -92,7 +93,7 @@
 //햄버거메뉴
 #hb-submenu{     
     position: fixed;
-    width: 400px;
+    max-width: 400px;
     height: 100vh;
     background-color: #fff;
     left:-400px;
@@ -258,7 +259,21 @@
     }
 //태블릿    
 @media only screen and (max-width: 768px){
+    #gnbbox{  
+        top: 0;
     }
+    #gnb{
+        height: 60px;
+        .logo img{
+            width: 6.3125rem;
+            height: 1.75rem;         
+        } 
+    }  
+}
 //리얼모바일    
 @media only screen and (max-width: 575px){
-    }
+    #gnb{
+        height: 40px;
+        border-bottom: var(--trip-gray2) 1px solid;
+    }   
+}
