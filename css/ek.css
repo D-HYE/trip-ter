@@ -22,16 +22,13 @@
 
 .footer_menu {
   font-size: var(--small-text);
+  font-weight: 700;
 }
 
 .footer_menu ul {
-  margin: 0px 0 20px 50px;
+  margin: 30px 0px 20px 50px;
   display: flex;
   gap: 40px;
-}
-
-.footer_menu ul li {
-  font-weight: 700;
 }
 
 .footer_menu > div {
@@ -43,13 +40,13 @@
   margin: 20px 50px 0px 50px;
   display: flex;
   flex-direction: column;
-  font-size: var(--section);
+  font-size: var(--desc-text);
 }
 
 .company_id {
   margin: 20px 50px 0px 50px;
   flex-direction: column;
-  font-size: var(--m-text);
+  font-size: var(--m-small-text);
 }
 
 .company_id i,

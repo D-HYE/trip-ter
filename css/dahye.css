@@ -370,47 +370,83 @@ main {
 .section6 .page_view a {
   font-size: var(--semismall-text);
 }
-.section6 .flow_swiper {
+.section6 .marquee_area {
   width: 100vw;
   overflow: hidden;
 }
-.section6 .flow_swiper .flow_line {
+.section6 .marquee_area .marquee_wrap {
+  position: relative;
+  height: 412px;
+}
+.section6 .marquee_area .marquee_line {
+  position: absolute;
   gap: 32px;
   margin: 24px 0;
-  transition-timing-function: linear !important;
 }
-.section6 .flow_swiper .flow_line li {
+.section6 .marquee_area .marquee_line li {
   width: 280px;
   padding: 16px 12px;
   background: var(--trip-white);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
-.section6 .flow_swiper .flow_line li .img_box {
+.section6 .marquee_area .marquee_line li .img_box {
   height: 256px;
   overflow: hidden;
 }
-.section6 .flow_swiper .flow_line li .img_box img {
+.section6 .marquee_area .marquee_line li .img_box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.section6 .flow_swiper .flow_line li .txt_box .user_info {
+.section6 .marquee_area .marquee_line li .txt_box .user_info {
   gap: 20px;
   margin: 20px 0;
 }
-.section6 .flow_swiper .flow_line li .txt_box .user_info .review_user {
+.section6 .marquee_area .marquee_line li .txt_box .user_info .review_user {
   font-size: var(--semismall-text);
   font-weight: 400;
 }
-.section6 .flow_swiper .flow_line li .txt_box .user_info .review_rate {
+.section6 .marquee_area .marquee_line li .txt_box .user_info .review_rate {
   font-style: normal;
 }
-.section6 .flow_swiper .flow_line li .txt_box .review_txt {
+.section6 .marquee_area .marquee_line li .txt_box .review_txt {
   overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: nowrap;
 }
+.section6 .marquee_area .marquee_line.marquee_line1 {
+  left: 0;
+  animation: review_marquee1 50s linear infinite;
+  transition: animation-play-state 0.5s;
+}
+.section6 .marquee_area .marquee_line.marquee_line1:hover {
+  animation-play-state: paused;
+}
+.section6 .marquee_area .marquee_line.marquee_line2 {
+  right: 0;
+  animation: review_marquee2 50s linear infinite;
+  transition: animation-play-state 0.5s;
+}
+.section6 .marquee_area .marquee_line.marquee_line2:hover {
+  animation-play-state: paused;
+}
 
+@keyframes review_marquee1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -4682px;
+  }
+}
+@keyframes review_marquee2 {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -4682px;
+  }
+}
 /* section7 */
 .section7 {
   position: relative;

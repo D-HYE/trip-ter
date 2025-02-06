@@ -96,16 +96,21 @@ fetch('../data/mainTabMenu.json')
   
 //----- marquee json + swiper marquee
 
-const marquee1 = document.getElementById("review_marquee1")
-const marquee2 = document.getElementById("review_marquee2")
+const marquee1 = document.getElementById("review_marquee1");
+const marquee2 = document.getElementById("review_marquee2");
 
 fetch('../data/review.json')
     .then(response => response.json())
     .then(reviews => {
-        reviews.forEach(review => {
+        const midpoint = Math.ceil(reviews.length / 2);  // 데이터 절반 (15개)
+
+        const list1 = []; // marquee1에 들어갈 요소들
+        const list2 = []; // marquee2에 들어갈 요소들
+        const cloneCount = 10; // 루프처럼 보이게 하기 위해 추가할 개수
+
+        reviews.forEach((review, index) => {
             const reviewLi = document.createElement('li');
-            
-            reviewLi.classList.add('swiper-slide');
+            reviewLi.classList.add('marquee_content');
             reviewLi.innerHTML = `
                 <a href="${review.href}">
                     <div class="img_box">
@@ -120,59 +125,22 @@ fetch('../data/review.json')
                     </div>
                 </a>
             `;
-            marquee1.appendChild(reviewLi);
-            marquee2.appendChild(reviewLi.cloneNode(true));
-            // 미래의 내가 해결할 부분^-^
-            // 스와이퍼랑 같이 알아서 바꿔서 해보세요!!!
+
+            if (index < midpoint) {
+                list1.push(reviewLi); // 1~15번째 아이템
+            } else {
+                list2.push(reviewLi); // 16~30번째 아이템
+            }
         });
+
+        // 앞부분 일부 아이템을 복제하여 뒤에 추가 (루프 효과)
+        const cloneList1 = list1.slice(0, cloneCount).map(item => item.cloneNode(true));
+        const cloneList2 = list2.slice(0, cloneCount).map(item => item.cloneNode(true));
+
+        // 리스트 추가
+        list1.forEach(item => marquee1.appendChild(item));
+        cloneList1.forEach(item => marquee1.appendChild(item));
+
+        list2.forEach(item => marquee2.appendChild(item));
+        cloneList2.forEach(item => marquee2.appendChild(item));
     });
-
-//나중에 생각해야지
-// setTimeout(function() {
-//     let review_marquee1 = new Swiper(".flow_swiper1", {
-//         slidesPerView: "auto",
-//         loop: true,
-//         speed: 5000,
-//         freeMode: false,
-//         allowTouchMove: false,
-//         autoplay: {
-//             delay: 0,
-//             //pauseOnMouseEnter: true,
-//         }
-//     });
-
-//     let review_marquee2 = new Swiper(".flow_swiper2", {
-//         slidesPerView: "auto",
-//         loop: true,
-//         speed: 5000,
-//         freeMode: true,
-//         allowTouchMove: false,
-//         autoplay: {
-//             delay: 0,
-//             reverseDirection: true,
-//             //pauseOnMouseEnter: true,
-//         }
-//     });
-
-//     // 공통 이벤트 처리 함수
-//     function addHoverAutoplayControl(swiperInstance, containerSelector) {
-//         const container = document.querySelector(containerSelector);
-
-//         container.addEventListener("mouseenter", function() {
-//             const translate = swiperInstance.getTranslate();
-//             swiperInstance.setTranslate(translate);
-//             swiperInstance.autoplay.stop();
-//         });
-
-//         container.addEventListener("mouseleave", function() {
-//             swiperInstance.slideTo(swiperInstance.activeIndex, 2500, false);
-//             swiperInstance.autoplay.start();
-//         });
-//     }
-
-//     // 각각의 스와이퍼에 이벤트 추가
-//     addHoverAutoplayControl(review_marquee1, ".flow_swiper1");
-//     addHoverAutoplayControl(review_marquee2, ".flow_swiper2");
-
-// }, 500);
-    
