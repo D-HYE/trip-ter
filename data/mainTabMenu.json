@@ -33,25 +33,24 @@
     "tablist": [
       {
         "href": "#none",
-        "src": "./img/tapmenu/nature_2.jpg",
+        "src": "./img/tabmenu/nature_2.jpg",
         "title": "365일 24시간 연기가 뿜어져 나오는 산,",
         "desc": "북해도 히가시카와, 북해도에서 가장 큰 봉우리! 여름에는 등산을~ 겨울에는 스키를~ 어느때든 호수 옆 연기를 볼 수 있어요!"
       },
       {
         "href": "#none",
-        "src": "./img/tapmenu/nature_3.jpg",
+        "src": "./img/tabmenu/nature_3.jpg",
         "title": "동해바다 앞에서 커피한잔",
         "desc": "푸르른 동해 바다 앞에서 강릉의 명물 옥수수 커피 한잔 어때요?"
       },
       {
         "href": "#none",
-        "src": "/img/tabmenu/nature_3.jpg",
-        "title": "강릉바다 옥수수 커피",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
+        "src": "/img/tabmenu/nature_1.jpg",
+        "title": "성이시돌 목장",
+        "desc": "파릇한 녹음과 푸르른 하늘사이 평화로운 목장의 풍경을 즐겨보세요!"},
       {
         "href": "#none",
-        "src": "./img/tapmenu/nature_4.jpg",
+        "src": "./img/tabmenu/nature_4.jpg",
         "title": "태국 왕실의 휴양지",
         "desc": "온화한 날씨와, 편안한 해변이 위치한 아름다운 도시 후아힌"
       }
@@ -74,14 +73,14 @@
         {
           "href": "#none",
           "src": "/img/tabmenu/onepiece_3.jpg",
-          "title": "플레이 원피스",
+          "title": "ak 플레이 원피스!",
           "desc": "홍대 ak몰 5층에 위치한 플레이 원피스. 원피스 굿즈도 사고, 게임도 체험해보고~ "
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/onepiece_4.jpg",
           "title": "본고장으로 가고 싶어!",
-          "desc": "오사카 유니버셜 스튜디오 재팬."
+          "desc": "오사카 유니버셜 스튜디오 재팬에서 원피스 식당, 어트랙션, 뮤지컬을 만나보세요!"
         }
       ]
   },
@@ -91,26 +90,26 @@
         {
           "href": "#none",
           "src": "/img/tabmenu/photo_1.jpg",
-          "title": "LA 유니버셜 스튜디오",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "유니버셜 스튜디오의 본고장은 바로 여기!",
+          "desc": "거대하고 웅장한 어트랙션도 즐기고, 잊지못할 사진도 한컷!"
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/photo_2.jpg",
-          "title": "영종도 인스파이어",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "고래와 함께 사진을",
+          "desc": "매 정시마다 나타나는 거대한 고래 LED쇼, 지금 바로 영종도 인스파이어로~"
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/photo_3.jpg",
-          "title": "기장",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "기장으로 오이소!",
+          "desc": "해운대, 다대포 못지 않게 아름다운 기장의 바다와 함께 인생샷을 남겨보세요"
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/photo_4.jpg",
-          "title": "후쿠오카 유후인",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "유후인 어디에서나 보인다는 두 쌍봉우리",
+          "desc": "유후다케산 앞에서 방문샷도 남기고, 탁트인 풍경 앞에서 걱정과 고민도 내려놓아 보아요."
         }
       ]
   },
@@ -120,14 +119,14 @@
         {
           "href": "#none",
           "src": "/img/tabmenu/sikdorock_1.jpg",
-          "title": "오사카 하면 타코야끼",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "타코야끼라 하면?",
+          "desc": "바로바로 오사카~ 쇼핑도, 빅파이브도, 돈키호테도 모두 즐겼다면 이제 타코야끼를 즐길시간!"
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/sikdorock_2.jpg",
-          "title": "제주도 펍",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "향기로운 칵테일에 취해도 보고",
+          "desc": "제주도 하면 한라봉? 갈치? 아니! 이젠 트렌디한 펍으로~ 색달 해변이 한눈에 보이는 모히또에서 펍 한잔~."
         },
         {
           "href": "#none",
@@ -207,20 +206,20 @@
       {
         "href": "#none",
         "src": "/img/tabmenu/umppa_1.jpg",
-        "title": "홋카이도 가족여행",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "가족여행 한 컷",
+        "desc": "먹을 것도, 숲도 조흠"
       },
       {
         "href": "#none",
         "src": "/img/tabmenu/umppa_2.jpg",
-        "title": "제주 산굼부리",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "갈대와 함께 춤을",
+        "desc": "제주 산굼부리 갈대 짱많고 짱큼"
       },
       {
         "href": "#none",
         "src": "/img/tabmenu/umppa_3.jpg",
-        "title": "남양주 딸기하우스",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "딸기가 좋아",
+        "desc": "하우스딸기라서 한박스 가득따고 딸기잼도 만들고 옴"
       },
       {
         "href": "#none",
