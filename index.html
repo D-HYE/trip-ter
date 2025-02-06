@@ -56,18 +56,18 @@
                     </ul>
                 </div>
             </div>
-            <div id="gnbbox" class="">
+            <div id="gnbbox">
                 <div id="gnb" class="container d-flex justify-content-between align-items-center">
                     <h1 class="logo order-2 mx-auto"><a href="index.html"><img src="./img/logo/logo_TRT_basic.svg" alt="logo">
                         <span class="d-none">트립터</span>                   
                     </a></h1>
-                    <div class="hbmenu mx-1"> 
-                        <button id="hamburger-btn"><img src="./img/icon/menu-all.svg" alt=""></button>
+                    <div class="hb-iconbox"> 
+                        <button id="hb-icon" class="p-0"><img src="./img/icon/menu-all.svg" alt=""></button>
                     </div>
                     <!-- dim 배경 -->
                     <div id="dim-background" class="dim d-none"></div>
                     
-                    <ul id="menu" class="d-flex justify-content-start gap-3 order-1 col-4">                   
+                    <ul id="menu" class="d-flex gap-3 order-1">                   
                         <li><a href="">계획하기</a></li>
                         <li><a href="">트립톡</a></li>
                         <li><a href="">이벤트</a></li>
@@ -256,24 +256,25 @@
                         <input type="submit" value="MY FEEL:TER 설정하기" class="submit_btn">
                     </form>
                 </div>
-            </div>
-            <div id="mftr_mb_btn" class="mb abs">
-                <a class="d-flex" href="#none">
-                    <div class="txt_box">
-                        <h4>MY FEEL:TER</h4>
-                        <p>나의 여행 스타일 설정하기</p>
-                    </div>
-                    <div class="img_box">
-                        <img src="./img/icon/arrow-right.svg" alt="arrow">
-                    </div>
-                </a>
+                <div id="mftr_mb_btn" class="mb abs mftr_mb_btn">
+                    <a class="d-flex" href="#none">
+                        <div class="txt_box">
+                            <h4>MY FEEL:TER</h4>
+                            <p>나의 여행 스타일 설정하기</p>
+                        </div>
+                        <div class="img_box">
+                            <img src="./img/icon/arrow-right.svg" alt="arrow">
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="promo_banner d-flex justify-content-center align-items-center pc">
                 <a href="#none"><img src="./img/illustrator/event.jpg" alt="여름 성수기 이벤트"></a>
             </div>
-            <div class="mb">
+            <div class="mb icon_menu">
                 <div class="container">
-                    <ul class="d-flex">
+                    <div class="search_mb">서치창</div>
+                    <ul class="d-flex justify-content-between">
                         <li>계획짜기</li>
                         <li>트립톡</li>
                         <li>이벤트</li>
@@ -295,7 +296,7 @@
                                     <img src="./img/md_slide_pc/lasvegas.jpg" alt="라스베가스">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end">밤 낮 없이 반짝반짝</b>
+                                    <b class="d-flex align-items-center justify-content-end pc">밤 낮 없이 반짝반짝</b>
                                     <p>라스베가스 2인 25만원부터</p>
                                 </div>
                             </a>
@@ -306,7 +307,7 @@
                                     <img src="./img/md_slide_pc/japan.jpg" alt="도쿄">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end">머글들의 마법 세상 체험기</b>
+                                    <b class="d-flex align-items-center justify-content-end pc">머글들의 마법 세상 체험기</b>
                                     <p>도쿄 워너 브라더스 2인 25만원부터</p>
                                 </div>
                             </a>
@@ -317,7 +318,7 @@
                                     <img src="./img/md_slide_pc/newzealand.jpg" alt="뉴질랜드">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end">마이 프레셔스~!<span>반지를 찾아서</span></b>
+                                    <b class="d-flex align-items-center justify-content-end pc">마이 프레셔스~!<span>반지를 찾아서</span></b>
                                     <p>뉴질랜드 2인 52만원부터</p>
                                 </div>
                             </a>
@@ -328,7 +329,7 @@
                                     <img src="./img/md_slide_pc/taiwan.jpg" alt="지우펀">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-end">내이름은 니기하야미<span>코하쿠누시야</span></b>
+                                    <b class="d-flex align-items-center  justify-content-end pc">내이름은 니기하야미<span>코하쿠누시야</span></b>
                                     <p>대만 지우펀 15만원부터</p>
                                 </div>
                             </a>
@@ -339,7 +340,7 @@
                                     <img src="./img/md_slide_pc/vietnam.jpg" alt="푸꾸옥">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-end">동화속 세상 그 자체!</b>
+                                    <b class="d-flex align-items-center  justify-content-end pc">동화속 세상 그 자체!</b>
                                     <p>베트남 푸꾸옥 33만원부터</p>
                                 </div>
                             </a>
@@ -350,7 +351,7 @@
                                     <img src="./img/md_slide_pc/santorini.jpg" alt="산토리니">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end">라라라라라라라~<span>날 좋아 한다고</span></b>
+                                    <b class="d-flex align-items-center justify-content-end pc">라라라라라라라~<span>날 좋아 한다고</span></b>
                                     <p>산토리니 125만원부터</p>
                                 </div>
                             </a>
@@ -361,7 +362,7 @@
                                     <img src="./img/md_slide_pc/india.jpg" alt="타지마할">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end">소고기는 넣지 않아 나마스떼</b>
+                                    <b class="d-flex align-items-center justify-content-end pc">소고기는 넣지 않아 나마스떼</b>
                                     <p>타지마할-갠지스강 45만원부터</p>
                                 </div>
                             </a>
@@ -372,7 +373,7 @@
                                     <img src="./img/md_slide_pc/lasvegas.jpg" alt="라스베가스">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end">밤 낮 없이 반짝반짝</b>
+                                    <b class="d-flex align-items-center justify-content-end pc">밤 낮 없이 반짝반짝</b>
                                     <p>라스베가스 2인 25만원부터</p>
                                 </div>
                             </a>
@@ -383,7 +384,7 @@
                                     <img src="./img/md_slide_pc/japan.jpg" alt="도쿄">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-end">머글들의 마법 세상 체험기</b>
+                                    <b class="d-flex align-items-center  justify-content-end pc">머글들의 마법 세상 체험기</b>
                                     <p>도쿄 워너 브라더스 2인 25만원부터</p>
                                 </div>
                             </a>
@@ -394,7 +395,7 @@
                                     <img src="./img/md_slide_pc/newzealand.jpg" alt="뉴질랜드">
                                 </div>
                                 <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end">마이 프레셔스~!<span>반지를 찾아서</span></b>
+                                    <b class="d-flex align-items-center justify-content-end pc">마이 프레셔스~!<span>반지를 찾아서</span></b>
                                     <p>뉴질랜드 2인 52만원부터</p>
                                 </div>
                             </a>
@@ -467,7 +468,7 @@
                         <img src="./img/illustrator/coupon_event.jpg" alt="트립터 후기 이벤트">
                     </li>
                     <li>
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fdGT48DUnl8?si=LI2skKgj3SFxlGi9"></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/s5YtOodFQZY?si=zqrrEUOKmJgJzv2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </li>
                 </ul>
            </div>
@@ -478,13 +479,15 @@
                 실시간 후기
            </h3>
            <div class="page_view container d-flex justify-content-end"><a href="#none">후기 더 보기></a></div>
-           <div class="swiper flow_swiper flow_swiper1">
-                <ul class="flow_line flow_line1 swiper-wrapper" id="review_marquee1">
-                </ul>
-           </div>
-           <div class="swiper flow_swiper flow_swiper2">
-                <ul class="flow_line flow_line2 swiper-wrapper" id="review_marquee2">
-                </ul>
+           <div class="marquee_area">
+               <div class="marquee_wrap">
+                   <ul class="marquee_line marquee_line1 d-flex" id="review_marquee1">
+                   </ul>
+               </div>
+               <div class="marquee_wrap">
+                   <ul class="marquee_line marquee_line2 d-flex" id="review_marquee2">
+                   </ul>
+               </div>
            </div>
         </div>
         <div class="section section7">
@@ -513,28 +516,30 @@
     <footer id="ft">
         <div class="ftcontainer">
             <img src="./img/logo/logo_TRT_basic.svg" class="ftlogo">
-            
-            <div class="footer_menu">
-                
-                <ul>
-                    <li><a href="#none">사업자정보</a></li>
-                    <li><a href="#none">이용약관</a></li>
-                    <li><a href="#none">개인정보 처리방침</a></li>
-                    <li><a href="#none">제휴 / 광고 문의</a></li>
-                </ul>
-            </div>
-                <div class="company_info">
-                    <b>회사소개</b>
-                    <i>주 트립터</i>
-                    <i><span>대표자</span> 신은경</i>
-                    <i><span>고객센터</span> 0000-0000</i>
-                    <i><span>주소</span> 서울특별시 구로구 구로5동 3-25 테크노마트 6층</i>
-                    <i><span>메일</span> help@tripter.com</i>
-                </div> 
-                <div class="company_id">   
-                    <i><span>사업자등록번호</span> 0000000-0000</i>
-                    <i><span>통신판매입신고번호</span> 제0000-서울00-0000호</i>
-                    <i><span>관광사업자등록번호</span> 제0000-000000호</i>
+            <div>
+
+                <div class="footer_menu">
+                    <ul>
+                        <li><a href="#none">사업자정보</a></li>
+                        <li><a href="#none">이용약관</a></li>
+                        <li><a href="#none">개인정보 처리방침</a></li>
+                        <li><a href="#none">제휴 / 광고 문의</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex">
+                    <div class="company_info">
+                        <b>회사소개</b>
+                        <i>(주)트립터</i>
+                        <i><span>대표자</span> 신은경</i>
+                        <i><span>고객센터</span> 0000-0000</i>
+                        <i><span>주소</span> 서울특별시 구로구 구로5동 3-25 602호</i>
+                        <i><span>메일</span> help@tripter.com</i>
+                    </div> 
+                    <div class="company_id">   
+                        <i><span>사업자등록번호</span> 0000000-0000</i>
+                        <i><span>통신판매입신고번호</span> 제0000-서울00-0000호</i>
+                        <i><span>관광사업자등록번호</span> 제0000-000000호</i>
+                    </div>
                 </div>
             </div>
         </div>
