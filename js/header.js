@@ -24,9 +24,9 @@ window.addEventListener('scroll', () =>{
 })
 
 //햄버거메뉴
-const hbmenu = document.querySelector("#hb-submenu");
+const hbmenu = document.querySelector("#hb-submenu"); //전체메뉴
 const hamburgerButton = document.querySelector("#hb-icon"); // 햄버거 버튼
-const closeButton = hbmenu.querySelector("button.p-0"); // X 버튼
+const closeButton = hbmenu.querySelector("#allMenuclose"); // X 버튼
 const body = document.querySelector("body"); // 바깥 영역 클릭 감지
 //dim화면
 const dimBackground = document.getElementById("dim-background");
