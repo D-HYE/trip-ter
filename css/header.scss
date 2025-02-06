@@ -2,7 +2,7 @@
     .search-bar{
         border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
         border: 2px solid #0051D3;
-     //활성화 될 때 색깔이 까매지는 거 수정(나중에 찾아서)
+        outline: none;
     }
     
     .logo{
@@ -26,7 +26,7 @@
     left: -15px;
     background-color: #fff;
     border: 2px solid #0051D3;
-    z-index: 1000;
+    z-index: 200;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     li{
         margin-top: 10px;
@@ -94,15 +94,17 @@
 //햄버거메뉴
 #hb-submenu{     
     position: fixed;   
-    bottom:0;
-    background-color: #fff;
-    left:-100%;
     top:0;
-    overflow: hidden;   
-    z-index: 1000;
+    bottom:0;
+    left:-100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+    flex-grow: 1;   
+    z-index: 100;
     transition:left .3s ease-in-out;  
     .p26{
-        padding: 26px;
+        padding: 25px;
     } 
     &.open{
         //자바스크립트 토글클래스명
@@ -143,11 +145,7 @@
             align-items: end;        
             
         }
-        .settings{
-          
-        }
         .profileicon{
-           
             border-radius: 50%;
             background: #9FC1FF;
             display: flex;
@@ -166,73 +164,77 @@
             }
             .username{
                 font-size: var(--semismall-text);
-                
-            }
-            
-        }
-    }
-    .hb-item{
-        font-size: var(--semismall-text);
-        font-family: var(--theJamsil-medium);  
-       
-        .menu-icon{
-            background-color: white;
-            padding:10px 36px;
-            a{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-size: 0.875rem;
-                img{
-                   margin: 10px;
-                }
-            }  
-        }
-    }
-    // 메뉴리스트
-    .hb-list{
-        margin: 36px 40px;
-        div ul{
-            margin-bottom: 30px;
-        }   
-        .feelter{
-            margin-bottom: 40px;
-            span{
-            font-family: var(--theJamsil-medium);
-            }
-        }
-        .arrow{
-            width: 24px;
-            height: 24px;
-        }           
-        .communitymenu{
-            li{
-                width:50%;
-                a{
-                    font-size:var(--small-text);
-                    font-family: var(--theJamsil-medium);   
-                }
-            }
-        }
-        .hb-sublist{
-            div{
-               
-                a{
-                    font-family: var(--theJamsil-medium);
-                }
-            }
-            .sublist{
-             
-                li{ width: 50%;
-                    a{
-                        font-size:var(--small-text);              
-                    }
-                }
             }
         }
     }
 }
+#hb-item{
+    flex-grow: 1;
+    font-size: var(--semismall-text);
+    font-family: var(--theJamsil-medium);        
+    .menu-icon{
+        background-color: white;
+        padding:15px 36px;
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.875rem;
+            img{
+               margin: 10px;
+            }
+        }  
+    }
+}
+// 메뉴리스트
+#hb-list{
+    margin: 36px 40px;
+    flex-grow: 1;
+    div ul{
+        margin-bottom: 30px;
+    }   
+    .feelter{
+        margin-bottom: 40px;
+        span{
+        font-family: var(--theJamsil-medium);
+        }
+    }
+    .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .scrollvertical{
+        overflow-y: auto;
+        flex-grow: 1;
+        height: 100%;
+    }           
+    .communitymenu{
+        li{
+            width:50%;
+            a{
+                font-size:var(--small-text);
+                font-family: var(--theJamsil-medium);   
+            }
+        }
+    }
+}
+#hb-sublist{
+    div{
+        margin-bottom:16px;
+        a{
+            font-family: var(--theJamsil-medium);
+        }
+    }
+    .sublist{
+        li{ width: 50%;
+            a{
+                font-size:var(--small-text);              
+            }
+        }
+    }
+}
+
 //작은pc
 @media only screen and (max-width: 1280px){
     }

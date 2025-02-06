@@ -1,6 +1,7 @@
 #hd .search-bar {
   border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
   border: 2px solid #0051D3;
+  outline: none;
 }
 #hd .logo img {
   width: 12.18431rem;
@@ -21,7 +22,7 @@
   left: -15px;
   background-color: #fff;
   border: 2px solid #0051D3;
-  z-index: 1000;
+  z-index: 200;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .hide-menu li {
@@ -93,16 +94,18 @@
 
 #hb-submenu {
   position: fixed;
-  bottom: 0;
-  background-color: #fff;
-  left: -100%;
   top: 0;
+  bottom: 0;
+  left: -100%;
+  height: 100vh;
+  background-color: #fff;
   overflow: hidden;
-  z-index: 1000;
+  flex-grow: 1;
+  z-index: 100;
   transition: left 0.3s ease-in-out;
 }
 #hb-submenu .p26 {
-  padding: 26px;
+  padding: 25px;
 }
 #hb-submenu.open {
   left: 0;
@@ -158,54 +161,67 @@
 #hb-submenu .mainheader .userprofile .username {
   font-size: var(--semismall-text);
 }
-#hb-submenu .hb-item {
+
+#hb-item {
+  flex-grow: 1;
   font-size: var(--semismall-text);
   font-family: var(--theJamsil-medium);
 }
-#hb-submenu .hb-item .menu-icon {
+#hb-item .menu-icon {
   background-color: white;
-  padding: 10px 36px;
+  padding: 15px 36px;
 }
-#hb-submenu .hb-item .menu-icon a {
+#hb-item .menu-icon a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 0.875rem;
 }
-#hb-submenu .hb-item .menu-icon a img {
+#hb-item .menu-icon a img {
   margin: 10px;
 }
-#hb-submenu .hb-list {
+
+#hb-list {
   margin: 36px 40px;
+  flex-grow: 1;
 }
-#hb-submenu .hb-list div ul {
+#hb-list div ul {
   margin-bottom: 30px;
 }
-#hb-submenu .hb-list .feelter {
+#hb-list .feelter {
   margin-bottom: 40px;
 }
-#hb-submenu .hb-list .feelter span {
+#hb-list .feelter span {
   font-family: var(--theJamsil-medium);
 }
-#hb-submenu .hb-list .arrow {
+#hb-list .arrow {
   width: 24px;
   height: 24px;
 }
-#hb-submenu .hb-list .communitymenu li {
+#hb-list .scrollvertical {
+  overflow-y: auto;
+  flex-grow: 1;
+  height: 100%;
+}
+#hb-list .communitymenu li {
   width: 50%;
 }
-#hb-submenu .hb-list .communitymenu li a {
+#hb-list .communitymenu li a {
   font-size: var(--small-text);
   font-family: var(--theJamsil-medium);
 }
-#hb-submenu .hb-list .hb-sublist div a {
+
+#hb-sublist div {
+  margin-bottom: 16px;
+}
+#hb-sublist div a {
   font-family: var(--theJamsil-medium);
 }
-#hb-submenu .hb-list .hb-sublist .sublist li {
+#hb-sublist .sublist li {
   width: 50%;
 }
-#hb-submenu .hb-list .hb-sublist .sublist li a {
+#hb-sublist .sublist li a {
   font-size: var(--small-text);
 }
 
