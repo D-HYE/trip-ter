@@ -96,64 +96,52 @@
 
 }
 
-//모바일 아이콘 메뉴
-#mb icon_menu{
-    .section1{
-        .search_mb{
-            width: 268px;
-            height: 24px;
-            flex-shrink: 0;
+//모바일 반응형
 
-            border-radius: 12px 5px 5px 12px;
-            border: 2px solid #0051D3;
-
-            } //서치창
-        .d-flex{
-
-            }
-        .justify-content-space-between{
-            li{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                  a{
-
-                }
-            }
-            &:nth-child(2){
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                    a{
+//다혜씨와의 협업
+.section1{
+    padding-top: 44px;
+    .main_swiper{
+        height: 320px;
+        border-radius: 0;
+        .swiper-slide{
+            .slide_desc{
+                top: 32px; left: 16px;
+                h2{
+                    font-size: var(--semibig-text);
+                    span{
+                        font-size: var(--mediumbig-text);
                     }
-                
-            }
-            &:nth-child(3){
-              
-                a{
-                
                 }
+                p{
+                    font-size: var(--medium-text);
+                }
+            }
+        }
+        .swiper-pagination{
+            left: 50%; bottom: 36px; transform: translateX(-50%);
+            .swiper-pagination-bullet{
+                width: 8px; height: 8px;
+                &.swiper-pagination-bullet-active{width: 24px;}
+            }
         }
     }
-                 }
-                }
-
-                //가져온거 
-
-                .mftr_mb_btn{
-                    position: absolute; left: 0; bottom: 0; transform: translateY(50%); z-index: 10;
-                    padding: 12px 10px;
-                    background: rgba(0, 81, 211, .9); border-radius: 0 30px 30px 0;
-                    a{
-                        color: #fff;
-                    }
-                            }
-                .icon_menu{
-                    padding-top: 40px;
-                    li{
-                        width: 30%; height: 120px;
-                        background: red;
-                    }
-                          }
+    // !!!!! 모바일 !!!!!
+    .mftr_mb_btn{
+        
+        position: absolute; left: 0; bottom: 0; transform: translateY(50%); z-index: 10;
+        padding: 12px 10px;
+        background: rgba(0, 81, 211, .9); border-radius: 0 30px 30px 0;
+        a{
+            color: #fff;
+        }
+    }
+    .icon_menu{
+        padding-top: 40px;
+        li{
+            width: 30%; height: 120px;
+            background: red;
+            border-radius: 60px 60px 0 0;
+        }
+    }
+}
