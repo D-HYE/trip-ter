@@ -67,15 +67,15 @@
                     <!-- dim 배경 -->
                     <div id="dim-background" class="dim d-none"></div>
                     
-                    <ul id="menu" class="d-flex gap-3 order-1">                   
+                    <ul id="menu" class="d-flex gap-3 order-1 pc">                   
                         <li><a href="">계획하기</a></li>
                         <li><a href="">트립톡</a></li>
                         <li><a href="">이벤트</a></li>
                     </ul>
                     <ul class= "icon d-flex align-items-center order-3">
-                        <li>
+                        <li class="search pc">
                             <form action="http://www.google.com" class="d-flex align-items-center">
-                                <input type="text" class="search" name="search">
+                                <input type="text" class="search-bar" name="search">
                                 <input type="image" class="py-0" src="./img/icon/search-02.svg" alt="">
                             </form>
                         </li>
@@ -86,42 +86,59 @@
                 </div>
             </div>
               <!-- 햄버거 소메뉴 -->  
-    <div id="hb-submenu" class="abs">
-        <div class="hb-item">
+    <div id="hb-submenu" class="d-flex flex-column">
+        <div id="hb-item">
             <div class="d-flex justify-content-end">
-                <button class="p-0"><img src="./img/icon/x-01.svg" alt=""></button>
+                <button class="p26" id="allMenuclose"><img src="./img/icon/x-01.svg" class="d-block" alt=""></button>
             </div>
             <!-- 로그인 전 -->
-            <hr>
-            <div class="m-1">로그인/회원가입</div>
+          <div class="d-none">
+            <div class="m-1 ">
+                <span>
+                    로그인/회원가입
+                </span>                
+            </div>
             <ul class="social-icon d-flex justify-content-center gap-3">
                 <li><a class="naver" href=""><img src="img/icon/naver.svg" alt="naver"></a></li>
                 <li><a class="kakao" href=""><img src="img/icon/kakao.svg" alt="kakao"></a></li>
                 <li><a class="google" href=""><img src="img/icon/google.svg" alt="google"></a></li>
             </ul>
-            <hr>
+          </div>
+           
+           
             <!-- 로그인 후 -->
-            <div class="mainheader">
-                <hr>
-                <div class="user-box d-flex">
-                    <div class="profileicon"><img src="./img/icon/user-profile-02.svg" alt=""></div>
+            <div class="mainheader">              
+                <div class="user-box d-flex align-content-end justify-content-between">
+                    <div class="profileicon"><img src="./img/icon/user-profile-02.svg" class="d-block" alt=""></div>
                     <div class="userprofile">
-                        <div class="hi">안녕하세요!</div>
+                        <div class="hi"><span>안녕하세요!</span></div>
                         <div>트립터<span class="username">###</span>님</div>
                     </div> 
-                    <a class="settings" href=""><img src="./img/icon/settings.svg" alt="설정"></a>
+                    <a class="settings" href=""><img class="d-block" src="./img/icon/settings.svg" alt="설정"></a>
                 </div>
-                <ul class="menu-icon d-flex justify-content-between">
-                    <li><a class="heart" href=""><img src="img/icon/heart_02.svg" alt="내찜">내 찜</a></li>
-                    <li><a href=""><img src="img/icon/travel.svg" alt="내여행">내 여행</a></li>
-                    <li><a href=""><img src="img/icon/layer.svg" alt="가계부">나 가계부</a></li>
-                    <li><a href=""><img src="img/icon/pencil-02.svg" alt="내후기">내 후기</a></li>
+                <ul class="menu-icon d-flex justify-content-between ">
+                    <li><a class="heart" href="">
+                        <img src="img/icon/heart_02.svg" class="d-block" alt="내찜">
+                        <span >내 찜</span>
+                    </a></li>
+                    <li><a href="">
+                        <img src="img/icon/travel.svg"  class="d-block" alt="내여행">
+                        <span >내 여행</span>
+                       </a></li>
+                    <li><a href=""><img src="img/icon/layer.svg"  class="d-block" alt="가계부">
+                        <span>내 가계부</span></a></li>
+                    <li><a href=""><img src="img/icon/pencil-02.svg"  class="d-block" alt="내후기">
+                        <span>내 후기</span>
+                    </a></li>
                 </ul>
             </div>
             <!-- 메뉴리스트 -->
-            <div class="hb-list">
-                <div class="color-active-blue d-flex">MY FEEL:TER 설정<img src="img/icon/arrow-right.svg" alt=""></div>
-                <div class="d-flex flex-column gap-3">
+            <div id="hb-list" class="d-flex flex-column">
+                <div><a class="feelter d-flex align-items-center" href="#none">
+                    <span class="color-active-blue">MY FEEL:TER 설정</span>
+                    <img class="d-block arrow" src="img/icon/arrow-right_bl.svg" alt=""></a>
+                </div>
+                <div class="d-flex flex-column gap-3 scrollvertical">
                     <ul class="d-flex communitymenu flex-wrap">
                         <li><a class="mbrecomm" href="">MD추천</a></li>
                         <li><a class="bestreview" href="">BEST 후기</a></li>
@@ -136,7 +153,7 @@
                         <li><a class="thismonths" href="">이달의 기획전</a></li>
                     </ul>
 
-                    <ul class="hb-sublist">  
+                    <ul id="hb-sublist">  
                         <li>
                             <div><a class="" href="">항공권</a></div>
                             <ul class="sublist d-flex flex-wrap">
