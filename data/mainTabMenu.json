@@ -33,15 +33,15 @@
     "tablist": [
       {
         "href": "#none",
-        "src": "/img/tabmenu/nature_1.jpg",
-        "title": "제주 한림읍",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "src": "./img/tapmenu/nature_2.jpg",
+        "title": "365일 24시간 연기가 뿜어져 나오는 산,",
+        "desc": "북해도 히가시카와, 북해도에서 가장 큰 봉우리! 여름에는 등산을~ 겨울에는 스키를~ 어느때든 호수 옆 연기를 볼 수 있어요!"
       },
       {
         "href": "#none",
-        "src": "/img/tabmenu/nature_2.jpg",
-        "title": "홋카이도 아사히다케",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "src": "./img/tapmenu/nature_3.jpg",
+        "title": "동해바다 앞에서 커피한잔",
+        "desc": "푸르른 동해 바다 앞에서 강릉의 명물 옥수수 커피 한잔 어때요?"
       },
       {
         "href": "#none",
@@ -51,38 +51,37 @@
       },
       {
         "href": "#none",
-        "src": "/img/tabmenu/nature_4.jpg",
-        "title": "태국 후아힌",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "src": "./img/tapmenu/nature_4.jpg",
+        "title": "태국 왕실의 휴양지",
+        "desc": "온화한 날씨와, 편안한 해변이 위치한 아름다운 도시 후아힌"
       }
     ]
   },
   {
-      "tabnm": "해적왕",
+      "tabnm": "나도 해적왕",
       "tablist": [
         {
           "href": "#none",
           "src": "/img/tabmenu/onepiece_1.jpg",
-          "title": "용산 원피스 전시회",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "원피스 대해적 시대(The great era of Piracy)",
+          "desc": "용산 아이파크몰에서 진행되는 원피스 애니메이션 25주년 기념 전시회에서 특별한 경험을 선사합니다!"
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/onepiece_2.jpg",
           "title": "원피스 뉴코아",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
+          "desc": "여기 정확히 어디인가요"},
         {
           "href": "#none",
           "src": "/img/tabmenu/onepiece_3.jpg",
-          "title": "홍대 ak몰",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "플레이 원피스",
+          "desc": "홍대 ak몰 5층에 위치한 플레이 원피스. 원피스 굿즈도 사고, 게임도 체험해보고~ "
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/onepiece_4.jpg",
-          "title": "오사카 유니버셜스튜디오 재팬",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "본고장으로 가고 싶어!",
+          "desc": "오사카 유니버셜 스튜디오 재팬."
         }
       ]
   },
