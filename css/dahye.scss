@@ -209,7 +209,7 @@ main{overflow: hidden;}
                         font-size: var(--semismall-text);
                     }
                     i{
-                        font-size: var(--small-text); color: var(--trip-gray1); font-style: normal;
+                        font-size: var(--small-text); font-style: normal;
                         line-height: 1.6;
                         span{display: block;}
                     }
@@ -296,6 +296,7 @@ main{overflow: hidden;}
 .section6{
     padding-bottom: 136px;
     background: linear-gradient(var(--trip-white), var(--trip-skyblue));
+    .section_tit{padding: 40px 0;}
     .page_view{
         margin-bottom: 36px;
         a{font-size: var(--semismall-text);}
@@ -375,7 +376,6 @@ main{overflow: hidden;}
     }
 }
 
-
 /* section7 */
 .section7{
     position: relative;
@@ -445,6 +445,7 @@ main{overflow: hidden;}
         .tab_contents{
             li{
                 height: 320px;
+                a b{font-size: var(--semismall-text);}
             }
         }
     }
@@ -454,6 +455,7 @@ main{overflow: hidden;}
 
 @media only screen and (max-width: 1024px){
     .section1{
+        padding-top: 60px;
         .main_swiper{
             .swiper-slide{
                 .slide_desc{
@@ -490,15 +492,12 @@ main{overflow: hidden;}
                     max-width: 100%;
                     li{
                         width: calc(50% - 8px); padding: 24px 8px;
-                        background: var(--trip-blue);
+                        border: 1px solid var(--trip-gray1);
                         border-radius: 8px;
-                        strong, b, i{
-                            color: var(--trip-white);
-                        }
+                        strong{color: var(--trip-black);}
                         &:nth-child(1), &:nth-child(4){
-                            background: none;
-                            border: 1px solid var(--trip-gray1);
-                            strong, b, i{color: var(--trip-black);}                           
+                            background: var(--trip-blue);                            
+                            strong, b, i{color: var(--trip-white);}                           
                         } 
                     }
                 }
@@ -580,7 +579,7 @@ main{overflow: hidden;}
     }
 
     .section1{
-        padding-top: 44px;
+        padding-top: 40px;
         .main_swiper{
             height: 320px;
             border-radius: 0;
@@ -750,6 +749,10 @@ main{overflow: hidden;}
                     min-width: 140px;
                     padding: 8px;
                     border: 1px solid var(--trip-white); border-radius: 4px;
+                    transition: .3s;
+                    &:hover{
+                        background: rgba(0, 0, 0, .25);
+                    }
                 }
             }
         }
@@ -814,7 +817,7 @@ main{overflow: hidden;}
         }
         .tab_contents{
             li{
-                width: 100%; height: 132px;
+                height: 240px;
             }
         }
     }
