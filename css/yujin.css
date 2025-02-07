@@ -99,10 +99,16 @@
 .section1 .icon_menu li {
   max-width: 500px;
   min-width: 100px;
-  height: 140px;
   background: var(--trip-skyblue);
-  border-radius: 100px 100px 10px 10px;
+}
+@media (max-width: 575px) {
+  .section1 .icon_menu li {
+    flex-direction: column;
+    height: 140px;
+    border-radius: 100px 100px 10px 10px;
+  }
 }
 .section1 .icon_menu li p {
   margin: 5px;
+  color: var(--trip-blue);
 }

@@ -122,9 +122,8 @@
         .search_mb{
         //width: 268px;
         //height: 24px;
+               
        
-      
-
         margin-bottom: 16px;
             .search{
                 border-radius: 12px 5px 5px 12px;
@@ -135,20 +134,28 @@
             }
         }
 
-        
     .icon_menu{
         padding-top: 50px;
         ul{gap: 30px;}
           li{
             max-width: 500px;
             min-width: 100px;
-            height: 140px;
+            
             background:var(--trip-skyblue);
-            border-radius: 100px 100px 10px 10px;
+
+            @media (max-width:575px) {
+                flex-direction: column;
+                height: 140px;
+                border-radius: 100px 100px 10px 10px;
+            }
+            
+            
 
               p{
                 margin:5px;
-                 }
+                color:var(--trip-blue)             
+                }
             }
             }
 }
+
