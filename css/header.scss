@@ -4,6 +4,9 @@
         border: 2px solid #0051D3;
         outline: none;
     }
+    &placeholder{
+        padding-right: 10px;
+    }
     
     .logo{
         img{
@@ -16,18 +19,17 @@
 
 #user{
     font-size: var(--m-small-text);
-    width: 100vw;
+    width: 100%;
     height: 40px;
 }
 .hide-menu{
     width: 80px;
     height: 80px;
-    top: 100%;
+    top: 20px;
     left: -15px;
     background-color: #fff;
-    border: 2px solid #0051D3;
     z-index: 200;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
     li{
         margin-top: 10px;
         display: flex;
@@ -38,6 +40,7 @@
         font-weight: 500;
     }
 }
+
 #gnbbox{
     position: fixed;
     top:40px;
@@ -45,8 +48,9 @@
     right:0;
     z-index: 100;
     background-color: white;
-    width: 100vw;
+    width: 100%;
     height: 80px;
+    overflow: hidden;
     transition: height 0.4s;
     &.scrolled{
         top:0;
@@ -97,14 +101,14 @@
     top:0;
     bottom:0;
     left:-100%;
-    height: 100vh;
     background-color: #fff;
+    max-width: 400px;
     overflow: hidden;
     flex-grow: 1;   
     z-index: 100;
     transition:left .3s ease-in-out;  
-    .p26{
-        padding: 25px;
+    .p16{
+        padding: 16px;
     } 
     &.open{
         //자바스크립트 토글클래스명
@@ -115,7 +119,7 @@
         font-family: var(--theJamsil-medium);  
     }
     .social-icon{
-        li{
+        li{margin: 1rem 0;
             a{
                 display: flex;
                 width: 3rem;
@@ -168,13 +172,18 @@
         }
     }
 }
+#login{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
 #hb-item{
     flex-grow: 1;
+    height: 100%;
     font-size: var(--semismall-text);
     font-family: var(--theJamsil-medium);        
     .menu-icon{
         background-color: white;
-        padding:15px 36px;
+        padding:12px 36px;
         a{
             display: flex;
             flex-direction: column;
@@ -191,6 +200,21 @@
 #hb-list{
     margin: 36px 40px;
     flex-grow: 1;
+    overflow-y: auto;
+    .scroll{
+        overflow-y: auto;
+        &::-webkit-scrollbar-track {
+            background: var(--trip-skyblue);
+            border-radius: 5px; /* 둥근 모서리 */
+        }
+        &::-webkit-scrollbar{
+            width: 5px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: var(--trip-blue);
+            border-radius:12px;
+        }
+    }
     div ul{
         margin-bottom: 30px;
     }   
@@ -203,12 +227,7 @@
     .arrow{
         width: 24px;
         height: 24px;
-    }
-    .scrollvertical{
-        overflow-y: auto;
-        flex-grow: 1;
-        height: 100%;
-    }           
+    }        
     .communitymenu{
         li{
             width:50%;
@@ -228,6 +247,7 @@
     }
     .sublist{
         li{ width: 50%;
+            display: inline-block;
             a{
                 font-size:var(--small-text);              
             }
@@ -240,14 +260,27 @@
     }
 //큰태블릿    
 @media only screen and (max-width: 1024px){
+    #menu a{
+        font-size: var(--small-text);
+        font-family: var(--theJamsil-medium);
+        transition: font-size 0.5s ease;
     }
+    #gnb{
+        height: 60px;
+        .logo img{
+        width:10.18431rem;
+        height: 3.375rem;         
+        } 
+    }  
+}
 //태블릿    
 @media only screen and (max-width: 768px){
     #gnbbox{  
         top: 0;
+        transition: top 0.5s ease;
     }
     #gnb{
-        height: 60px;
+        border-bottom: var(--trip-gray2) 1px solid;
         .logo img{
             width: 6.3125rem;
             height: 1.75rem;         
@@ -258,6 +291,8 @@
 @media only screen and (max-width: 575px){
     #gnb{
         height: 40px;
-        border-bottom: var(--trip-gray2) 1px solid;
+    }
+    #hb-item{
+        width: 100%;
     }   
 }
