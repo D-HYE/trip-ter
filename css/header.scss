@@ -1,7 +1,8 @@
 #hd{
-    .search{
+    .search-bar{
         border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
         border: 2px solid #0051D3;
+        outline: none;
     }
     
     .logo{
@@ -25,7 +26,7 @@
     left: -15px;
     background-color: #fff;
     border: 2px solid #0051D3;
-    z-index: 1000;
+    z-index: 200;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     li{
         margin-top: 10px;
@@ -50,6 +51,7 @@
     &.scrolled{
         top:0;
         height: 44px;
+        border-bottom: var(--trip-gray2) 1px solid;
         .logo{
             img{
                 width: 0;
@@ -91,78 +93,60 @@
 }
 //햄버거메뉴
 #hb-submenu{     
-    position: fixed;
-    width: 400px;
+    position: fixed;   
+    top:0;
+    bottom:0;
+    left:-100%;
     height: 100vh;
     background-color: #fff;
-    left:-400px;
-    top:0;
     overflow: hidden;
-    z-index: 1000;
-    transition:left .3s ease-in-out;   
+    flex-grow: 1;   
+    z-index: 100;
+    transition:left .3s ease-in-out;  
+    .p26{
+        padding: 25px;
+    } 
     &.open{
+        //자바스크립트 토글클래스명
         left:0;
-    }
-    hr{
-        margin-left: -2rem;
-        margin-right: -2rem;
-    }
+    }    
     .m-1{
         font-size: var(--semismall-text);
         font-family: var(--theJamsil-medium);  
     }
     .social-icon{
-        .naver{
-            background-color:#03c75a;
-            border-radius: 1.5rem;
-            display: flex;
-            width: 3rem;
-            height: 3rem;
-            justify-content: center;
-            align-items: center;
+        li{
+            a{
+                display: flex;
+                width: 3rem;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                &.naver{
+                    background-color:#03c75a; 
+                }
+                &.kakao{
+                    background-color:#fae100;                  
+                }
+                &.google{
+                    border: solid 1px #0051D3;                   
+                }
+            }
         }
-        .kakao{
-            background-color:#fae100;
-            border-radius: 1.5rem;
-            display: flex;
-            width: 3rem;
-            height: 3rem;
-            justify-content: center;
-            align-items: center;
-        }
-        .google{
-            border: solid 1px #0051D3;
-            border-radius: 1.5rem;
-            display: flex;
-            width: 3rem;
-            height: 3rem;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    #hamburger-btn{
-        margin-left: 1rem;
     }
     .mainheader{
-        margin:0 -1.5rem;
-        hr{
-            margin-left: -1.5rem;
-            margin-right: -1.5rem;
-        }        
+        border-top:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        
         .user-box{
-            background-color:rgba(255, 218, 0, 0.25);
-            margin-top: -10px;
-            margin-bottom: 20px;
-        }
-        .settings{
-            margin-top: 2.75rem;
-            margin-left: 7rem;
+            background-color:rgba(255, 218, 0, 0.25);       
+            padding: 16px 36px;  
+            align-items: end;        
+            
         }
         .profileicon{
-            margin-bottom: 15px;
-            margin-top: 1rem;
-            margin-left:2.5rem;
-            border-radius: 1.5rem;
+            border-radius: 50%;
             background: #9FC1FF;
             display: flex;
             width: 3rem;
@@ -171,85 +155,86 @@
             align-items: center;
         }
         .userprofile{
-            margin: auto 10px;
             font-size: var(--small-text);
+            margin-right: auto;
+            margin-left:24px;
             .hi{
-                margin-bottom: 10px;
+               margin-bottom: 8px; 
+               line-height: 1;
             }
             .username{
                 font-size: var(--semismall-text);
-                margin: 0 1rem;
-            }
-            
-        }
-    }
-    .hb-item{
-        font-size: var(--semismall-text);
-        font-family: var(--theJamsil-medium);  
-        margin: 1.5rem;
-        .menu-icon{
-            margin-left:2.5rem;
-            margin-right:2.5rem;
-            a{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-size: 0.875rem;
-            }
-            img{
-                margin-bottom: 10px;
-            }
-        }
-    }
-    button.p-0 {
-        background: transparent;
-        border: none;
-        }
-    // 메뉴리스트
-    .hb-list{
-        margin: 2.5rem 2.25rem;
-        .color-active-blue{
-            margin-bottom: 2.5rem;
-            font-family: var(--theJamsil-medium);
-            img{
-                width: 24px;
-                height: 24px;
-                margin-left: 0.5rem;
-                margin-top: -2px;
-            }
-        }           
-        .communitymenu{
-            li{
-                width:50%;
-                a{
-                    font-size:var(--small-text);
-                    font-family: var(--theJamsil-medium);   
-                }
-                .friendfind{
-                    margin-top:-15px;
-                }
-            }
-        }
-        .hb-sublist{
-            div{
-                margin-top: 1.5rem;
-                a{
-                    font-family: var(--theJamsil-medium);
-                }
-            }
-            .sublist{
-                margin-top:.5rem;
-                row-gap:.5rem;
-                li{ width: 50%;
-                    a{
-                        font-size:var(--small-text);              
-                    }
-                }
             }
         }
     }
 }
+#hb-item{
+    flex-grow: 1;
+    font-size: var(--semismall-text);
+    font-family: var(--theJamsil-medium);        
+    .menu-icon{
+        background-color: white;
+        padding:15px 36px;
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.875rem;
+            img{
+               margin: 10px;
+            }
+        }  
+    }
+}
+// 메뉴리스트
+#hb-list{
+    margin: 36px 40px;
+    flex-grow: 1;
+    div ul{
+        margin-bottom: 30px;
+    }   
+    .feelter{
+        margin-bottom: 40px;
+        span{
+        font-family: var(--theJamsil-medium);
+        }
+    }
+    .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .scrollvertical{
+        overflow-y: auto;
+        flex-grow: 1;
+        height: 100%;
+    }           
+    .communitymenu{
+        li{
+            width:50%;
+            a{
+                font-size:var(--small-text);
+                font-family: var(--theJamsil-medium);   
+            }
+        }
+    }
+}
+#hb-sublist{
+    div{
+        margin-bottom:16px;
+        a{
+            font-family: var(--theJamsil-medium);
+        }
+    }
+    .sublist{
+        li{ width: 50%;
+            a{
+                font-size:var(--small-text);              
+            }
+        }
+    }
+}
+
 //작은pc
 @media only screen and (max-width: 1280px){
     }
@@ -258,7 +243,21 @@
     }
 //태블릿    
 @media only screen and (max-width: 768px){
+    #gnbbox{  
+        top: 0;
     }
+    #gnb{
+        height: 60px;
+        .logo img{
+            width: 6.3125rem;
+            height: 1.75rem;         
+        } 
+    }  
+}
 //리얼모바일    
 @media only screen and (max-width: 575px){
-    }
+    #gnb{
+        height: 40px;
+        border-bottom: var(--trip-gray2) 1px solid;
+    }   
+}

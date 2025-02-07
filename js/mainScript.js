@@ -117,11 +117,14 @@ fetch('../data/review.json')
                         <img src="${review.img}" alt="${review.alt}">
                     </div>
                     <div class="txt_box">
-                        <div class="user_info d-flex">
+                        <div class="user_info d-flex pc">
                             <b class="review_user">${review.nickname}</b>
                             <i class="review_rate">${review.rating}</i>
                         </div>
-                        <p class="review_txt">${review.desc}</p>
+                        <p class="review_txt pc">${review.desc}</p>
+                        <div class="user_info mb">
+                            <b class="review_user">${review.nickname} 님의 후기</b>
+                        </div>
                     </div>
                 </a>
             `;

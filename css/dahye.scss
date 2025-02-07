@@ -32,6 +32,7 @@ main{overflow: hidden;}
     .main_swiper{
         width: 100vw; height: 640px;
         border-radius: 400px 0 0 400px;
+        transition: .3s;
         cursor: pointer;
     
         .swiper-slide{     
@@ -243,6 +244,7 @@ main{overflow: hidden;}
             width: 23.077%; height: 440px;
             border-radius: 15px; overflow: hidden;
             background: url(../img/review/review3.jpg) no-repeat center/cover;
+
             a{
                 flex-direction: column;
                 width: 100%; height: 100px; padding: 0 20px;
@@ -257,7 +259,7 @@ main{overflow: hidden;}
                 span{
                     display: block;
                     height: 0; overflow: hidden;
-                    font-size: var(--mall-text); line-height: 1.45;
+                    font-size: var(--small-text); line-height: 1.45;
                     transition: .3s;
                 }
             }
@@ -282,6 +284,10 @@ main{overflow: hidden;}
         li{
             width: 48.438%; border-radius: 20px;
             overflow: hidden;
+            img{
+                width: 100%; height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
@@ -319,7 +325,7 @@ main{overflow: hidden;}
                 }
                 .txt_box{
                     .user_info{
-                        gap: 20px;
+                        gap: 16px;
                         margin: 20px 0;
                         .review_user{font-size: var(--semismall-text); font-weight: 400;}
                         .review_rate{font-style: normal;}
@@ -386,7 +392,8 @@ main{overflow: hidden;}
         height: 440px;
         .qrimg{
             .img_box{width: 120px; height: 120px; background: #000;}
-            p{
+            a{
+                display: block;
                 margin-top: 12px;
                 font-family: var(--theJamsil-light); color: var(--trip-white); text-align: center;
             }
@@ -480,11 +487,20 @@ main{overflow: hidden;}
             .txt_box{
                 h3, h4{text-align: center;}
                 ol{
+                    row-gap: 16px;
                     max-width: 100%;
                     li{
-                        width: calc(50% - 8px);
-                        background: red;
+                        width: calc(50% - 8px); padding: 24px 8px;
+                        background: var(--trip-blue);
                         border-radius: 8px;
+                        strong, b, i{
+                            color: var(--trip-white);
+                        }
+                        &:nth-child(1), &:nth-child(4){
+                            background: none;
+                            border: 1px solid var(--trip-gray1);
+                            strong, b, i{color: var(--trip-black);}                           
+                        } 
                     }
                 }
             }
@@ -511,11 +527,27 @@ main{overflow: hidden;}
             }
         }
     }
-    .section5{
-        ul{
-            flex-direction: column;
-            li{
-                width: 100%;
+    .section6{
+        padding-bottom: 80px;
+        .marquee_area .marquee_wrap{
+            height: 316px;
+            .marquee_line{
+                gap: 24px;
+                li{
+                    width: 200px;
+                    .img_box{
+                        height: 160px;
+                    }
+                    .txt_box{
+                        .user_info{
+                            justify-content: space-between; gap: 0;
+                            .review_user, .review_rate{font-size: var(--small-text);}
+                        }
+                        .review_txt{
+                            font-size: var(--desc-text);
+                        }
+                    }
+                }
             }
         }
     }
@@ -526,7 +558,7 @@ main{overflow: hidden;}
 @media only screen and (max-width: 768px){
     .pc{display: none !important;}
     .section_tit{
-        padding: 40px 0;
+        padding: 60px 0 40px;
         font-size: var(--semismall-text);
     }
 
@@ -557,9 +589,10 @@ main{overflow: hidden;}
                 }
             }
         }
-        
+
     }
     .section2{
+        padding-bottom: 0;
         .md_swiper{
             padding-bottom: 48px;
             .swiper-wrapper{
@@ -582,16 +615,29 @@ main{overflow: hidden;}
             }
             .swiper-pagination{
                 bottom: 20px;
+                .swiper-pagination-bullet{
+                    background: var(--trip-yellow);
+                    opacity: 1;
+                    &.swiper-pagination-bullet-active{
+                        background: var(--trip-blue);
+                    }
+                }
             }
         }
     }
     .section3{
+        padding: 60px 0;
         .container{
             .txt_box{
                 h3{
-                    line-height: 1.6;
+                    line-height: 1.6; letter-spacing: normal;
                     span{
                         display: block;
+                    }
+                }
+                ol,li{
+                    strong, b{
+                        font-weight: 400; 
                     }
                 }
             }   
@@ -599,15 +645,85 @@ main{overflow: hidden;}
     }
     .section4{
         .tab_menu{
-            justify-content: flex-start; flex-wrap: nowrap;
+            margin-bottom: 24px;
             li{
-                flex-shrink: 0;
+                padding: 8px 24px;
+                font-size: var(--small-text);
             }
         }
         .tab_contents{
             li{
-                width: 100%; height: 132px;
-
+                font-size: var(--small-text);
+                &:hover{
+                    a{
+                        b{
+                            font-size: var(--small-text);
+                        }
+                        span{
+                            font-size: var(--desc-text);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section5{
+        padding: 0 0 60px;
+        ul{
+            flex-direction: column; gap: 20px;
+            li{
+                width: 100%; height: 180px;
+            }
+        }
+    }
+    .section6{
+        padding-bottom: 60px;
+        .page_view{
+            justify-content: center;
+            margin-bottom: 30px;
+            a{font-size: var(--desc-text);}
+        }
+        .marquee_area .marquee_wrap{
+            height: 172px;
+            .marquee_line{
+                gap: 16px;
+                margin: 8px 0;
+                li{
+                    width: 130px; padding: 8px 6px;
+                    .img_box{
+                        height: 108px;
+                    }
+                    .txt_box{
+                        .user_info{
+                            margin: 8px 0;
+                            .review_user{
+                                font-size: var(--desc-text);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section7{
+        .container{
+            flex-direction: column-reverse; gap: 20px;
+            height: 300px;
+            .txt_box{
+                h2{
+                    font-weight: 500; line-height: 1.45; letter-spacing: -0.1rem;
+                    span{
+                        display: block;
+                    }
+                }
+                .logo{width: 120px;}
+            }
+            .qrimg{
+                a{
+                    min-width: 140px;
+                    padding: 8px;
+                    border: 1px solid var(--trip-white); border-radius: 4px;
+                }
             }
         }
     }
@@ -616,6 +732,7 @@ main{overflow: hidden;}
 
 
 @media only screen and (max-width: 575px){
+
     .section1{
         .main_swiper{
             .swiper-slide{
@@ -637,6 +754,40 @@ main{overflow: hidden;}
                     width: 8px; height: 8px;
                     &.swiper-pagination-bullet-active{width: 24px;}
                 }
+            }
+        }
+    }
+    .section3{
+        .container{
+            .txt_box{
+                h3{
+                    font-size: var(--medium-text); 
+                }
+                h4{
+                    margin-top: 24px;
+                    font-size: var(--desc-text);
+                }
+                ol{
+                    li{
+                        strong, b, i{
+                            font-size: var(--desc-text);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section4{
+        padding: 0 0 60px;
+        .section_tit{
+            line-height: 1.45;
+            span{
+                display: block;
+            }
+        }
+        .tab_contents{
+            li{
+                width: 100%; height: 132px;
             }
         }
     }

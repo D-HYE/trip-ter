@@ -24,23 +24,30 @@ window.addEventListener('scroll', () =>{
 })
 
 //햄버거메뉴
-const hbmenu = document.querySelector("#hb-submenu");
+const hbmenu = document.querySelector("#hb-submenu"); //전체메뉴
 const hamburgerButton = document.querySelector("#hb-icon"); // 햄버거 버튼
-const closeButton = hbmenu.querySelector("button.p-0"); // X 버튼
+const closeButton = hbmenu.querySelector("#allMenuclose"); // X 버튼
 const body = document.querySelector("body"); // 바깥 영역 클릭 감지
 //dim화면
 const dimBackground = document.getElementById("dim-background");
+
+function preventScroll(e) {
+    e.preventDefault();
+}
 
 // 햄버거 버튼 클릭 시 메뉴 열기
 hamburgerButton.addEventListener("click", () => {
     hbmenu.classList.add("open"); // 메뉴에 'open' 클래스를 추가하여 보이게 함
     dimBackground.classList.remove("d-none");
+    //document.body.addEventListener('wheel', preventScroll, { passive: false });
+  
 });
 
 // X 버튼 클릭 시 메뉴 닫기
 closeButton.addEventListener("click", () => {
     hbmenu.classList.remove("open"); // 'open' 클래스를 제거하여 메뉴 숨기기
     dimBackground.classList.add("d-none");
+    //document.body.removeEventListener('wheel', preventScroll, { passive: false });
 });
 
 // 바깥 영역 클릭 시 메뉴 닫기
@@ -48,6 +55,7 @@ body.addEventListener("click", (e) => {
     if (!hbmenu.contains(e.target) && !hamburgerButton.contains(e.target)) {
         hbmenu.classList.remove("open"); // 메뉴가 아닌 영역을 클릭하면 메뉴 숨기기
         dimBackground.classList.add("d-none");
+        //document.body.removeEventListener('wheel', preventScroll, { passive: false });
     }
 });
 
