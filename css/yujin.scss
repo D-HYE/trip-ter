@@ -123,7 +123,8 @@
     
 
         .search_mb{
-        //width: 268px;
+         
+       //width: 268px;
         //height: 24px;
                
        
@@ -141,10 +142,12 @@
         padding-top: 50px;
         ul{gap: 30px;}
           li{
-            max-width: 500px;
+            max-width: 700px;
             min-width: 100px;
-            
+            padding: 20px;
             background:var(--trip-skyblue);
+
+            border-radius: 10px;
 
             @media (max-width:575px) {
                 flex-direction: column;
