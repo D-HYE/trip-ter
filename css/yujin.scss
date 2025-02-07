@@ -100,6 +100,9 @@
 
 
    .section1{
+    .d-flex{
+        display: flex !important;
+    }
      .mftr_mb_btn{
         position: absolute; left: 0; bottom: 0; transform: translateY(50%); z-index: 10;
         padding: 12px 10px;
@@ -120,7 +123,8 @@
     
 
         .search_mb{
-        //width: 268px;
+         
+       //width: 268px;
         //height: 24px;
                
        
@@ -138,10 +142,12 @@
         padding-top: 50px;
         ul{gap: 30px;}
           li{
-            max-width: 500px;
+            max-width: 700px;
             min-width: 100px;
-            
+            padding: 20px;
             background:var(--trip-skyblue);
+
+            border-radius: 10px;
 
             @media (max-width:575px) {
                 flex-direction: column;

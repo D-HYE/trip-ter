@@ -259,31 +259,31 @@
     ]
   },
   {
-      "tabnm": "먹스타그램",
+      "tabnm": "빵지순례",
       "tablist": [
         {
           "href": "#none",
           "src": "/img/tabmenu/sampleimg37.jpg",
           "title": "대한민국 빵의 자존심 대전",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "desc": "성심당 뿐만 아니라 어마어마한 빵집들이 행렬! 빵축제도 놓치지마세요"
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/sampleimg38.jpg",
-          "title": "또 어디가 있는데",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "대전에만 있다구? 아니!",
+          "desc": "제주에도 성심당이?."
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/sampleimg39.jpg",
-          "title": "잘 몰루겠어요",
+          "title": "풍미 깊은 초코렛으로 만들어진 빵을 여의도 더현대에서 만나보세요",
           "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
           "href": "#none",
           "src": "/img/tabmenu/sampleimg40.jpg",
-          "title": "흠흠",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "title": "인천공항, 인스파이어 호텔, 그리고?",
+          "desc": "카페 오라로 오라!"
         }
       ]
   },

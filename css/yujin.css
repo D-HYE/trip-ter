@@ -63,6 +63,9 @@
   top: 0;
 }
 
+.section1 .d-flex {
+  display: flex !important;
+}
 .section1 .mftr_mb_btn {
   position: absolute;
   left: 0;
@@ -97,9 +100,11 @@
   gap: 30px;
 }
 .section1 .icon_menu li {
-  max-width: 500px;
+  max-width: 700px;
   min-width: 100px;
+  padding: 20px;
   background: var(--trip-skyblue);
+  border-radius: 10px;
 }
 @media (max-width: 575px) {
   .section1 .icon_menu li {
