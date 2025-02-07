@@ -22,7 +22,6 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                justify-content: flex-start;
             }
             
     }    
@@ -62,24 +61,28 @@
             }
             @media only screen and (max-width: 768px){
                 margin: 20px 0px 20px 0px;
-                gap: 10px;
+                gap: 5px;
                 font-size: var(--m-small-text);  
+                font-weight: bold;
+                color: var(--trip-black);
             }
         }
     }
 
-    >div .d-flex{
+    >div.d-flex{
+            display: flex;
             width: 100%;
             font-style: normal;
         
             @media only screen and (max-width: 1024px){
                 font-size: var(--m-small-text);  
+                
             }
                       
             @media only screen and (max-width: 768px){
-                flex-direction: column;
-                margin-top: 20px;
+                margin: 20px 0px 20px 20px;
                 font-size: var(--m-small-text);  
+                
             }
             
         .company_info{
@@ -107,6 +110,7 @@
             }
 
             @media only screen and (max-width: 768px){
+                margin: 20px;
                 font-size: var(--m-small-text);
             }
         }
