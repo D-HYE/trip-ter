@@ -366,7 +366,6 @@ main{overflow: hidden;}
         left: -4682px;
     }
 }
-
   @keyframes review_marquee2 {
     0% {
       right: 0;
@@ -380,7 +379,7 @@ main{overflow: hidden;}
 /* section7 */
 .section7{
     position: relative;
-    background: url(../img/main_slide/jeju.jpg) no-repeat center/cover;
+    background: url(../img/main_img/bgimg1.jpg) no-repeat right center/cover;
     isolation: isolate;
     &:after{
         content: ""; 
@@ -508,9 +507,9 @@ main{overflow: hidden;}
     }
     .section4{
         .tab_menu{
-            justify-content: flex-start; flex-wrap: nowrap;
             li{
-                flex-shrink: 0;
+                padding: 8px 20px;
+                font-size: var(--small-text);
             }
         }
         .tab_contents{
@@ -551,6 +550,24 @@ main{overflow: hidden;}
             }
         }
     }
+
+    @keyframes review_marquee1 {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: -3360px;
+        }
+    }
+      @keyframes review_marquee2 {
+        0% {
+          right: 0;
+        }
+        100% {
+            right: -3360px;
+        }
+    }
+    
 }
 
 
@@ -645,10 +662,10 @@ main{overflow: hidden;}
     }
     .section4{
         .tab_menu{
+            justify-content: flex-start; flex-wrap: nowrap;
             margin-bottom: 24px;
             li{
-                padding: 8px 24px;
-                font-size: var(--small-text);
+                flex-shrink: 0;
             }
         }
         .tab_contents{
@@ -672,7 +689,7 @@ main{overflow: hidden;}
         ul{
             flex-direction: column; gap: 20px;
             li{
-                width: 100%; height: 180px;
+                width: 100%; height: 300px;
             }
         }
     }
@@ -705,6 +722,16 @@ main{overflow: hidden;}
             }
         }
     }
+
+    @keyframes review_marquee1 {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: -2189px;
+        }
+    }
+
     .section7{
         .container{
             flex-direction: column-reverse; gap: 20px;
@@ -788,6 +815,13 @@ main{overflow: hidden;}
         .tab_contents{
             li{
                 width: 100%; height: 132px;
+            }
+        }
+    }
+    .section5{
+        ul{
+            li{
+                height: 180px;
             }
         }
     }

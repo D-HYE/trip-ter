@@ -456,7 +456,7 @@ main {
 /* section7 */
 .section7 {
   position: relative;
-  background: url(../img/main_slide/jeju.jpg) no-repeat center/cover;
+  background: url(../img/main_img/bgimg1.jpg) no-repeat right center/cover;
   isolation: isolate;
 }
 .section7:after {
@@ -565,12 +565,9 @@ main {
   .section3 .container .txt_box ol li:nth-child(1) strong, .section3 .container .txt_box ol li:nth-child(1) b, .section3 .container .txt_box ol li:nth-child(1) i, .section3 .container .txt_box ol li:nth-child(4) strong, .section3 .container .txt_box ol li:nth-child(4) b, .section3 .container .txt_box ol li:nth-child(4) i {
     color: var(--trip-black);
   }
-  .section4 .tab_menu {
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-  }
   .section4 .tab_menu li {
-    flex-shrink: 0;
+    padding: 8px 20px;
+    font-size: var(--small-text);
   }
   .section4 .tab_contents {
     row-gap: 16px;
@@ -611,6 +608,22 @@ main {
   }
   .section6 .marquee_area .marquee_wrap .marquee_line li .txt_box .review_txt {
     font-size: var(--desc-text);
+  }
+  @keyframes review_marquee1 {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -3360px;
+    }
+  }
+  @keyframes review_marquee2 {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -3360px;
+    }
   }
 }
 @media only screen and (max-width: 768px) {
@@ -698,11 +711,12 @@ main {
     font-weight: 400;
   }
   .section4 .tab_menu {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     margin-bottom: 24px;
   }
   .section4 .tab_menu li {
-    padding: 8px 24px;
-    font-size: var(--small-text);
+    flex-shrink: 0;
   }
   .section4 .tab_contents li {
     font-size: var(--small-text);
@@ -722,7 +736,7 @@ main {
   }
   .section5 ul li {
     width: 100%;
-    height: 180px;
+    height: 300px;
   }
   .section6 {
     padding-bottom: 60px;
@@ -753,6 +767,14 @@ main {
   }
   .section6 .marquee_area .marquee_wrap .marquee_line li .txt_box .user_info .review_user {
     font-size: var(--desc-text);
+  }
+  @keyframes review_marquee1 {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -2189px;
+    }
   }
   .section7 .container {
     flex-direction: column-reverse;
@@ -821,5 +843,8 @@ main {
   .section4 .tab_contents li {
     width: 100%;
     height: 132px;
+  }
+  .section5 ul li {
+    height: 180px;
   }
 }
