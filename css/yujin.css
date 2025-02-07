@@ -64,7 +64,7 @@
 }
 
 .section1 .d-flex {
-  display: flex !important;
+  display: flex;
 }
 .section1 .mftr_mb_btn {
   position: absolute;
@@ -99,7 +99,7 @@
 .section1 .icon_menu ul {
   gap: 30px;
 }
-.section1 .icon_menu li {
+.section1 .icon_menu ul li {
   max-width: 700px;
   min-width: 100px;
   padding: 20px;
@@ -107,13 +107,13 @@
   border-radius: 10px;
 }
 @media (max-width: 575px) {
-  .section1 .icon_menu li {
+  .section1 .icon_menu ul li {
     flex-direction: column;
     height: 140px;
     border-radius: 100px 100px 10px 10px;
   }
 }
-.section1 .icon_menu li p {
+.section1 .icon_menu ul li p {
   margin: 5px;
   color: var(--trip-blue);
 }
