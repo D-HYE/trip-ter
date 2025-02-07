@@ -63,6 +63,9 @@
   top: 0;
 }
 
+.section1 .d-flex {
+  display: flex !important;
+}
 .section1 .mftr_mb_btn {
   position: absolute;
   left: 0;

@@ -100,6 +100,9 @@
 
 
    .section1{
+    .d-flex{
+        display: flex !important;
+    }
      .mftr_mb_btn{
         position: absolute; left: 0; bottom: 0; transform: translateY(50%); z-index: 10;
         padding: 12px 10px;
