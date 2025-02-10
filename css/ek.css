@@ -70,69 +70,56 @@
     font-size: var(--m-small-text);
   }
 }
-#ft .company_info {
-  margin: 20px;
-  font-size: var(--m-small-text);
-}
-#ft .company_id {
-  margin: 20px;
-  font-size: var(--m-small-text);
-}
-#ft .ftcontainer .d-flex {
-  display: block;
-}
-#ft div.company_info b {
-  font-weight: normal;
-}
-#ft div.company_info b > div .d-flex {
+#ft > div .d-flex {
   width: 100%;
   font-style: normal;
 }
 @media only screen and (max-width: 1024px) {
-  #ft div.company_info b > div .d-flex {
+  #ft > div .d-flex {
     font-size: var(--m-small-text);
   }
 }
 @media only screen and (max-width: 768px) {
-  #ft div.company_info b > div .d-flex {
+  #ft > div .d-flex {
     flex-direction: column;
     margin-top: 20px;
     font-size: var(--m-small-text);
   }
 }
-#ft div.company_info b > div .d-flex .company_info {
+#ft > div .d-flex .company_info {
   margin: 20px 50px 0px 50px;
   display: flex;
   flex-direction: column;
   font-size: var(--desc-text);
+  word-break: keep-all;
 }
 @media only screen and (max-width: 768px) {
-  #ft div.company_info b > div .d-flex .company_info {
+  #ft > div .d-flex .company_info {
     margin: 0px;
     font-size: var(--m-small-text);
   }
 }
-#ft div.company_info b > div .d-flex .company_id {
+#ft > div .d-flex .company_id {
   margin: 20px 50px 0px 0px;
   flex-direction: column;
   display: flex;
   font-size: var(--m-small-text);
 }
 @media only screen and (max-width: 1024px) {
-  #ft div.company_info b > div .d-flex .company_id {
+  #ft > div .d-flex .company_id {
     margin-top: 20px;
     display: flex;
     font-size: var(--m-small-text);
   }
 }
 @media only screen and (max-width: 768px) {
-  #ft div.company_info b > div .d-flex .company_id {
+  #ft > div .d-flex .company_id {
     font-size: var(--m-small-text);
   }
 }
-#ft div.company_info b > div .d-flex .company_info b,
-#ft div.company_info b > div .d-flex .company_info i,
-#ft div.company_info b > div .d-flex .company_id i {
+#ft > div .d-flex .company_info b,
+#ft > div .d-flex .company_info i,
+#ft > div .d-flex .company_id i {
   margin-bottom: 8px;
   font-style: normal;
 }
