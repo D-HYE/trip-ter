@@ -27,24 +27,56 @@ let main_slide = new Swiper(".main_swiper", {
 });
 
 //----- md swiper
-let md_slide = new Swiper(".md_swiper", {
-    loop: true,
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-prev",
-        prevEl: ".swiper-button-next",
-    },
-    pagination: {
-          el: ".swiper-pagination",
-      clickable: true,
+fetch('../data/slide.json')
+  .then(response => response.json())
+  .then(data => {
+    const mdSlideArea = document.getElementById('md_slide_area');
+    const mdSlideList = data.mdSlides;
+    
+    mdSlideList.forEach((item) => {
+        const mdSlide = document.createElement('div');
+        mdSlide.classList.add('swiper-slide');
 
-    },
-});
+        mdSlide.innerHTML = `
+            <a href="${item.href}">
+                <div class="img_box">
+                    <img src="${item.img}" alt="${item.alt}">
+                </div>
+                <div class="swiper_desc">
+                    <b class="d-flex align-items-center justify-content-end pc">${item.title}</b>
+                    <p>${item.subtitle}</p>
+                </div>
+            </a>
+        `;
+
+        // mdSlideArea에 추가
+        mdSlideArea.appendChild(mdSlide);
+    });
+  })
+  .catch(error => console.error('Error loading JSON:', error));
+
+setTimeout(function(){
+
+    let md_slide = new Swiper(".md_swiper", {
+        loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-prev",
+            prevEl: ".swiper-button-next",
+        },
+        pagination: {
+              el: ".swiper-pagination",
+          clickable: true,
+    
+        },
+    });
+
+}, 500)
 
 //----- tab
 fetch('../data/mainTabMenu.json')
