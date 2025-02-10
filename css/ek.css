@@ -19,11 +19,12 @@
 }
 @media only screen and (max-width: 768px) {
   #ft .ftcontainer {
-    width: 80%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 #ft .ftlogo {
@@ -57,7 +58,7 @@
 }
 @media only screen and (max-width: 1024px) {
   #ft .footer_menu > ul {
-    margin: 20px 0px 20px 30px;
+    margin: 20px 0px 20px 50px;
     gap: 20px;
     font-size: var(--desc-text);
   }
@@ -65,28 +66,23 @@
 @media only screen and (max-width: 768px) {
   #ft .footer_menu > ul {
     margin: 20px 0px 20px 0px;
-    gap: 20px;
+    gap: 10px;
     font-size: var(--m-small-text);
-    font-weight: bold;
-    color: var(--trip-black);
   }
 }
 #ft > div .d-flex {
-  display: flex;
   width: 100%;
   font-style: normal;
 }
 @media only screen and (max-width: 1024px) {
   #ft > div .d-flex {
-    margin: 20px 0px 20px 20px;
-    gap: 20px;
     font-size: var(--m-small-text);
   }
 }
 @media only screen and (max-width: 768px) {
   #ft > div .d-flex {
-    margin: 20px 0px 20px 20px;
-    gap: 20px;
+    flex-direction: column;
+    margin-top: 20px;
     font-size: var(--m-small-text);
   }
 }
@@ -98,18 +94,20 @@
 }
 @media only screen and (max-width: 768px) {
   #ft > div .d-flex .company_info {
-    margin: 20px;
+    margin: 0px;
     font-size: var(--m-small-text);
   }
 }
 #ft > div .d-flex .company_id {
-  margin: 20px 50px 0px 50px;
+  margin: 20px 50px 0px 0px;
   flex-direction: column;
+  display: flex;
   font-size: var(--m-small-text);
 }
 @media only screen and (max-width: 1024px) {
   #ft > div .d-flex .company_id {
-    margin: 20px;
+    margin-top: 20px;
+    display: flex;
     font-size: var(--m-small-text);
   }
 <<<<<<< HEAD
@@ -122,7 +120,6 @@
 }
 @media only screen and (max-width: 768px) {
   #ft > div .d-flex .company_id {
-    margin: 20px;
     font-size: var(--m-small-text);
 >>>>>>> b132c1e4078879b4c10271e77279ee0e3f7f7caf
   }

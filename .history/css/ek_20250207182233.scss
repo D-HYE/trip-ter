@@ -67,21 +67,6 @@
             }
         }
     }
-<<<<<<< HEAD
-    .company_info{
-        margin: 20px;
-        font-size: var(--m-small-text);
-    }
-    .company_id{
-        margin: 20px;
-        font-size: var(--m-small-text);
-    }
-    .ftcontainer .d-flex{
-        display: block;
-    }
-    div.company_info b{
-        font-weight: normal;
-=======
 
     >div .d-flex{
             width: 100%;
@@ -122,6 +107,7 @@
             }
 
             @media only screen and (max-width: 768px){
+                margin: 20px;
                 font-size: var(--m-small-text);
             }
         }
@@ -131,7 +117,6 @@
             margin-bottom: 8px;
             font-style: normal;
         }
->>>>>>> b132c1e4078879b4c10271e77279ee0e3f7f7caf
         
     }
 }
