@@ -34,10 +34,8 @@ body.scrolled #quick {
 }
 
 #mb-top {
-  display: flex;
   justify-content: space-between;
   padding: 10px;
-  z-index: 1000000;
   position: relative;
   background: url(../img/logo/logo_TRT_bl.png) no-repeat center;
   background-size: cover;

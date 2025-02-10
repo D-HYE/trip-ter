@@ -63,9 +63,19 @@
     z-index: 100;
     background-color: white;
     width: 100%;
-    transition: height 0.4s;
+    transition: height .3s;
    
 }
+
+#gnb{
+    transition: height .3s;
+    height: 80px;   
+    .hb-iconbox{
+        margin-right: 20px;
+        margin-top: 5px;
+    }   
+}
+
 body.scrolled{
     #gnbbox{   
         top:0;
@@ -74,25 +84,18 @@ body.scrolled{
         .logo{
             img{
                 width: 0;
-                transition: opacity 0.1s;
+                transition: opacity 0.3s;
             }
 
         }       
      } 
      #gnb{
             top:0;
-            height: 44px;
+            height: 40px;
        
     }
-}  
-
-#gnb{
-    height: 80px;   
-    .hb-iconbox{
-        margin-right: 20px;
-        margin-top: 5px;
-    }   
 }
+
 #menu a {
     font-size: var(--semismall-text);
     font-family: var(--theJamsil-medium);
@@ -312,12 +315,16 @@ body.scrolled{
 }
 //태블릿    
 @media only screen and (max-width: 768px){
-    #gnbbox{  
+    #gnbbox{
+        position: relative;
         top: 0;
-        transition: top 0.5s ease;
     }
+    body.scrolled{
+        #gnbbox{
+            position: fixed;
+         } 
+    } 
     #gnb{
-        border-bottom: var(--trip-gray2) 1px solid;
         .logo img{
             width: 6.3125rem;
             height: 1.75rem;         
@@ -353,6 +360,7 @@ body.scrolled{
 //리얼모바일    
 @media only screen and (max-width: 575px){
     #gnb{
+
         height: 40px;
     }
     #mb-searchbox{

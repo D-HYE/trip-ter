@@ -60,7 +60,16 @@
   z-index: 100;
   background-color: white;
   width: 100%;
-  transition: height 0.4s;
+  transition: height 0.3s;
+}
+
+#gnb {
+  transition: height 0.3s;
+  height: 80px;
+}
+#gnb .hb-iconbox {
+  margin-right: 20px;
+  margin-top: 5px;
 }
 
 body.scrolled #gnbbox {
@@ -70,19 +79,11 @@ body.scrolled #gnbbox {
 }
 body.scrolled #gnbbox .logo img {
   width: 0;
-  transition: opacity 0.1s;
+  transition: opacity 0.3s;
 }
 body.scrolled #gnb {
   top: 0;
-  height: 44px;
-}
-
-#gnb {
-  height: 80px;
-}
-#gnb .hb-iconbox {
-  margin-right: 20px;
-  margin-top: 5px;
+  height: 40px;
 }
 
 #menu a {
@@ -295,11 +296,11 @@ body.scrolled #gnb {
 }
 @media only screen and (max-width: 768px) {
   #gnbbox {
+    position: relative;
     top: 0;
-    transition: top 0.5s ease;
   }
-  #gnb {
-    border-bottom: var(--trip-gray2) 1px solid;
+  body.scrolled #gnbbox {
+    position: fixed;
   }
   #gnb .logo img {
     width: 6.3125rem;

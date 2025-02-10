@@ -578,7 +578,7 @@ main{overflow: hidden;}
     }
 
     .section1{
-        padding-top: 40px;
+        padding-top: 0px;
         .main_swiper{
             height: 100vw;
             border-radius: 0;
@@ -608,6 +608,11 @@ main{overflow: hidden;}
             height: 25vw;
         }
 
+    }
+    body.scrolled{
+        .section1{
+            padding-top: 40px;
+        }
     }
     .section2{
         padding-bottom: 0;

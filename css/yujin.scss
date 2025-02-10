@@ -60,11 +60,9 @@ body.scrolled{
 
 // 모바일 상단 어플 광고
 #mb-top{
-    display: flex;
     justify-content: space-between;
     // background: linear-gradient(to right, #dfe9f3, #ffffff); 
     padding: 10px;
-    z-index: 1000000;
     position: relative;
     background: url(../img/logo/logo_TRT_bl.png) no-repeat center;
     background-size: cover;
