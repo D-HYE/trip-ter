@@ -3,7 +3,7 @@
     #quick{
     padding: 10px 0;
     position: fixed;
-    right: 20px;
+    left: 100%;
     top:50%;
 
     border-radius: 116.811px;
@@ -12,6 +12,8 @@
     width: 77.729px;
     height: 171.96px;
     flex-shrink: 0;
+    transform: translateX(0);
+    transition: 0.5s;
   
     z-index: 3000;
     display: flex;
@@ -48,6 +50,12 @@
     }
 
 }
+
+body.scrolled{
+    #quick{
+       transform: translateX(calc(-100% - 20px));
+    }
+}
             
 
 // 모바일 상단 어플 광고
@@ -62,12 +70,16 @@
     background-size: cover;
  
    
-    .container{ 
+    .container{
+            display: flex;
+            align-items: center;
         #mb-top-text{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 left: 30px;
+                margin-right: 20px;
+                
             h5{
                 color: #111;
                     span{
@@ -84,6 +96,7 @@
         background: var(--Trip_blue, #0051D3);
         display: flex;
         align-items: center;
+        padding: 10px 15px;
 
         justify-content: center;
        
@@ -92,6 +105,8 @@
     .close-btn{
         right: 0;
         top:0
+
+        
     }
 
 }
@@ -122,27 +137,10 @@
     }
     
 
-        .search_mb{
-         
-       //width: 268px;
-        //height: 24px;
-               
-       
-        margin-bottom: 16px;
-               .search{
-                border-radius: 12px 5px 5px 12px;
-                border: 2px solid #0051D3;
-                width: 300px;
-                min-width: 100px;
-                
-                    }
-            
-                }
-
     .icon_menu{
         padding-top: 50px;
         ul{
-            gap: 30px;
+            gap: 15px;
           li{
             max-width: 700px;
             min-width: 100px;

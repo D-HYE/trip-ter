@@ -62,22 +62,23 @@
   overflow: hidden;
   transition: height 0.4s;
 }
-#gnbbox.scrolled {
+
+body.scrolled #gnbbox {
   top: 0;
   height: 44px;
   border-bottom: var(--trip-gray2) 1px solid;
 }
-#gnbbox.scrolled .logo img {
+body.scrolled #gnbbox .logo img {
   width: 0;
   transition: opacity 0.1s;
+}
+body.scrolled #gnb {
+  top: 0;
+  height: 44px;
 }
 
 #gnb {
   height: 80px;
-}
-#gnb.scrolled {
-  top: 0;
-  height: 44px;
 }
 #gnb .hb-iconbox {
   margin-right: 20px;
