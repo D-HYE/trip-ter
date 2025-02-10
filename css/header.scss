@@ -3,7 +3,9 @@
         border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
         border: 2px solid #0051D3;
         outline: none;
+        padding-left: 20px;
     }
+
 
     .logo{
         img{
@@ -13,7 +15,6 @@
         }
     }     
 }
-
 #user{
     font-size: var(--m-small-text);
     width: 100%;
@@ -30,22 +31,22 @@
     li{
         margin-top: 10px;
         display: flex;
-        justify-content: center;  
-        position: relative;     
+        justify-content: center;      
     }
     a{
         color: #0051D3;
         font-weight: 500;
+        position: relative;
         &::after{
             content: "";
             position: absolute;
             left: 50%;
-            bottom: -2px;
+            bottom: -5px;
             opacity: 0;
             width: 100%;
             height: 2px;
             background: #0051D3;
-            transform: translateX(-20%);
+            transform: translateX(-50%);
             transition: opacity 0.2s ease-in-out;
         }
         &:hover::after{
@@ -62,14 +63,13 @@
     z-index: 100;
     background-color: white;
     width: 100%;
-    overflow: hidden;
     transition: height 0.4s;
    
 }
 body.scrolled{
     #gnbbox{   
         top:0;
-        height: 44px;
+        height: 40px;
         border-bottom: var(--trip-gray2) 1px solid;
         .logo{
             img{
@@ -91,7 +91,7 @@ body.scrolled{
     .hb-iconbox{
         margin-right: 20px;
         margin-top: 5px;
-    }    
+    }   
 }
 #menu a {
     font-size: var(--semismall-text);
@@ -130,6 +130,7 @@ body.scrolled{
     height: 100%;
     background: rgba(0,0,0,0.3);
 }
+
 //햄버거메뉴
 #hb-submenu{     
     position: fixed;   
@@ -320,13 +321,42 @@ body.scrolled{
         .logo img{
             width: 6.3125rem;
             height: 1.75rem;         
-        } 
-    }  
+        }
+    }
+    #mb-searchbox{       
+        .mb-search{
+            top: 0;
+            left:0;
+            right: 0;
+            width: 100%;
+            height: 40px;
+            background-color: rgba(0, 81, 211, 0.8);
+            z-index: 300;
+            transition : all 0.3s ease-in-out;
+            .mb-searchbar{
+                border-radius: 0.75rem 0.3125rem 0.3125rem 0.75rem;
+                border: 2px solid #fff;
+                background-color: rgba(0, 81, 211, 0.1);
+                outline: none;
+                padding-left: 20px;
+                color: #fff;
+                &::placeholder{
+                    color: #fff;
+                }
+        }
+        }
+    }
+    
+
+
 }
 //리얼모바일    
 @media only screen and (max-width: 575px){
     #gnb{
         height: 40px;
+    }
+    #mb-searchbox{
+        top: 40px;
     }
     #hb-item{
         width: 100%;
