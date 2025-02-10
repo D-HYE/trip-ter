@@ -154,10 +154,13 @@ main {
   color: var(--trip-yellow);
   background: var(--trip-blue);
 }
-.section1 .promo_banner {
+.section1 .promo_banner a {
   height: 170px;
   background: var(--trip-blue);
   overflow: hidden;
+}
+.section1 .promo_banner a img {
+  height: 100%;
 }
 
 /* section2 */
@@ -303,7 +306,7 @@ main {
 }
 .section4 .tab_contents li {
   width: 23.077%;
-  height: 440px;
+  height: 22.917vw;
   border-radius: 15px;
   overflow: hidden;
   background: url(../img/review/review3.jpg) no-repeat center/cover;
@@ -498,6 +501,9 @@ main {
   .section1 .mftr_form {
     right: 2.5%;
   }
+  .section2 .md_swiper .swiper-wrapper .swiper-slide {
+    margin: 0 10px;
+  }
   .section2 .md_swiper .swiper-button-prev {
     left: 5%;
   }
@@ -520,9 +526,6 @@ main {
   .section4 .tab_menu {
     gap: 12px;
   }
-  .section4 .tab_contents li {
-    height: 320px;
-  }
   .section4 .tab_contents li a b {
     font-size: var(--semismall-text);
   }
@@ -536,15 +539,6 @@ main {
   }
   .section1 .main_swiper .swiper-slide .slide_desc p {
     font-size: var(--semibig-text);
-  }
-  .section1 .promo_banner {
-    height: 140px;
-  }
-  .section1 .promo_banner a img {
-    height: 140px;
-  }
-  .section2 .md_swiper .swiper-wrapper .swiper-slide {
-    margin: 0 10px;
   }
   .section3 .container {
     align-items: center;
@@ -565,9 +559,14 @@ main {
   }
   .section3 .container .txt_box ol li strong {
     color: var(--trip-black);
+    font-weight: 400;
+  }
+  .section3 .container .txt_box ol li b {
+    font-weight: 400;
   }
   .section3 .container .txt_box ol li:nth-child(1), .section3 .container .txt_box ol li:nth-child(4) {
     background: var(--trip-blue);
+    border: none;
   }
   .section3 .container .txt_box ol li:nth-child(1) strong, .section3 .container .txt_box ol li:nth-child(1) b, .section3 .container .txt_box ol li:nth-child(1) i, .section3 .container .txt_box ol li:nth-child(4) strong, .section3 .container .txt_box ol li:nth-child(4) b, .section3 .container .txt_box ol li:nth-child(4) i {
     color: var(--trip-white);
@@ -583,10 +582,9 @@ main {
   }
   .section4 .tab_contents li {
     width: calc(50% - 8px);
-    height: 200px;
   }
   .section4 .tab_contents li a {
-    height: 40px;
+    height: 60px;
   }
   .section4 .tab_contents li a b {
     font-size: var(--small-text);
@@ -645,21 +643,21 @@ main {
     padding-top: 40px;
   }
   .section1 .main_swiper {
-    height: 320px;
+    height: 100vw;
     border-radius: 0;
   }
   .section1 .main_swiper .swiper-slide .slide_desc {
-    top: 32px;
+    top: 10vw;
     left: 16px;
   }
   .section1 .main_swiper .swiper-slide .slide_desc h2 {
-    font-size: var(--semibig-text);
+    font-size: 7.5vw;
   }
   .section1 .main_swiper .swiper-slide .slide_desc h2 span {
-    font-size: var(--mediumbig-text);
+    font-size: 4.375vw;
   }
   .section1 .main_swiper .swiper-slide .slide_desc p {
-    font-size: var(--medium-text);
+    font-size: 4.375vw;
   }
   .section1 .main_swiper .swiper-pagination {
     left: 50%;
@@ -672,6 +670,9 @@ main {
   }
   .section1 .main_swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 24px;
+  }
+  .section1 .promo_banner a {
+    height: 25vw;
   }
   .section2 {
     padding-bottom: 0;
@@ -714,14 +715,24 @@ main {
   .section3 .container .txt_box h3 span {
     display: block;
   }
-  .section3 .container .txt_box ol strong, .section3 .container .txt_box ol b, .section3 .container .txt_box li strong, .section3 .container .txt_box li b {
-    font-weight: 400;
-  }
   .section4 .tab_menu {
     justify-content: flex-start;
     flex-wrap: nowrap;
-    margin-bottom: 24px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
     overflow-x: scroll;
+  }
+  .section4 .tab_menu::-webkit-scrollbar-track {
+    background: rgba(0, 81, 211, 0.3);
+    border-radius: 5px;
+  }
+  .section4 .tab_menu::-webkit-scrollbar {
+    height: 5px;
+  }
+  .section4 .tab_menu::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: var(--trip-blue);
+    border-radius: 12px;
   }
   .section4 .tab_menu li {
     flex-shrink: 0;
@@ -729,8 +740,13 @@ main {
   .section4 .tab_contents li {
     font-size: var(--small-text);
   }
+  .section4 .tab_contents li a {
+    height: 40px;
+    padding: 8px;
+  }
   .section4 .tab_contents li:hover a b {
     font-size: var(--small-text);
+    letter-spacing: -0.05rem;
   }
   .section4 .tab_contents li:hover a span {
     font-size: var(--desc-text);
@@ -744,7 +760,7 @@ main {
   }
   .section5 ul li {
     width: 100%;
-    height: 300px;
+    height: 56.25vw;
   }
   .section6 {
     padding-bottom: 60px;
@@ -812,15 +828,6 @@ main {
   }
 }
 @media only screen and (max-width: 575px) {
-  .section1 .main_swiper .swiper-slide .slide_desc h2 {
-    font-size: var(--medium-text);
-  }
-  .section1 .main_swiper .swiper-slide .slide_desc h2 span {
-    font-size: var(--desc-text);
-  }
-  .section1 .main_swiper .swiper-slide .slide_desc p {
-    font-size: var(--desc-text);
-  }
   .section1 .main_swiper .swiper-pagination {
     left: 50%;
     bottom: 36px;
@@ -853,9 +860,7 @@ main {
     display: block;
   }
   .section4 .tab_contents li {
-    height: 240px;
-  }
-  .section5 ul li {
-    height: 180px;
+    width: 100%;
+    height: 41.25vw;
   }
 }
