@@ -721,6 +721,7 @@ main {
     justify-content: flex-start;
     flex-wrap: nowrap;
     margin-bottom: 24px;
+    overflow-x: scroll;
   }
   .section4 .tab_menu li {
     flex-shrink: 0;

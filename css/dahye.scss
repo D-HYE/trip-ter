@@ -663,6 +663,7 @@ main{overflow: hidden;}
         .tab_menu{
             justify-content: flex-start; flex-wrap: nowrap;
             margin-bottom: 24px;
+            overflow-x: scroll;
             li{
                 flex-shrink: 0;
             }
