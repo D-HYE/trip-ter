@@ -36,6 +36,10 @@
   background: url(../img/logo/logo_TRT_bl.png) no-repeat center;
   background-size: cover;
 }
+#mb-top .container {
+  display: flex;
+  align-items: center;
+}
 #mb-top .container #mb-top-text {
   display: flex;
   flex-direction: column;

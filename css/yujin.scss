@@ -62,7 +62,9 @@
     background-size: cover;
  
    
-    .container{ 
+    .container{
+            display: flex;
+            align-items: center;
         #mb-top-text{
                 display: flex;
                 flex-direction: column;
