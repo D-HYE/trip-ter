@@ -3,7 +3,7 @@
     #quick{
     padding: 10px 0;
     position: fixed;
-    right: 20px;
+    left: 100%;
     top:50%;
 
     border-radius: 116.811px;
@@ -12,6 +12,8 @@
     width: 77.729px;
     height: 171.96px;
     flex-shrink: 0;
+    transform: translateX(0);
+    transition: 0.5s;
   
     z-index: 3000;
     display: flex;
@@ -47,6 +49,12 @@
                     }
     }
 
+}
+
+body.scrolled{
+    #quick{
+       transform: translateX(calc(-100% - 20px));
+    }
 }
             
 
