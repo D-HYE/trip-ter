@@ -6,7 +6,7 @@ window.addEventListener('scroll', () =>{
 
     //메뉴 글씨 변경
     const menuSize = document.querySelectorAll("#menu a");
-
+    
     if(scrollPosition > 40){
         gnbbox.classList.add('scrolled');
         gnb.classList.add('scrolled');
@@ -31,9 +31,9 @@ const body = document.querySelector("body"); // 바깥 영역 클릭 감지
 //dim화면
 const dimBackground = document.getElementById("dim-background");
 
-function preventScroll(e) {
-    e.preventDefault();
-}
+// function preventScroll(e) {
+//     e.preventDefault();
+// }
 
 // 햄버거 버튼 클릭 시 메뉴 열기
 hamburgerButton.addEventListener("click", () => {
@@ -59,6 +59,39 @@ body.addEventListener("click", (e) => {
     }
 });
 
+//search
+const search =document.getElementById("mb-searchbox") ;
+const searchIcon = document.querySelector(".search-icon"); //search아이콘
+
+searchIcon.addEventListener("click", (e) =>{
+    const windowWidth = window.innerWidth;
+
+    if(windowWidth < 768){
+        e.preventDefault();
+        search.classList.toggle("d-none");
+    }
+})
+body.addEventListener("click",(e) =>{
+    const windowWidth = window.innerWidth;
+    if(windowWidth > 768 || (!search.contains(e.target) && !searchIcon.contains(e.target))){
+        search.classList.add("d-none");
+    }
+})
+
+
+//고객지원
+const supportMenu = document.querySelector(".support a");
+const hideMenu = document.querySelector(".support .hide-menu");
+
+supportMenu.addEventListener('click',(e) => {
+    hideMenu.classList.toggle('d-none')
+})
+body.addEventListener('click', (e)=>{
+    if(!hideMenu.contains(e.target) &&!supportMenu.contains(e.target)) {
+        hideMenu.classList.add("d-none")
+    }
+})
+
 //로그인 시 변경
 // const isLoggedIn = false;
 // const loginSection = document.getElementById("login-section");
@@ -71,11 +104,3 @@ body.addEventListener("click", (e) => {
 //     loginSection.style.display = "block";
 //     loggedInSection.classList.add("d-none");
 // }
-
-//고객지원
-const supportMenu = document.querySelector(".support a");
-const hideMenu = document.querySelector(".support .hide-menu");
-
-supportMenu.addEventListener('click',(e) => {
-    hideMenu.classList.toggle('d-none')
-})

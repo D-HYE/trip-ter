@@ -639,7 +639,7 @@ main {
     font-size: var(--semismall-text);
   }
   .section1 {
-    padding-top: 44px;
+    padding-top: 40px;
   }
   .section1 .main_swiper {
     height: 320px;

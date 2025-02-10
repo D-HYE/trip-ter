@@ -20,8 +20,8 @@
 
 </head>
 <body>
-    <!-- mb 어플 다운로드 창 -->
-        <div id="mb-top" class="d-flex mb" >
+    
+        <!-- <div id="mb-top" class="d-flex mb " >
             
               <div class="container d-flex">
                    <div id="mb-top-text">
@@ -35,7 +35,7 @@
             <button class="close-btn abs align-items-start">
                 <img src="./img/icon/x-01_mb.svg" alt="닫기...">
             </button>    
-        </div>
+        </div>  -->
 
     <!-- 상단 -->
        <header id="hd">
@@ -73,18 +73,25 @@
                         <li><a href="#none">이벤트</a></li>
                     </ul>
                     <ul class= "icon d-flex align-items-center order-3">
-                        <li class="search pc">
-                            <form action="http://www.google.com" class="d-flex align-items-center">
-                                <input type="text" class="search-bar px-3" name="search" placeholder="눈의 나라 훗카이도로~!">
-                                <input type="image" class="py-0" src="./img/icon/search-02.svg" alt="">
+                        <li class="search">
+                            <form action="#none" class="d-flex align-items-center">
+                                <input type="text" class="search-bar pc" name="search" placeholder="눈의 나라 훗카이도로~!">
+                                <input type="image" class="search-icon py-0" src="./img/icon/search-02.svg" alt="">
                             </form>
                         </li>
                         <li>
                             <button class="wishlist-btn p-0"><a href="#none"><img src="./img/icon/heart.svg" alt=""></a></button>
                         </li>
-                    </ul> 
+                    </ul>
+                </div>
+                <div id="mb-searchbox" class="d-none">
+                    <form action="#none" class=" mb-search d-flex  align-items-center justify-content-end">
+                        <input type="text" class="mb-searchbar" name="search" placeholder="눈의 나라 훗카이도로~!">
+                        <input type="image" class="mb-searchicon" src="./img/icon/search-01.svg" alt="">
+                    </form>                       
                 </div>
             </div>
+
               <!-- 햄버거 소메뉴 -->  
         <div id="hb-submenu">
             <div id="hb-item" class="d-flex flex-column">
