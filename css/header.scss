@@ -61,7 +61,25 @@
     z-index: 100;
     background-color: white;
     width: 100%;
+<<<<<<< HEAD
     &.scrolled{
+=======
+    transition: height .3s;
+   
+}
+
+#gnb{
+    transition: height .3s;
+    height: 80px;   
+    .hb-iconbox{
+        margin-right: 20px;
+        margin-top: 5px;
+    }   
+}
+
+body.scrolled{
+    #gnbbox{   
+>>>>>>> c9949b2ad837d1671a18b6bad7472bccffd49dfd
         top:0;
         height: 40px;
         border-bottom: var(--trip-gray2) 1px solid;
@@ -70,6 +88,7 @@
                 width: 0;
                 transition: opacity 0.3s;
             }
+<<<<<<< HEAD
         }
     }   
 }
@@ -84,7 +103,18 @@
         margin-right: 20px;
         margin-top: 5px;
     }   
+=======
+
+        }       
+     } 
+     #gnb{
+            top:0;
+            height: 40px;
+       
+    }
+>>>>>>> c9949b2ad837d1671a18b6bad7472bccffd49dfd
 }
+
 #menu a {
     font-size: var(--semismall-text);
     font-family: var(--theJamsil-medium);
@@ -246,6 +276,7 @@
     }
     div ul{
         margin-bottom: 30px;
+        row-gap: px;
     }   
     .feelter{
         margin-bottom: 40px;
@@ -304,13 +335,21 @@
 }
 //태블릿    
 @media only screen and (max-width: 768px){
-    #gnbbox{  
+    #gnbbox{
+        position: relative;
         top: 0;
+<<<<<<< HEAD
         transition: top 0.5s ease;
         .logo img{}
+=======
+>>>>>>> c9949b2ad837d1671a18b6bad7472bccffd49dfd
     }
+    body.scrolled{
+        #gnbbox{
+            position: fixed;
+         } 
+    } 
     #gnb{
-        border-bottom: var(--trip-gray2) 1px solid;
         .logo img{
             width: 6.3125rem;
             height: 1.75rem;       
@@ -347,6 +386,7 @@
 //리얼모바일    
 @media only screen and (max-width: 575px){
     #gnb{
+
         height: 40px;
     }
     #mb-searchbox{

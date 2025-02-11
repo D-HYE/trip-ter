@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Title" content="J이고 싶은 P, 당신을 위한 플랫폼 Trip:ter"/>
+    <meta property="og:title" content="J이고 싶은 P, 당신을 위한 플랫폼 Trip:ter"/>
+    <meta property="og:site_name" content="Trep:ter">
+    <meta property="og:description" content="반복되는 일상에 지쳤다면? 트립터에서 나만의 여행을 만나보세요."/>
+    <meta property="og:image" content="https://trip-ter.vercel.app/img/logo/metatripter.jpg">
+    <meta property="og:locale" content="ko_KR"/>
+    <link rel="shortcut icon" href="https://trip-ter.vercel.app/img/logo/metatripter_logo.jpg">
+    <link rel="apple-touch-icon" href="https://trip-ter.vercel.app/img/logo/metatripter_logo.jpg">
+    <link rel="preload" as="image" href="https://trip-ter.vercel.app/img/logo/metatripter.jpg">
 
-    <link rel="icon" type="image/x-icon" href="./img/icon/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="https://trip-ter.vercel.app/img/icon/favicon.svg">
 
     <title>Trip:ter J이고 싶은 P 당신을 위한 플랫폼</title>
     
@@ -21,7 +32,7 @@
 </head>
 <body>
     
-        <!-- <div id="mb-top" class="d-flex mb " >
+        <div id="mb-top" class="d-flex mb " >
             
               <div class="container d-flex">
                    <div id="mb-top-text">
@@ -35,7 +46,7 @@
             <button class="close-btn abs align-items-start">
                 <img src="./img/icon/x-01_mb.svg" alt="닫기...">
             </button>    
-        </div>  -->
+        </div>
 
     <!-- 상단 -->
        <header id="hd">
@@ -45,7 +56,7 @@
                     <ul class="d-flex gap-3 align-items-center">
                         <li ><a href="#none" class="text-white">로그인/회원가입</a></li>
                         <li class="support rel"><a href="#none" class="text-white">고객지원
-                            <img src="./img/icon/polygon-1.svg" alt="">
+                            <img src="./img/icon/polygon-1.svg" alt="더보기">
                         </a>
                             <ul class="hide-menu abs d-none">
                                 <li><a href="#none">이용가이드</a></li>
@@ -58,11 +69,13 @@
             </div>
             <div id="gnbbox">
                 <div id="gnb" class="container d-flex justify-content-between align-items-center">
-                    <h1 class="logo order-2 mx-auto"><a href="index.html"><img src="./img/logo/logo_TRT_basic.svg" alt="logo">
+                    <h1 class="logo order-2 mx-auto">
+                        <a href="index.html"><img src="./img/logo/logo_TRT_basic.svg" alt="트립터">
                         <span class="d-none">트립터</span>                   
-                    </a></h1>
+                        </a>
+                    </h1>
                     <div class="hb-iconbox"> 
-                        <button id="hb-icon" class="p-0"><img src="./img/icon/menu-all.svg" alt=""></button>
+                        <button id="hb-icon" class="p-0"><img src="./img/icon/menu-all.svg" alt="메뉴"></button>
                     </div>
                     <!-- dim 배경 -->
                     <div id="dim-background" class="dim d-none"></div>
@@ -84,7 +97,8 @@
                         </li>
                     </ul>
                 </div>
-                <div id="mb-searchbox" class="d-none">
+                <div id="mb-searchbox" class="d-none mb">
+                    <!-- resize시 설정 초기화 넣기 지금은 눈가림용~ -->
                     <form action="#none" class=" mb-search d-flex  align-items-center justify-content-end">
                         <input type="text" class="mb-searchbar" name="search" placeholder="눈의 나라 훗카이도로~!">
                         <input type="image" class="mb-searchicon" src="./img/icon/search-01.svg" alt="">
@@ -156,7 +170,7 @@
                             <li><a class="friendfind" href="">동행 구해요</a></li>
                         </ul>
                         <ul class="d-flex communitymenu flex-wrap">                        
-                            <li><a class="couponpack" href="">트립터 쿠폰팩</a></li>
+                            <li><a class="couponpack color-active-blue" href="">트립터 쿠폰팩</a></li>
                             <li><a class="thismonths" href="">이달의 기획전</a></li>
                         </ul>
 
@@ -285,24 +299,21 @@
                             <h4>MY FEEL:TER</h4>
                             <p>나의 여행 스타일 설정하기</p>
                         </div>
-                        <div class="img_box">
+                        <div class="img_box d-flex">
                             <img src="./img/icon/arrow-right.svg" alt="arrow">
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="promo_banner d-flex justify-content-center align-items-center pc">
-                <a href="#none"><img src="./img/illustrator/event.jpg" alt="여름 성수기 이벤트"></a>
+            <div class="promo_banner">
+                <a href="#none" class="d-flex justify-content-center align-items-center">
+                    <img src="./img/illustrator/event.jpg" alt="여름 성수기 이벤트" class="pc">
+                    <img src="./img/illustrator/event_mb.jpg" alt="여름 성수기 이벤트" class="mb">
+                </a>
             </div>
             <div class="mb icon_menu">
                 <div class="container">
-                    <div class="search_mb">
-                        <form action="http://www.google.com" class="d-flex align-items-center justify-content-center">
-                            <input type="text" class="search" name="search" placeholder="눈의 나라 홋카이도로~!" onfocus="this.placeholder=''" onblur="this.placeholder='눈의 나라 홋카이도로~!'">
-                            <input type="image" class="py-0" src="./img/icon/search-02.svg" alt="">
-                        </form>
-                    </div>
-                    <ul class="d-flex justify-content-center">
+                     <ul class="d-flex justify-content-center">
                         <li class="d-flex align-items-center justify-content-center">
                             <p>
                                 <img src="./img/icon/pencil_m.svg" alt="">
@@ -338,128 +349,21 @@
             </h3>
             <div id="md_slide">
                 <div class="swiper md_swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#none">
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/lasvegas.jpg" alt="라스베가스">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end pc">밤 낮 없이 반짝반짝</b>
-                                    <p>라스베가스 2인 25만원부터</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#none">
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/japan.jpg" alt="도쿄">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end pc">머글들의 마법 세상 체험기</b>
-                                    <p>도쿄 워너 브라더스 2인 25만원부터</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#none">                               
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/newzealand.jpg" alt="뉴질랜드">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end pc">마이 프레셔스~!<span>반지를 찾아서</span></b>
-                                    <p>뉴질랜드 2인 52만원부터</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#none">
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/taiwan.jpg" alt="지우펀">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-end pc">내이름은 니기하야미<span>코하쿠누시야</span></b>
-                                    <p>대만 지우펀 15만원부터</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#none">
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/vietnam.jpg" alt="푸꾸옥">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-end pc">동화속 세상 그 자체!</b>
-                                    <p>베트남 푸꾸옥 33만원부터</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#none">
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/santorini.jpg" alt="산토리니">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end pc">라라라라라라라~<span>날 좋아 한다고</span></b>
-                                    <p>산토리니 125만원부터</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#none">
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/india.jpg" alt="타지마할">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end pc">소고기는 넣지 않아 나마스떼</b>
-                                    <p>타지마할-갠지스강 45만원부터</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#none">
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/lasvegas.jpg" alt="라스베가스">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end pc">밤 낮 없이 반짝반짝</b>
-                                    <p>라스베가스 2인 25만원부터</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#none">
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/japan.jpg" alt="도쿄">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center  justify-content-end pc">머글들의 마법 세상 체험기</b>
-                                    <p>도쿄 워너 브라더스 2인 25만원부터</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#none">                               
-                                <div class="img_box">
-                                    <img src="./img/md_slide_pc/newzealand.jpg" alt="뉴질랜드">
-                                </div>
-                                <div class="swiper_desc">
-                                    <b class="d-flex align-items-center justify-content-end pc">마이 프레셔스~!<span>반지를 찾아서</span></b>
-                                    <p>뉴질랜드 2인 52만원부터</p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="swiper-wrapper" id="md_slide_area">
+                        
                     </div>
                     <div class="swiper-button-next pc"></div>
                     <div class="swiper-button-prev pc"></div>
                     <div class="swiper-pagination mb"></div>
-                  </div>
+                </div>
             </div>
         </div>
     <!-- section3 -->
         <div class="section section3">
             <div id="trt_info" class="container d-flex justify-content-center align-items-end">
-                <div class="img_box pc"></div>
+                <div class="img_box d-flex justify-content-center align-items-end  pc">
+                    <img src="./img/main_img/trtillustrator.png" alt="당신을 위한 플랫폼">
+                </div>
                 <div class="txt_box">
                     <h3>J이고 싶은 P, <span>당신을 위한 플랫폼</span></h3>
                     <h4>반복되는 일상에 지쳤다면?<br>트립터에서 나에게 딱 맞는 여행을 만나보세요</h4>
@@ -598,6 +502,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/mainScript.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/mb_top.js"></script>
    
 </body>
 </html>

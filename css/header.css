@@ -59,6 +59,7 @@
   z-index: 100;
   background-color: white;
   width: 100%;
+<<<<<<< HEAD
 }
 #gnbbox.scrolled {
   top: 0;
@@ -68,19 +69,40 @@
 #gnbbox.scrolled .logo img {
   width: 0;
   transition: opacity 0.3s;
+=======
+  transition: height 0.3s;
+>>>>>>> c9949b2ad837d1671a18b6bad7472bccffd49dfd
 }
 
 #gnb {
+  transition: height 0.3s;
   height: 80px;
 }
+<<<<<<< HEAD
 #gnb.scrolled {
   top: 0;
   height: 40px;
   transition: height 0.3s ease;
 }
+=======
+>>>>>>> c9949b2ad837d1671a18b6bad7472bccffd49dfd
 #gnb .hb-iconbox {
   margin-right: 20px;
   margin-top: 5px;
+}
+
+body.scrolled #gnbbox {
+  top: 0;
+  height: 40px;
+  border-bottom: var(--trip-gray2) 1px solid;
+}
+body.scrolled #gnbbox .logo img {
+  width: 0;
+  transition: opacity 0.3s;
+}
+body.scrolled #gnb {
+  top: 0;
+  height: 40px;
 }
 
 #menu a {
@@ -244,6 +266,7 @@
 }
 #hb-list div ul {
   margin-bottom: 30px;
+  row-gap: px;
 }
 #hb-list .feelter {
   margin-bottom: 40px;
@@ -293,11 +316,11 @@
 }
 @media only screen and (max-width: 768px) {
   #gnbbox {
+    position: relative;
     top: 0;
-    transition: top 0.5s ease;
   }
-  #gnb {
-    border-bottom: var(--trip-gray2) 1px solid;
+  body.scrolled #gnbbox {
+    position: fixed;
   }
   #gnb .logo img {
     width: 6.3125rem;
@@ -320,9 +343,6 @@
     background-color: rgba(0, 81, 211, 0.1);
     outline: none;
     padding-left: 20px;
-    color: #fff;
-  }
-  #mb-searchbox .mb-search .mb-searchbar::-moz-placeholder {
     color: #fff;
   }
   #mb-searchbox .mb-search .mb-searchbar::placeholder {

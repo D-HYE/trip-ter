@@ -3,20 +3,21 @@ window.addEventListener('scroll', () =>{
     const gnbbox = document.getElementById("gnbbox");
     const gnb = document.getElementById("gnb");
     const scrollPosition = window.scrollY;
+    const bodydom = document.body;
 
     //메뉴 글씨 변경
     const menuSize = document.querySelectorAll("#menu a");
     
     if(scrollPosition > 40){
-        gnbbox.classList.add('scrolled');
-        gnb.classList.add('scrolled');
+        bodydom.classList.add('scrolled');
+      
         for(let i=0; i < menuSize.length; i++){
             menuSize[i].classList.add('scrolled');
         }
     } 
     else{
-        gnbbox.classList.remove('scrolled');
-        gnb.classList.remove('scrolled');
+        bodydom.classList.remove('scrolled');
+      
         for(let i=0; i < menuSize.length; i++){
             menuSize[i].classList.remove('scrolled');
         }        

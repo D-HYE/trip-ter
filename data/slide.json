@@ -1,0 +1,84 @@
+{   
+    "mainSlides": [
+      {
+        "title": "라스베이거스",
+        "english": "Las Vegas",
+        "subtitle": "야경의 끝판왕"
+      },
+      {
+        "title": "언제가도 좋은 제주",
+        "english": "",
+        "subtitle": "제주도 구석구석"
+      },
+      {
+        "title": "아이슬란드",
+        "english": "",
+        "subtitle": "버킷리스트 1순위 여행지 대자연의 웅장함"
+      },
+      {
+        "title": "특별기획 테마여행",
+        "english": "",
+        "subtitle": "트립터와 함께 떠나보세요"
+      }
+
+    ],
+    "mdSlides": [
+      {
+        "title": "밤 낮 없이 반짝반짝",
+        "subtitle": "라스베가스 2인 25만원부터",
+        "href": "#none",
+        "img": "/img/md_slide_pc/lasvegas.jpg",
+        "alt": "라스베가스",
+        "description": "밤 낮 없이 반짝반짝"
+      },
+      {
+        "title": "머글들의 마법 세상 체험기",
+        "subtitle": "도쿄 워너 브라더스 2인 25만원부터",
+        "href": "#none",
+        "img": "/img/md_slide_pc/japan.jpg",
+        "alt": "도쿄",
+        "description": "머글들의 마법 세상 체험기"
+      },
+      {
+        "title": "마이 프레셔스~!<span>반지를 찾아서</span>",
+        "subtitle": "뉴질랜드 2인 52만원부터",
+        "href": "#none",
+        "img": "/img/md_slide_pc/newzealand.jpg",
+        "alt": "뉴질랜드",
+        "description": "마이 프레셔스~! 반지를 찾아서"
+      },
+      {
+        "title": "내이름은 니기하야미<span>코하쿠누시야</span>",
+        "subtitle": "대만 지우펀 15만원부터",
+        "href": "#none",
+        "img": "/img/md_slide_pc/taiwan.jpg",
+        "alt": "지우펀",
+        "description": "내이름은 니기하야미 코하쿠누시야"
+      },
+      {
+        "title": "동화속 세상 그 자체!",
+        "subtitle": "베트남 푸꾸옥 33만원부터",
+        "href": "#none",
+        "img": "/img/md_slide_pc/vietnam.jpg",
+        "alt": "푸꾸옥",
+        "description": "동화속 세상 그 자체!"
+      },
+      {
+        "title": "라라라라라라라~<span>날 좋아 한다고</span>",
+        "subtitle": "산토리니 125만원부터",
+        "href": "#none",
+        "img": "/img/md_slide_pc/santorini.jpg",
+        "alt": "산토리니",
+        "description": "라라라라라라라~ 날 좋아 한다고"
+      },
+      {
+        "title": "소고기는 넣지 않아 나마스떼",
+        "subtitle": "타지마할-갠지스강 45만원부터",
+        "href": "#none",
+        "img": "/img/md_slide_pc/india.jpg",
+        "alt": "타지마할",
+        "description": "소고기는 넣지 않아 나마스떼"
+      }
+    ]
+  }
+  

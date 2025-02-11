@@ -16,12 +16,13 @@
             }
 
             @media only screen and (max-width: 768px){ 
-                //태블릿        
-                width: 80%;
+                //태블릿이하        
+                width: 90%;
                 height: auto;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+                justify-content: flex-start;
             }
             
     }    
@@ -55,52 +56,30 @@
             
             @media only screen and (max-width: 1024px){
             
-                margin: 20px 0px 20px 30px;
+                margin: 20px 0px 20px 50px;
                 gap: 20px;
                 font-size: var(--desc-text);  
             }
             @media only screen and (max-width: 768px){
                 margin: 20px 0px 20px 0px;
-                gap: 20px;
+                gap: 10px;
                 font-size: var(--m-small-text);  
-                font-weight: bold;
-                color: var(--trip-black);
             }
         }
     }
-<<<<<<< HEAD
-    .company_info{
-        margin: 20px;
-        font-size: var(--m-small-text);
-    }
-    .company_id{
-        margin: 20px;
-        font-size: var(--m-small-text);
-    }
-    .ftcontainer .d-flex{
-        display: block;
-    }
-    div.company_info b{
-        font-weight: normal;
-=======
 
     >div .d-flex{
-            display: flex;
             width: 100%;
             font-style: normal;
         
             @media only screen and (max-width: 1024px){
-                margin: 20px 0px 20px 20px;
-                gap: 20px;
                 font-size: var(--m-small-text);  
-                
             }
                       
             @media only screen and (max-width: 768px){
-                margin: 20px 0px 20px 20px;
-                gap: 20px;
+                flex-direction: column;
+                margin-top: 20px;
                 font-size: var(--m-small-text);  
-                
             }
             
         .company_info{
@@ -108,25 +87,27 @@
             display: flex;
             flex-direction: column;
             font-size: var(--desc-text);
+            word-break: keep-all;
 
             @media only screen and (max-width: 768px){
-                margin: 20px;
+                margin: 0px;
                 font-size: var(--m-small-text);
                 
             }
         }
         .company_id{
-            margin: 20px 50px 0px 50px;
+            margin: 20px 50px 0px 0px;
             flex-direction: column;
+            display: flex;
             font-size: var(--m-small-text);
             
             @media only screen and (max-width: 1024px){
-                margin: 20px;
+                margin-top: 20px;
+                display: flex;
                 font-size: var(--m-small-text);
             }
 
             @media only screen and (max-width: 768px){
-                margin: 20px;
                 font-size: var(--m-small-text);
             }
         }
@@ -136,7 +117,6 @@
             margin-bottom: 8px;
             font-style: normal;
         }
->>>>>>> b132c1e4078879b4c10271e77279ee0e3f7f7caf
         
     }
 }
