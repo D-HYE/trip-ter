@@ -26,7 +26,7 @@
 
 | ![](https://github.com/D-HYE/trip-ter/blob/new_shin/%ED%9A%A8%EC%A0%95.png) | ![](https://github.com/D-HYE/trip-ter/blob/new_shin/%EB%8B%A4%ED%98%9C.png) | ![](https://github.com/D-HYE/trip-ter/blob/new_shin/%EC%9D%80%EA%B2%BD.png) | ![](https://github.com/D-HYE/trip-ter/blob/new_shin/%EC%9C%A0%EC%A7%84.png) |
 | :------------: | :-------------: | :-------------: | :-------------: |
-| **김효정** <br/> 서브퍼블리셔 | **박다혜** <br/> 메인퍼블리셔 | **신은경** <br/> 기획 | **정유진** <br/> 디자인 |
+| **김효정** <br/> 서브퍼블리셔| **박다혜** <br/> 메인퍼블리셔 | **신은경** <br/> 기획 | **정유진** <br/> 디자인 |
 
 <br/>
 <br/>
@@ -72,12 +72,23 @@
   - 맞춤 여행 계획 짜기
   - 테마별 여행 소개
   - 검증된 후기
+<br/>
 
+ ## 로고  
+
+|  LOGO | Preview |
+| --- | --- |
+| `Default` |<img src ="https://github.com/user-attachments/assets/e4b98b90-ce97-4084-a5b8-c2b9a3f9f546" width="200" height="100"/> |
+| `Favicon` |<img src ="https://github.com/user-attachments/assets/a2d57ef3-7038-4d57-a4c1-74cb648d2a52" width="200" height="100"/> |
+</br>
+
+  & MORE...
+
+<br/>
+<br/>
 
 ---
-
-
-    
+  
 
 <details><summary>❓FAQ</summary>
 </details>  
@@ -90,6 +101,9 @@
 팀원 사진 및 기타 개인적인 이미지가 포함되어 있으므로, 이를 이용할 때는 반드시 팀원들의 동의를 받아야 합니다.
 이 프로젝트의 콘텐츠를 무단 사용 및 배포할 시 저작권 침해 및 초상권 침해에 해당하며, 이에 대해 법적 책임이 발생할 수 있습니다.
 </details>  
+
+<br/>
+<br/>
 
 <br/>
 
