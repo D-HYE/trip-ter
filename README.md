@@ -58,7 +58,8 @@
 <br/>
 <br/>
 
-**[트립터 Trip:ter](https://trip-ter.vercel.app/)**
+**[트립터 Trip:ter]
+https://trip-ter.vercel.app/**
 
   
 *본 웹사이트는 크롬 브라우저에 최적화 되어 있습니다.
