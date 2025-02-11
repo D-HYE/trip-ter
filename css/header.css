@@ -247,6 +247,7 @@ body.scrolled #gnb {
 }
 #hb-list div ul {
   margin-bottom: 30px;
+  row-gap: px;
 }
 #hb-list .feelter {
   margin-bottom: 40px;

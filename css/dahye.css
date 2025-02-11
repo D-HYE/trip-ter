@@ -228,7 +228,7 @@ main {
   padding: 80px 0 160px;
 }
 .section3 .container {
-  gap: 120px;
+  gap: 6.25vw;
 }
 .section3 .container .img_box {
   width: 460px;
@@ -635,6 +635,9 @@ main {
   .pc {
     display: none !important;
   }
+  #section_wrap .container {
+    padding: 0 10px;
+  }
   .section_tit {
     padding: 60px 0 40px;
     font-size: var(--semismall-text);
@@ -741,10 +744,10 @@ main {
     flex-shrink: 0;
   }
   .section4 .tab_contents li {
+    height: 56.25vw;
     font-size: var(--small-text);
   }
   .section4 .tab_contents li a {
-    height: 40px;
     padding: 8px;
   }
   .section4 .tab_contents li:hover a b {
@@ -853,6 +856,13 @@ main {
   .section3 .container .txt_box ol li strong, .section3 .container .txt_box ol li b, .section3 .container .txt_box ol li i {
     font-size: var(--desc-text);
   }
+}
+@media only screen and (max-width: 575px) and (max-width: 340px) {
+  .section3 .container .txt_box ol li strong, .section3 .container .txt_box ol li b, .section3 .container .txt_box ol li i {
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (max-width: 575px) {
   .section4 {
     padding: 0 0 60px;
   }
@@ -862,8 +872,9 @@ main {
   .section4 .section_tit span {
     display: block;
   }
-  .section4 .tab_contents li {
-    width: 100%;
-    height: 41.25vw;
+}
+@media only screen and (max-width: 575px) and (max-width: 340px) {
+  .section4 .tab_contents li a b {
+    font-size: 4vw;
   }
 }
