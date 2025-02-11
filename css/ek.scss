@@ -87,6 +87,7 @@
             display: flex;
             flex-direction: column;
             font-size: var(--desc-text);
+            word-break: keep-all;
 
             @media only screen and (max-width: 768px){
                 margin: 0px;
