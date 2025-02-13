@@ -1,4 +1,3 @@
-![표지](https://github.com/D-HYE/trip-ter/blob/new_shin/%ED%91%9C%EC%A7%801.jpg)
 # 🛫**Welcom to Trip:ter**
 <br/>
 
@@ -86,6 +85,16 @@ https://trip-ter.vercel.app/**
 | `Default` |<img src ="https://github.com/user-attachments/assets/e4b98b90-ce97-4084-a5b8-c2b9a3f9f546" width="200" height="100"/> |
 | `Favicon` |<img src ="https://github.com/user-attachments/assets/a2d57ef3-7038-4d57-a4c1-74cb648d2a52" width="200" height="100"/> |
 </br>
+
+|  COLOR | Color Code |
+| --- | --- |
+| Trip - blue | #0051D3 ![Trip-blue](https://github.com/user-attachments/assets/4d21d825-2069-4434-8c47-9f9c98a60a0d) |
+| Trip - yellow | #FFDA00 ![Trip-yellow](https://github.com/user-attachments/assets/af8fe2a0-15d3-42a2-a6d3-64750758a309) |
+| | |
+| Trip - skyblue | #87CEEB ![Trip-skyblue](https://github.com/user-attachments/assets/8143eebf-ee22-4e8e-86cf-bf3a29bc2d27) |
+| Trip - gray | #B5B5B5 ![Trip-gray](https://github.com/user-attachments/assets/63581e44-e811-46e2-bec1-1b5b6edf5ce0) |
+| Trip - white | #FFFFFF ![Trip-white](https://github.com/user-attachments/assets/a3a457b2-e9f8-4687-9dfe-0d9422c928e1) |
+| Trip - black | #111111 ![Trip-black](https://github.com/user-attachments/assets/6420f8e5-586f-46ee-8d80-66e666de92f8) |
 
 ---
   
