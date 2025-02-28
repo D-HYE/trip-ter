@@ -1,7 +1,5 @@
 //스크롤해서 상단메뉴 픽스
 window.addEventListener('scroll', () =>{
-    const gnbbox = document.getElementById("gnbbox");
-    const gnb = document.getElementById("gnb");
     const scrollPosition = window.scrollY;
     const bodydom = document.body;
 
