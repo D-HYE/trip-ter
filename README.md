@@ -1,18 +1,16 @@
-![표지](https://github.com/D-HYE/trip-ter/blob/new_shin/%ED%91%9C%EC%A7%801.jpg)
 # 🛫**Welcom to Trip:ter**
 <br/>
 
 
 ### 필요 하지 않은 것 까지 묶인 패키지, 특색 없는 여행지에 지쳐 있지 않으신가요?
 <br/>
-<br/>
 
 
-“트립터는 맞춤형 여행가이드 서비스 플랫폼으로
+트립터는 맞춤형 여행가이드 서비스 플랫폼으로
 여행자들의 취향과 가치에 맞춘 여행을 제시하여
 
 여러분의 소중한 순간이 행복한 추억으로 남을 수 있도록
-최고의 가이드가 되어 함께 합니다. “
+최고의 가이드가 되어 함께 합니다.
 <br/>
 <br/>
 <br/>
@@ -21,7 +19,7 @@
 ---
 <br/>
 
-# 🙌🖐팀 트립터 Trip:ter 😘
+# 👩‍👩‍👧‍👧팀 트립터 Trip:ter
 <br/>
 
 | ![](https://github.com/D-HYE/trip-ter/blob/new_shin/%ED%9A%A8%EC%A0%95.png) | ![](https://github.com/D-HYE/trip-ter/blob/new_shin/%EB%8B%A4%ED%98%9C.png) | ![](https://github.com/D-HYE/trip-ter/blob/new_shin/%EC%9D%80%EA%B2%BD.png) | ![](https://github.com/D-HYE/trip-ter/blob/new_shin/%EC%9C%A0%EC%A7%84.png) |
@@ -58,7 +56,8 @@
 <br/>
 <br/>
 
-**[트립터 Trip:ter](https://trip-ter.vercel.app/)**
+**[트립터 Trip:ter]
+https://trip-ter.vercel.app/**
 
   
 *본 웹사이트는 크롬 브라우저에 최적화 되어 있습니다.
@@ -74,7 +73,12 @@
   - 검증된 후기
 <br/>
 
- ## 로고  
+  & MORE...
+
+<br/>
+<br/>
+
+ ## 🧸로고  
 
 |  LOGO | Preview |
 | --- | --- |
@@ -82,10 +86,15 @@
 | `Favicon` |<img src ="https://github.com/user-attachments/assets/a2d57ef3-7038-4d57-a4c1-74cb648d2a52" width="200" height="100"/> |
 </br>
 
-  & MORE...
-
-<br/>
-<br/>
+|  COLOR | Color Code |
+| --- | --- |
+| Trip - blue | #0051D3 ![Trip-blue](https://github.com/user-attachments/assets/4d21d825-2069-4434-8c47-9f9c98a60a0d) |
+| Trip - yellow | #FFDA00 ![Trip-yellow](https://github.com/user-attachments/assets/af8fe2a0-15d3-42a2-a6d3-64750758a309) |
+| | |
+| Trip - skyblue | #87CEEB ![Trip-skyblue](https://github.com/user-attachments/assets/8143eebf-ee22-4e8e-86cf-bf3a29bc2d27) |
+| Trip - gray | #B5B5B5 ![Trip-gray](https://github.com/user-attachments/assets/63581e44-e811-46e2-bec1-1b5b6edf5ce0) |
+| Trip - white | #FFFFFF ![Trip-white](https://github.com/user-attachments/assets/a3a457b2-e9f8-4687-9dfe-0d9422c928e1) |
+| Trip - black | #111111 ![Trip-black](https://github.com/user-attachments/assets/6420f8e5-586f-46ee-8d80-66e666de92f8) |
 
 ---
   
