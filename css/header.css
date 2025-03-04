@@ -255,9 +255,10 @@ body.scrolled #gnb {
   margin-bottom: 40px;
 }
 #hb-list .tapPart .feelter {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 #hb-list .tapPart span {
+  font-size: var(--medium-text);
   font-family: var(--theJamsil-medium);
 }
 #hb-list .arrow {

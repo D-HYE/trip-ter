@@ -263,9 +263,10 @@ body.scrolled{
     .tapPart{
         margin-bottom: 40px;
         .feelter{
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         span{
+            font-size: var(--medium-text);
             font-family: var(--theJamsil-medium);
         }  
     } 
