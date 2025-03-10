@@ -36,7 +36,7 @@ main{overflow: hidden;}
         cursor: pointer;
     
         .swiper-slide{     
-            background: url('../img/main_slide/lasvegas.jpg') no-repeat left/cover;
+            background: url('../img/main_img/mainslide1.jpg') no-repeat left/cover;
             .slide_desc{
                 top: 160px; left: 15.625%;
                 color: var(--trip-white);
@@ -54,12 +54,12 @@ main{overflow: hidden;}
             }    
         }
         .swiper-slide2{
-            background-image: url('../img/main_slide/jeju.jpg');
+            background-image: url('../img/main_img/mainslide2.jpg');
             .slide_desc{color: var(--trip-black);}
         }
-        .swiper-slide3{background-image: url('../img/main_slide/iceland.jpg');}
+        .swiper-slide3{background-image: url('../img/main_img/mainslide3.jpg');}
         .swiper-slide4{
-            background-image: url('../img/main_slide/illustlator_slide.jpg');
+            background-image: url('../img/main_img/mainslide4.jpg');
             .slide_desc{color: var(--trip-black);}
         }
     
