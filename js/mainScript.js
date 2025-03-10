@@ -1,18 +1,3 @@
-//----- form btn
-const formFiedset = document.querySelectorAll('.mftr_cont fieldset');
-formFiedset.forEach(fieldset => {
-    fieldset.addEventListener('click', (e) =>{
-
-        const formBtn = fieldset.querySelectorAll('input');
-        
-        if(e.target.tagName === 'INPUT'){ 
-            formBtn.forEach(btn => btn.classList.remove('active'));
-            e.target.classList.add('active');
-        }
-
-    });
-});
-
 //----- main swiper
 let main_slide = new Swiper(".main_swiper", {
     loop: true,
