@@ -13,14 +13,14 @@ main{overflow: hidden;}
 .swiper-button-prev,
 .swiper-button-next{
     width: 78px; height: 78px;
-    background: url(../img/icon/arrow-left.svg) no-repeat 15px 50%/48px, var(--trip-blue); border-radius: 40px;
+    background: url('../img/icon/arrow-left.svg') no-repeat 15px 50%/48px, var(--trip-blue); border-radius: 40px;
     text-indent: -9999px;
     transition: .3s;
 
     &:hover{width: 156px;}
 }
 .swiper-button-next{
-    background-image: url(../img/icon/arrow-right.svg);
+    background-image: url('../img/icon/arrow-right.svg');
     background-position: calc(100% - 15px) 50%;
 }
 
@@ -36,7 +36,7 @@ main{overflow: hidden;}
         cursor: pointer;
     
         .swiper-slide{     
-            background: url(../img/main_slide/lasvegas.jpg) no-repeat left/cover;
+            background: url('../img/main_img/mainslide1.jpg') no-repeat left/cover;
             .slide_desc{
                 top: 160px; left: 15.625%;
                 color: var(--trip-white);
@@ -54,12 +54,12 @@ main{overflow: hidden;}
             }    
         }
         .swiper-slide2{
-            background-image: url(../img/main_slide/jeju.jpg);
+            background-image: url('../img/main_img/mainslide2.jpg');
             .slide_desc{color: var(--trip-black);}
         }
-        .swiper-slide3{background-image: url(../img/main_slide/iceland.jpg);}
+        .swiper-slide3{background-image: url('../img/main_img/mainslide3.jpg');}
         .swiper-slide4{
-            background-image: url(../img/main_slide/illustlator_slide.jpg);
+            background-image: url('../img/main_img/mainslide4.jpg');
             .slide_desc{color: var(--trip-black);}
         }
     
@@ -98,17 +98,17 @@ main{overflow: hidden;}
             }
             .mftr_btn_wrap{
                 gap: 12px;
-                input{
+                .mftr_btn{
                     padding: 4px 16px;
                     font-size: var(--small-text);
                     border-radius: 20px; border: 1px solid var(--trip-gray1); background: var(--trip-white);
                     cursor: pointer;
     
-                    &.active{
-                        color: var(--trip-white);
-                        background: var(--trip-blue);
-                        border-color: var(--trip-blue);
-                    }
+                }
+                input[type='radio']:checked + .mftr_btn{
+                    color: var(--trip-white);
+                    background: var(--trip-blue);
+                    border-color: var(--trip-blue);
                 }
             }
         }
@@ -244,7 +244,7 @@ main{overflow: hidden;}
         li{
             width: 23.077%; height: 22.917vw;
             border-radius: 15px; overflow: hidden;
-            background: url(../img/review/review3.jpg) no-repeat center/cover;
+            background: url('../img/review/review3.jpg') no-repeat center/cover;
 
             a{
                 flex-direction: column;
@@ -378,15 +378,14 @@ main{overflow: hidden;}
 }
 
 /* section7 */
-.section7{
+.section7{ 
     position: relative;
-    background: url(../img/main_img/bgimg1.jpg) no-repeat right center/cover;
-    isolation: isolate;
-    &:after{
-        content: ""; 
-        position: absolute; z-index: -1; inset: 0;
-        background: rgba(0, 0, 0, .25);
-    }
+    background: url('../img/main_img/bgimg1.jpg') no-repeat right center/cover;
+    // &:after{
+    //     content: ""; 
+    //     position: absolute; z-index: -1; inset: 0;
+    //     background: rgba(0, 0, 0, .25);
+    // }
     .container{
         gap: 40px;
         height: 440px;

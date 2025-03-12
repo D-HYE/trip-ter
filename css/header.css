@@ -249,15 +249,15 @@ body.scrolled #gnb {
 }
 #hb-list div ul {
   margin-bottom: 30px;
-  row-gap: px;
+  row-gap: 8px;
 }
-#hb-list .tapPart {
+#hb-list .feelter {
   margin-bottom: 40px;
 }
-#hb-list .tapPart .feelter {
+#hb-list .feelter .feelter {
   margin-bottom: 15px;
 }
-#hb-list .tapPart span {
+#hb-list .feelter span {
   font-size: var(--medium-text);
   font-family: var(--theJamsil-medium);
 }
@@ -334,9 +334,6 @@ body.scrolled #gnb {
     background-color: rgba(0, 81, 211, 0.1);
     outline: none;
     padding-left: 20px;
-    color: #fff;
-  }
-  #mb-searchbox .mb-search .mb-searchbar::-moz-placeholder {
     color: #fff;
   }
   #mb-searchbox .mb-search .mb-searchbar::placeholder {
