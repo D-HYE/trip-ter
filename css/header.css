@@ -251,14 +251,10 @@ body.scrolled #gnb {
   margin-bottom: 30px;
   row-gap: 8px;
 }
-#hb-list .feelter {
-  margin-bottom: 40px;
-}
-#hb-list .feelter .feelter {
+#hb-list .feelter, #hb-list .planner {
   margin-bottom: 15px;
 }
-#hb-list .feelter span {
-  font-size: var(--medium-text);
+#hb-list .feelter span, #hb-list .planner span {
   font-family: var(--theJamsil-medium);
 }
 #hb-list .arrow {
@@ -283,11 +279,11 @@ body.scrolled #gnb {
   width: 50%;
   display: inline-block;
 }
-#hb-sublist .sublist li .allPass {
-  font-weight: 600;
-}
 #hb-sublist .sublist li a {
   font-size: var(--small-text);
+}
+#hb-sublist .sublist li .allPass {
+  font-family: var(--theJamsil-medium);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -334,6 +330,9 @@ body.scrolled #gnb {
     background-color: rgba(0, 81, 211, 0.1);
     outline: none;
     padding-left: 20px;
+    color: #fff;
+  }
+  #mb-searchbox .mb-search .mb-searchbar::-moz-placeholder {
     color: #fff;
   }
   #mb-searchbox .mb-search .mb-searchbar::placeholder {

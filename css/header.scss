@@ -1,3 +1,4 @@
+
 #hd{
     .search form{
         gap: 5px;
@@ -256,20 +257,16 @@ body.scrolled{
             border-radius:12px;
         }
     }
-    div ul{
+   div ul{
         margin-bottom: 30px;
         row-gap: 8px;
     }   
-    .feelter{
-        margin-bottom: 40px;
-        .feelter{
-            margin-bottom: 15px;
-        }
+    .feelter, .planner{
+        margin-bottom: 15px;
         span{
-            font-size: var(--medium-text);
             font-family: var(--theJamsil-medium);
-        }  
-    } 
+        }
+    }
     .arrow{
         width: 24px;
         height: 24px;
@@ -294,17 +291,15 @@ body.scrolled{
     .sublist{
         li{ width: 50%;
             display: inline-block;
-            .allPass{
-                font-weight: 600;
-            }
             a{
                 font-size:var(--small-text);              
             }
-
+            .allPass{
+                font-family: var(--theJamsil-medium);
+            }
         }
     }
 }
-
 //작은pc
 @media only screen and (max-width: 1280px){
     }
@@ -382,4 +377,5 @@ body.scrolled{
     #hb-item{
         width: 100%;
     }   
+
 }
